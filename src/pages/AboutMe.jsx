@@ -1,65 +1,29 @@
-// This is a static page mocking an "About Us" section for our fake user data
 export default function AboutMe() {
     return (
-      <div className="container pt-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-          nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
-        <section className="features-icons bg-light text-center m-4">
-          <div className="container">
-            <div className="row p-2">
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-window m-auto text-primary" />
-                  </div>
-                  <h3>Fully Responsive</h3>
-                  <p className="lead mb-0">
-                    This theme will look great on any device, no matter the size!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-layers m-auto text-primary" />
-                  </div>
-                  <h3>Bootstrap 5 Ready</h3>
-                  <p className="lead mb-0">
-                    Featuring the latest build of the new Bootstrap 5 framework!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-terminal m-auto text-primary" />
-                  </div>
-                  <h3>Easy to Use</h3>
-                  <p className="lead mb-0">
-                    Ready to use with your own content, or customize the source
-                    files!
-                  </p>
-                </div>
-              </div>
-            </div>
+      <div className="container pt-4 about-me-container ">
+        <div className="row">
+          <div className="col-md-4">
+            {/* Include a recent photo or avatar of the developer */}
+            <img
+              src="src\assets\images\Lumii_20231124_1832597415757 - Copy.jpg"
+              alt="Profile"
+              className="img-fluid rounded-circle mb-3"
+            />
           </div>
-        </section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-          nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
+          <div className="col-md-8">
+            {/* Include a short bio about the developer */}
+            <h2 className="mb-4">About the Developer</h2>
+            <p className="bio-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
       </div>
     );
   }
