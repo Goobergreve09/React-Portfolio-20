@@ -8,7 +8,6 @@ export default function AboutMe() {
       <div className="container pt-4 about-me-container">
         <div className="row">
           <div className="col-md-4">
-            {/* Include a recent photo or avatar of the developer */}
             <img
               src= {profileImage}
               alt="Profile Image"

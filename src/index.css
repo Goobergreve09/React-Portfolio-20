@@ -1,5 +1,5 @@
 body {
-  background-color: #6c757d; /* Change this to the desired background color */
+  background-color: #6c757d; 
 }
 
 /* FOOTER */
@@ -8,10 +8,10 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #333; /* Background color for the footer */
-  color: white; /* Text color for the footer */
-  padding-top: 50px; /* Adjust padding as needed */
-  text-align: center; /* Align text to center */
+  background-color: #333;
+  color: white; 
+  padding-top: 50px;
+  text-align: center; 
   font-size: 32px;
 }
 
@@ -55,15 +55,15 @@ body {
 
 .bi.bi-download {
   color: whitesmoke;
-  transition: color 0.2s ease; /* Smooth transition effect */
+  transition: color 0.2s ease; 
 }
 
 .bi.bi-download:hover {
-  color: #3795ff; /* Change to black on hover */
+  color: #3795ff;
 }
 
 .icon {
-  font-size: 18px; /* Change the size as needed */
+  font-size: 18px;
 }
 
 .contact {
@@ -85,7 +85,7 @@ body {
 }
 
 .project:last-child {
-  margin-bottom: 80px; /* Adjust the value as needed */
+  margin-bottom: 80px; 
 }
 
 .project img {
@@ -105,8 +105,8 @@ body {
 }
 
 .project-title {
-  color: white; /* Change color as needed */
-  margin-bottom: 5px; /* Adjust spacing between title and links */
+  color: white; 
+  margin-bottom: 5px; 
   font-family: "Manrope", sans-serif;
 }
 
