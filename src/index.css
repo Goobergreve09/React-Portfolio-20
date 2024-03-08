@@ -1,5 +1,6 @@
 body {
-  background-color: #6c757d; 
+  background-image: url(https://getwallpapers.com/wallpaper/full/8/a/a/6122.jpg);
+  background-size: cover;
 }
 
 /* FOOTER */
@@ -8,10 +9,10 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #333;
-  color: white; 
+  background-color: black !important;
+  color: white;
   padding-top: 50px;
-  text-align: center; 
+  text-align: center;
   font-size: 32px;
 }
 
@@ -32,6 +33,8 @@ body {
 
 .about-me-container img {
   width: 400px;
+  height: auto;
+  border: solid 2px white;
 }
 
 .bio-text {
@@ -55,7 +58,7 @@ body {
 
 .bi.bi-download {
   color: whitesmoke;
-  transition: color 0.2s ease; 
+  transition: color 0.2s ease;
 }
 
 .bi.bi-download:hover {
@@ -79,13 +82,14 @@ body {
 .project {
   display: flex;
   align-items: center;
-  background-color: #495057;
+  background-image: url(https://getwallpapers.com/wallpaper/full/4/d/c/56482.jpg);
+  background-size: cover;
   color: whitesmoke;
   border-bottom: solid 5px whitesmoke;
 }
 
 .project:last-child {
-  margin-bottom: 80px; 
+  margin-bottom: 80px;
 }
 
 .project img {
@@ -102,11 +106,12 @@ body {
   text-align: center;
   margin-left: 250px;
   padding-right: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .project-title {
-  color: white; 
-  margin-bottom: 5px; 
+  color: white;
+  margin-bottom: 5px;
   font-family: "Manrope", sans-serif;
 }
 
@@ -126,11 +131,12 @@ body {
 
 .project-description {
   font-family: "Manrope", sans-serif;
+
 }
 /* HEADER  */
 
 header {
-  background-color: #333;
+  background-color: black;
   color: #fff;
   padding: 1rem;
 }
