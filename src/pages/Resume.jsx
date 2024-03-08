@@ -64,7 +64,7 @@ const Resume = () => {
       <Header />
       <div className="container pt-4 resume">
         <h2> Download Resume</h2>
-        <a href="src\assets\Gregory M Greve Resume.pdf" download>
+        <a href="src/assets/Gregory M Greve Resume.pdf" download>
           <i className="bi bi-download" style={{ fontSize: "48px" }}></i>
         </a>
         <div className="row">
