@@ -35,7 +35,7 @@ export default function AboutMe() {
           <div className="col-md-8 about-text">
             <h2 className="mb-4">About the Developer</h2>
             <p className="bio-text">
-              Hello and welcome to my portfolio! I'm Greg, a dedicated
+            <span id="custom-text">Hello World</span>,  and welcome to my portfolio! I'm Greg, a dedicated
               full-stack web developer fueled by a passion for creating
               immersive digital experiences. I hold a certificate in Full Stack
               Web Development from Michigan State University, where I gained

@@ -29,12 +29,17 @@ body {
 
 .about-text {
   background-color: whitesmoke;
-  border-top-left-radius: 25px; /* Border radius for top-left corner */
+  border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   overflow-y: auto;
   max-height: 600px;
 }
 
+#custom-text {
+  font-family: "Oswald", sans-serif;
+  font-size: x-large;
+  color: #921952;
+}
 
 .about-text h2 {
   text-align: center;
