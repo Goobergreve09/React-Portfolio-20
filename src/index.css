@@ -35,13 +35,6 @@ body {
   max-height: 600px;
 }
 
-.about-text {
-  background-color: whitesmoke;
-  border-top-left-radius: 25px; /* Border radius for top-left corner */
-  border-bottom-left-radius: 25px; /* Border radius for bottom-left corner */
-  /* overflow-y: auto; 
-  max-height: 600px; */
-}
 
 .about-text h2 {
   text-align: center;
