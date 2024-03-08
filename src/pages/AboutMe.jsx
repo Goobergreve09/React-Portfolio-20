@@ -1,5 +1,9 @@
+import Header from "../components/Header";
+
 export default function AboutMe() {
-    return (
+  return (
+    <div>
+      <Header />
       <div className="container pt-4 about-me-container">
         <div className="row">
           <div className="col-md-4">
@@ -27,6 +31,8 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
   

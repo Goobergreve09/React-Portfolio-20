@@ -90,3 +90,24 @@ padding-top: 25px;
     background-color: lightblue; /* Change this to the desired background color */
   }
 
+  .nav-links {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .nav-links li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+  }
+  
+  .nav-links li a.active {
+    background-color: #ccc; /* Adjust the background color as needed */
+  }
