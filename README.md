@@ -23,7 +23,7 @@ To view my portfolio on Netlify click the following link:
 
 --- > [Click Me To View Portfolio](https://main--react-portfolio-greg-greve.netlify.app/)
 
-![porttty](https://github.com/Goobergreve09/React-Portfolio-20/assets/143923830/25f0357d-7a6d-4731-9bad-9f32603adac5)
+![hjlkhj](https://github.com/Goobergreve09/React-Portfolio-20/assets/143923830/cc73cb3a-c573-448f-b844-462139d6dcbf)
 
 
 ## Contributions
