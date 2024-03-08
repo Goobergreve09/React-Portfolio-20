@@ -1,18 +1,11 @@
-import { Outlet } from 'react-router-dom';
-import Footer from './components/Footer';
-
-
-
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-    
-        <Outlet />
-        <Footer />
-   
-       
-        
+      <Outlet />
+      <Footer />
     </>
   );
 }

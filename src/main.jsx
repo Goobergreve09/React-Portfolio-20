@@ -1,22 +1,22 @@
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Importing components and styles
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import './index.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./index.css";
 
 // Importing pages
-import App from './App';
-import Error from './pages/Error';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import AboutMe from './pages/AboutMe';
-import Resume from './pages/Resume';
+import App from "./App";
+import Error from "./pages/Error";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe";
+import Resume from "./pages/Resume";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <Error />,
     children: [
@@ -25,19 +25,19 @@ const router = createBrowserRouter([
         element: <AboutMe />,
       },
       {
-        path: '/',
+        path: "/",
         element: <AboutMe />, // Change the path to '/' to match the NavLink
       },
       {
-        path: '/Portfolio',
+        path: "/Portfolio",
         element: <Portfolio />,
       },
       {
-        path: '/Contact',
+        path: "/Contact",
         element: <Contact />,
       },
       {
-        path: '/Resume',
+        path: "/Resume",
         element: <Resume />,
       },
     ],
@@ -45,6 +45,6 @@ const router = createBrowserRouter([
 ]);
 
 // Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
