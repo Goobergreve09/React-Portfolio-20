@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import profileImage from "../assets/images/profile.jpg";
 
 export default function AboutMe() {
   return (
@@ -9,8 +10,8 @@ export default function AboutMe() {
           <div className="col-md-4">
             {/* Include a recent photo or avatar of the developer */}
             <img
-              src="public/images/Lumii_20231124_1832597415757 - Copy.jpg"
-              alt="Profile"
+              src= {profileImage}
+              alt="Profile Image"
               className="img-fluid rounded-circle mb-3"
             />
           </div>
