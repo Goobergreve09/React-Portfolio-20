@@ -2,6 +2,25 @@ body {
     background-color: lightblue; /* Change this to the desired background color */
   }
 
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Background color for the footer */
+    color: white; /* Text color for the footer */
+    padding-top: 50px; /* Adjust padding as needed */
+    text-align: center; /* Align text to center */
+    font-size: 32px;
+  }
+  
+  .project:last-child {
+    margin-bottom: 100px; /* Adjust the value as needed */
+  }
+
+  .footer a {
+    padding:25px;
+  }
+
   .about-text {
     background-color: whitesmoke;
     border-radius: 25px;
@@ -51,6 +70,7 @@ padding-top: 25px;
     align-items: center;
     text-align: center;
     margin-left: 250px;
+    padding-right: 100px;
   }
   
   .project-title {
