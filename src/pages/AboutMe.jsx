@@ -4,7 +4,6 @@ import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 
-
 export default function AboutMe() {
   return (
     <div>
@@ -17,25 +16,19 @@ export default function AboutMe() {
               alt="Profile Image"
               className="img-fluid rounded-circle mb-3"
             />
-            
+
             <div className="text-center credentials">
               <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>
               <h4 className="mb-4">Full-Stack Web-Developer</h4>
               <div className="logo-images">
-              <div className="d-flex justify-content-center align-items-center">
-                <img
-                  src= {msuLogo}
-                  alt="MSU Logo"
-                  className="img-fluid mr-4"
-                
-                />
-                <img
-                  src=  {edx}
-                  alt="edX Logo"
-                  className="img-fluid"
-                
-                />
-              </div>
+                <div className="d-flex justify-content-center align-items-center">
+                  <img
+                    src={msuLogo}
+                    alt="MSU Logo"
+                    className="img-fluid mr-4"
+                  />
+                  <img src={edx} alt="edX Logo" className="img-fluid" />
+                </div>
               </div>
             </div>
           </div>
@@ -75,11 +68,33 @@ export default function AboutMe() {
               committed to delivering high-quality solutions that meet the
               unique needs of each project.
             </p>
+            <p className="bio-text">
+              In addition to my passion for web development, I lead a life
+              filled with curiosity, diverse interests and hobbies that enrich
+              my creativity and perspective. One of my greatest joys is
+              exploring the great outdoors through landscape photography and
+              hiking. There's something magical about capturing the beauty of
+              nature through the lens of my camera and immersing myself in
+              breathtaking landscapes.
+            </p>
+            <p className="bio-text">
+              Traveling is another integral part of my life, as it allows me to
+              experience different cultures, cuisines, and landscapes firsthand.
+              From bustling cities to serene countryside settings, I find
+              inspiration in the diversity of the world around me, which often
+              fuels my creative endeavors in web development and beyond.
+            </p>
+            <p className="bio-text">
+              Overall, my diverse interests and hobbies shape who I am as a web
+              developer, infusing my work with creativity, curiosity, and a deep
+              appreciation for the world around me. Whether I'm coding a website
+              or exploring a new hiking trail, I approach each endeavor with
+              enthusiasm, dedication, and a commitment to excellence and knowing
+              the unknown.
+            </p>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-

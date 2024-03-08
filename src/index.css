@@ -18,18 +18,29 @@ body {
 
 .footer a {
   padding: 25px;
-  transition: ease .2s;
+  transition: ease 0.2s;
 }
 
 .footer a:hover {
-  color:#3795ff !important;
+  color: #3795ff !important;
 }
 
 /* ABOUT ME */
 
 .about-text {
   background-color: whitesmoke;
-  border-radius: 25px;
+  border-top-left-radius: 25px; /* Border radius for top-left corner */
+  border-bottom-left-radius: 25px;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.about-text {
+  background-color: whitesmoke;
+  border-top-left-radius: 25px; /* Border radius for top-left corner */
+  border-bottom-left-radius: 25px; /* Border radius for bottom-left corner */
+  /* overflow-y: auto; 
+  max-height: 600px; */
 }
 
 .about-text h2 {
@@ -42,20 +53,18 @@ body {
   border: solid 2px white;
 }
 
-
-
 .bio-text {
   font-size: 20px;
 }
 
 .credentials {
   color: whitesmoke;
- font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .logo-images img {
-  border:none;
-  max-width:150px;
+  border: none;
+  max-width: 150px;
   padding: 15px;
 }
 
@@ -149,7 +158,6 @@ body {
 
 .project-description {
   font-family: "Manrope", sans-serif;
-
 }
 /* HEADER  */
 
@@ -167,7 +175,6 @@ header {
 
 .navbar h1:hover {
   color: whitesmoke;
- 
 }
 
 .navbar {
@@ -195,7 +202,6 @@ header {
 
 .nav-links li a:hover {
   color: #3795ff;
-
 }
 
 .nav-links li a.active {
