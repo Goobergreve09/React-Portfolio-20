@@ -18,6 +18,11 @@ body {
 
 .footer a {
   padding: 25px;
+  transition: ease .2s;
+}
+
+.footer a:hover {
+  color:#3795ff !important;
 }
 
 /* ABOUT ME */
@@ -37,8 +42,21 @@ body {
   border: solid 2px white;
 }
 
+
+
 .bio-text {
   font-size: 20px;
+}
+
+.credentials {
+  color: whitesmoke;
+ font-family: "Oswald", sans-serif;
+}
+
+.logo-images img {
+  border:none;
+  max-width:150px;
+  padding: 15px;
 }
 
 /* RESUME */
@@ -149,6 +167,7 @@ header {
 
 .navbar h1:hover {
   color: whitesmoke;
+ 
 }
 
 .navbar {
@@ -174,6 +193,12 @@ header {
   transition: ease 0.1s;
 }
 
+.nav-links li a:hover {
+  color: #3795ff;
+
+}
+
 .nav-links li a.active {
   font-weight: bold;
+  color: #3795ff;
 }

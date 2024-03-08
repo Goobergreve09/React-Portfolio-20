@@ -1,5 +1,9 @@
 import Header from "../components/Header";
+
 import profileImage from "../assets/images/profile.jpg";
+import msuLogo from "../assets/images/msuLogo.png";
+import edx from "../assets/images/edx.png";
+
 
 export default function AboutMe() {
   return (
@@ -9,10 +13,31 @@ export default function AboutMe() {
         <div className="row">
           <div className="col-md-4">
             <img
-              src= {profileImage}
+              src={profileImage}
               alt="Profile Image"
               className="img-fluid rounded-circle mb-3"
             />
+            
+            <div className="text-center credentials">
+              <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>
+              <h4 className="mb-4">Full-Stack Web-Developer</h4>
+              <div className="logo-images">
+              <div className="d-flex justify-content-center align-items-center">
+                <img
+                  src= {msuLogo}
+                  alt="MSU Logo"
+                  className="img-fluid mr-4"
+                
+                />
+                <img
+                  src=  {edx}
+                  alt="edX Logo"
+                  className="img-fluid"
+                
+                />
+              </div>
+              </div>
+            </div>
           </div>
           <div className="col-md-8 about-text">
             <h2 className="mb-4">About the Developer</h2>
@@ -56,3 +81,5 @@ export default function AboutMe() {
     </div>
   );
 }
+
+
