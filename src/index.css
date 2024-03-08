@@ -2,9 +2,28 @@ body {
     background-color: lightblue; /* Change this to the desired background color */
   }
 
-/* .portfolio {
-    background-color:#0d1821 ;
-} */
+  .about-text {
+    background-color: whitesmoke;
+    border-radius: 25px;
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+
+  .bio-text {
+    font-size: 20px;
+  }
+
+ .resume   {
+    text-align: center;
+}
+
+.resume .row {
+padding-top: 25px;
+}
+
+
 
 .portfolio h2 {
     color: #0d1821;
