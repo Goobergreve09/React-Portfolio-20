@@ -9,7 +9,7 @@ export default function AboutMe() {
           <div className="col-md-4">
             {/* Include a recent photo or avatar of the developer */}
             <img
-              src="src/assets/images/Lumii_20231124_1832597415757 - Copy.jpg"
+              src="public/images/Lumii_20231124_1832597415757 - Copy.jpg"
               alt="Profile"
               className="img-fluid rounded-circle mb-3"
             />
