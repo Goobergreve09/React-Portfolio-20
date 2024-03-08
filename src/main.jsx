@@ -9,7 +9,6 @@ import './index.css';
 // Importing pages
 import App from './App';
 import Error from './pages/Error';
-import Header from './components/Header';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import AboutMe from './pages/AboutMe';

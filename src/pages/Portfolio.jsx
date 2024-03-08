@@ -7,7 +7,6 @@ const Portfolio = () => {
     <div>
       <Header />
       <div className="portfolio">
-        <h2>Greg Greve's Portfolio</h2>
         <div className="projects">
           <Project
             title="Weather API"

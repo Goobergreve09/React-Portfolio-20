@@ -1,113 +1,177 @@
 body {
-    background-color: lightblue; /* Change this to the desired background color */
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #343a40; /* Background color for the footer */
-    color: white; /* Text color for the footer */
-    padding-top: 50px; /* Adjust padding as needed */
-    text-align: center; /* Align text to center */
-    font-size: 32px;
-  }
-  
-  .project:last-child {
-    margin-bottom: 100px; /* Adjust the value as needed */
-  }
-
-  .footer a {
-    padding:25px;
-  }
-
-  .about-text {
-    background-color: whitesmoke;
-    border-radius: 25px;
-  }
-
-  .about-text h2 {
-    text-align: center;
-  }
-
-  .bio-text {
-    font-size: 20px;
-  }
-
- .resume   {
-    text-align: center;
+  background-color: #6c757d; /* Change this to the desired background color */
 }
 
-.resume .row {
-padding-top: 25px;
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Background color for the footer */
+  color: white; /* Text color for the footer */
+  padding-top: 50px; /* Adjust padding as needed */
+  text-align: center; /* Align text to center */
+  font-size: 32px;
 }
 
-
-
-.portfolio h2 {
-    color: #0d1821;
-}
-
-.project {
-    display: flex;
-    align-items: center;
-    background-color:#344966 ;
-    color: whitesmoke;
-    border-bottom: solid 5px whitesmoke;
-   
-  }
-
-.project img {
-  width: 750px;
-  border-radius: 15px;
+.footer a {
   padding: 25px;
 }
 
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 250px;
-    padding-right: 100px;
-  }
-  
-  .project-title {
-    color: white; /* Change color as needed */
-    margin-bottom: 5px; /* Adjust spacing between title and links */
-  }
-  
-  .project-info a {
-    color: whitesmoke
+/* ABOUT ME */
+
+.about-text {
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+
+.about-text h2 {
+  text-align: center;
+}
+
+.about-me-container img {
+  width: 400px;
+}
+
+.bio-text {
+  font-size: 20px;
+}
+
+/* RESUME */
+
+.resume {
+  text-align: center;
+}
+
+.resume h2 {
+  color: whitesmoke;
+  font-family: "Manrope", sans-serif;
+}
+
+.resume .row {
+  padding-top: 25px;
+}
+
+.bi.bi-download {
+  color: whitesmoke;
+  transition: color 0.2s ease; /* Smooth transition effect */
+}
+
+.bi.bi-download:hover {
+  color: #3795FF ; /* Change to black on hover */
+}
+
+.icon {
+  font-size: 18px; /* Change the size as needed */
+}
+
+.contact {
+  color: whitesmoke;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+/* PORTFOLIO */
+
+.project {
+  display: flex;
+  align-items: center;
+  background-color: #495057;
+  color: whitesmoke;
+  border-bottom: solid 5px whitesmoke;
+}
+
+.project:last-child {
+  margin-bottom: 80px; /* Adjust the value as needed */
+}
+
+.project img {
+  width: 750px;
+  border-radius: 30px;
+padding: 20px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 250px;
+  padding-right: 100px;
+}
+
+.project-title {
+  color: white; /* Change color as needed */
+  margin-bottom: 5px; /* Adjust spacing between title and links */
+  font-family: "Manrope", sans-serif;
+}
+
+.project-info a {
+  color: whitesmoke;
+  font-family: "Manrope", sans-serif;
+  transition: ease .2s;
+}
+
+.project-info a:hover {
+    color:#3795FF   ;
+}
+
+.project-info h3 {
+  margin-bottom: 50px;
+}
+
+.project-description {
+    font-family: "Manrope", sans-serif;
+
+}
+/* HEADER  */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar h1 {
+  color: whitesmoke;
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar h1:hover {
+  color: whitesmoke;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
   }
 
-  .project-info h3 {
-    margin-bottom: 50px;
-  }
-
-  .about-me-container {
-    background-color: lightblue; /* Change this to the desired background color */
-  }
-
-  .nav-links {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    list-style-type: none;
-  }
-  
-  .nav-links li {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .nav-links li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333; /* Adjust the color as needed */
-  }
-  
-  .nav-links li a.active {
-    background-color: #ccc; /* Adjust the background color as needed */
-  }
+.nav-links li a.active {
+  font-weight: bold;
+}

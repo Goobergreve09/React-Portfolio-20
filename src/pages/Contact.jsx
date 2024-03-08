@@ -50,7 +50,7 @@ export default function Contact() {
     return (
       <div>
         <Header />
-        <div className="container pt-4">
+        <div className="container pt-4 contact">
           <h2>Contact Me</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
