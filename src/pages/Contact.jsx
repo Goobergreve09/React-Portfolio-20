@@ -69,7 +69,7 @@ export default function Contact() {
       Don’t fill this out if you're human: <input name="bot-field" />
     </label>
   </div>
-  {/* Rest of your form fields */}
+  {/* Name field */}
   <div className="mb-3">
     <label htmlFor="name" className="form-label">
       Name
@@ -86,10 +86,44 @@ export default function Contact() {
       <div className="invalid-feedback">{errors.name}</div>
     )}
   </div>
-  {/* Other form fields */}
+  {/* Email field */}
+  <div className="mb-3">
+    <label htmlFor="email" className="form-label">
+      Email
+    </label>
+    <input
+      type="email"
+      className={`form-control ${errors.email ? "is-invalid" : ""}`}
+      id="email"
+      name="email"
+      value={formData.email}
+      onChange={handleChange}
+    />
+    {errors.email && (
+      <div className="invalid-feedback">{errors.email}</div>
+    )}
+  </div>
+  {/* Message field */}
+  <div className="mb-3">
+    <label htmlFor="message" className="form-label">
+      Message
+    </label>
+    <textarea
+      className={`form-control ${errors.message ? "is-invalid" : ""}`}
+      id="message"
+      name="message"
+      value={formData.message}
+      onChange={handleChange}
+    ></textarea>
+    {errors.message && (
+      <div className="invalid-feedback">{errors.message}</div>
+    )}
+  </div>
+  {/* Submit button */}
   <button type="submit" className="btn btn-primary">
     Send Message
   </button>
+  {/* Success message */}
   {successMessage && (
     <div className="alert alert-success mt-3">{successMessage}</div>
   )}
