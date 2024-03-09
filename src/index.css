@@ -54,6 +54,7 @@ body {
 
 #bold-text:hover {
   color: #3795ff;
+  text-decoration: underline;
 }
 
 .about-text h2 {
