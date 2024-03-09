@@ -38,12 +38,21 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const myForm = e.target;
+    const formDataToSend = new FormData(myForm); // Rename formData to avoid conflict
+
     if (validateForm()) {
-      // Process the form submission here (e.g., send the data to a server)
-      // For demonstration purposes, just display a success message
-      setSuccessMessage("Message sent successfully!");
-      // Clear the form fields
-      setFormData({ name: "", email: "", message: "" });
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formDataToSend).toString(), // Use formDataToSend here
+      })
+        .then(() => {
+          setSuccessMessage("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+        })
+        .catch((error) => alert(error));
     }
   };
 
@@ -111,3 +120,4 @@ export default function Contact() {
     </div>
   );
 }
+
