@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
+import signature from "../assets/images/signature.png";
 
 export default function AboutMe() {
   return (
@@ -35,21 +36,75 @@ export default function AboutMe() {
           <div className="col-md-8 about-text">
             <h2 className="mb-4">About the Developer</h2>
             <p className="bio-text">
-            <span id="custom-text">Hello World</span>,  and welcome to my portfolio! I'm Greg, a dedicated
-              full-stack web developer fueled by a passion for creating
-              immersive digital experiences. I hold a certificate in Full Stack
-              Web Development from Michigan State University, where I gained
-              hands-on experience and a solid foundation in the latest web
-              technologies.
+              <span id="custom-text">Hello World</span>, and welcome to my
+              portfolio! I'm Greg, a dedicated full-stack web developer fueled
+              by a passion for creating immersive digital experiences. I hold a
+              certificate in Full Stack Web Development from Michigan State
+              University, where I gained hands-on experience and a solid
+              foundation in the latest web technologies.
             </p>
             <p className="bio-text">
               My journey into the world of web development began with a
               curiosity for crafting dynamic and user-friendly interfaces. With
-              proficiency in HTML, JavaScript, Bootstrap, and CSS. I embarked on
-              a journey to bring my creative visions to life. Along the way,
-              I've expanded my skill set to include cutting-edge frameworks and
-              libraries such as React, as well as backend technologies like
-              Node.js and Express.
+              proficiency in{" "}
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">HTML</span>
+              </a>
+              ,{" "}
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">JavaScript</span>
+              </a>
+              ,{" "}
+              <a
+                href="https://getbootstrap.com/docs/5.1/getting-started/introduction/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">Bootstrap</span>
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">CSS</span>
+              </a>
+              . I embarked on a journey to bring my creative visions to life.
+              Along the way, I've expanded my skill set to include cutting-edge
+              frameworks and libraries such as{" "}
+              <a
+                href="https://reactjs.org/docs/getting-started.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">React</span>
+              </a>
+              , as well as backend technologies like{" "}
+              <a
+                href="https://nodejs.org/en/docs/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">Node.js</span>
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://expressjs.com/en/starter/installing.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">Express</span>
+              </a>
+              .
             </p>
             <p className="bio-text">
               In addition to my technical expertise, I have a keen eye for
@@ -62,11 +117,34 @@ export default function AboutMe() {
             </p>
             <p className="bio-text">
               My experience extends beyond frontend development, as I am also
-              proficient in database management using MySQL and other relational
-              databases. Whether it's building responsive websites, developing
-              scalable web applications, or optimizing performance, I'm
-              committed to delivering high-quality solutions that meet the
-              unique needs of each project.
+              proficient in database management using{" "}
+              <a
+                href="https://dev.mysql.com/doc/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">MySQL</span>
+              </a>{" "}
+              and other relational databases including{" "}
+              <a
+                href="https://docs.mongodb.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">NoSQL</span>
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.mongodb.com/docs/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">MongoDB</span>
+              </a>
+              . Whether it's building responsive websites, developing scalable
+              web applications, or optimizing performance, I'm committed to
+              delivering high-quality solutions that meet the unique needs of
+              each project.
             </p>
             <p className="bio-text">
               In addition to my passion for web development, I lead a life
@@ -91,6 +169,15 @@ export default function AboutMe() {
               or exploring a new hiking trail, I approach each endeavor with
               enthusiasm, dedication, and a commitment to excellence and knowing
               the unknown.
+              <div className="d-flex justify-content-end">
+                <div className="signature">
+                  <img
+                    src={signature}
+                    alt="Developer's Signature"
+                    className="img-fluid signature-img"
+                  />
+                </div>
+              </div>
             </p>
           </div>
         </div>

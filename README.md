@@ -42,6 +42,8 @@ Special thanks to the following frameworks and tools:
 
 *   [React Image Import](https://stackabuse.com/importing-images-with-react/)
 
+*   [Google Developers - About rel=noopener](https://developers.google.com/web/tools/lighthouse/audits/noopener)
+
 *   [EDX MSU Software Development Bootcamp](https://www.edx.org/boot-camps/coding/michigan-state-university-coding-boot-camp)
 
 

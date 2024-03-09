@@ -35,14 +35,30 @@ body {
   max-height: 600px;
 }
 
-#custom-text {
-  font-family: "Oswald", sans-serif;
-  font-size: x-large;
+.about-text a {
+  text-decoration: none;
+}
+
+.signature .signature-img {
+  border: none;
+  width: 150px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+#bold-text {
+  font-weight: 600;
   color: #921952;
+  transition: ease 0.1s;
+}
+
+#bold-text:hover {
+  color: #3795ff;
 }
 
 .about-text h2 {
   text-align: center;
+  font-family: "Manrope", sans-serif;
 }
 
 .about-me-container img {
