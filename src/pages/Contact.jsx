@@ -63,7 +63,7 @@ export default function Contact() {
       <Header />
       <div className="container pt-4 contact">
         <h2>Contact Me</h2>
-        <form onSubmit={handleSubmit} name="contact" netlify>
+        <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
