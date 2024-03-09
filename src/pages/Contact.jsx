@@ -36,25 +36,14 @@ export default function Contact() {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      try {
-        const response = await fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        });
-        if (response.ok) {
-          setSuccessMessage("Message sent successfully!");
-          setFormData({ name: "", email: "", message: "" });
-        } else {
-          throw new Error("Network response was not ok.");
-        }
-      } catch (error) {
-        console.error("Error submitting the form:", error);
-        // Handle error, e.g., show error message to the user
-      }
+      // Process the form submission here (e.g., send the data to a server)
+      // For demonstration purposes, just display a success message
+      setSuccessMessage("Message sent successfully!");
+      // Clear the form fields
+      setFormData({ name: "", email: "", message: "" });
     }
   };
 
@@ -64,7 +53,6 @@ export default function Contact() {
       <div className="container pt-4 contact">
         <h2>Contact Me</h2>
         <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
               Name
@@ -123,6 +111,3 @@ export default function Contact() {
     </div>
   );
 }
-
-
-
