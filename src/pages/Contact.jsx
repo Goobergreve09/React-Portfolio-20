@@ -48,11 +48,21 @@ export default function Contact() {
       const templateParams = {
         name: `${formData.firstName} ${formData.lastName}`,
         email: formData.email,
-        company: formData.company,
-        message: formData.message
+        message: formData.message,
       };
+
+      if (formData.company) {
+        templateParams.company = formData.company;
+      }
+
+
       // Send email using EmailJS
-      send("service_18mue07", "template_cfjw3yl", templateParams, "nkbfmoPkd4Tr3OQNX")
+      send(
+        "service_18mue07",
+        "template_cfjw3yl",
+        templateParams,
+        "nkbfmoPkd4Tr3OQNX"
+      )
         .then((response) => {
           console.log("Email sent successfully:", response);
           setSuccessMessage("Message sent successfully!");
@@ -139,7 +149,7 @@ export default function Contact() {
             </div>
             <div className="col-md-6">
               <label htmlFor="company" className="form-label">
-                Company
+                Company (optional)
               </label>
               <input
                 type="text"
