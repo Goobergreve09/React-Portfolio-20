@@ -45,8 +45,14 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
+      const templateParams = {
+        name: `${formData.firstName} ${formData.lastName}`,
+        email: formData.email,
+        company: formData.company,
+        message: formData.message
+      };
       // Send email using EmailJS
-      send("service_18mue07", "template_cfjw3yl", formData, "nkbfmoPkd4Tr3OQNX")
+      send("service_18mue07", "template_cfjw3yl", templateParams, "nkbfmoPkd4Tr3OQNX")
         .then((response) => {
           console.log("Email sent successfully:", response);
           setSuccessMessage("Message sent successfully!");
