@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import { useState } from "react";
+import { send } from 'emailjs-com';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,11 +40,18 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Process the form submission here (e.g., send the data to a server)
-      // For demonstration purposes, just display a success message
-      setSuccessMessage("Message sent successfully!");
-      // Clear the form fields
-      setFormData({ name: "", email: "", message: "" });
+      // Send email using EmailJS
+      send('service_18mue07', 'template_cfjw3yl', formData, 'nkbfmoPkd4Tr3OQNX')
+        .then((response) => {
+          console.log('Email sent successfully:', response);
+          setSuccessMessage("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+        })
+        .catch((error) => {
+          console.error('Error sending email:', error);
+          setSuccessMessage("");
+          // You can set an error message here if needed
+        });
     }
   };
 
