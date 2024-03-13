@@ -1,4 +1,6 @@
 import Header from "../components/Header";
+import { useState, useEffect } from 'react';
+
 
 import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
@@ -6,6 +8,33 @@ import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
 
 export default function AboutMe() {
+  const [codingDuration, setCodingDuration] = useState({
+    years: 0,
+    months: 0,
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const startDate = new Date('2023-09-10T18:00:00'); // September 25th, 2023, at 6:00 PM
+    const interval = setInterval(() => {
+      const currentDate = new Date();
+      const elapsedTime = currentDate - startDate;
+      const years = Math.floor(elapsedTime / (1000 * 60 * 60 * 24 * 365.25));
+      const months = Math.floor((elapsedTime % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
+      const days = Math.floor((elapsedTime % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+      setCodingDuration({ years, months, days, hours, minutes, seconds });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
       <Header />
@@ -36,10 +65,12 @@ export default function AboutMe() {
           <div className="col-md-8 about-text">
             <h2 className="mb-4">About the Developer</h2>
             <p className="bio-text">
-              <span id="custom-text">Hello World</span>, and welcome to my
+            <span id="custom-text">Hello World</span>, and welcome to my
               portfolio! I'm Greg, a dedicated full-stack web developer fueled
-              by a passion for creating immersive digital experiences. I hold a
-              certificate in Full Stack Web Development from Michigan State
+              by a passion for creating immersive digital experiences. I began my coding journey {codingDuration.months} months,
+                {codingDuration.days} days, {codingDuration.hours} hours, {codingDuration.minutes} minutes,
+                 and {codingDuration.seconds} seconds ago.
+              I hold a certificate in Full Stack Web Development from Michigan State
               University, where I gained hands-on experience and a solid
               foundation in the latest web technologies.
             </p>
