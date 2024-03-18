@@ -1,30 +1,43 @@
 // Header.js
-import React from "react";
+import  { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header>
       <nav className="navbar">
         <h1 className="navbar-brand">Gregory M. Greve</h1>
-        <ul className="nav-links">
+        {/* Hamburger icon for mobile */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
+        {/* Nav links */}
+        <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <NavLink to="/" activeClassName="active">
+            <NavLink to="/" activeClassName="active" onClick={toggleMenu}>
               About Me
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio" activeClassName="active">
+            <NavLink to="/portfolio" activeClassName="active" onClick={toggleMenu}>
               Portfolio
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active">
+            <NavLink to="/contact" activeClassName="active" onClick={toggleMenu}>
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink to="/resume" activeClassName="active">
+            <NavLink to="/resume" activeClassName="active" onClick={toggleMenu}>
               Resume
             </NavLink>
           </li>
@@ -35,3 +48,4 @@ function Header() {
 }
 
 export default Header;
+

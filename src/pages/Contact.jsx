@@ -176,9 +176,11 @@ export default function Contact() {
               <div className="invalid-feedback">{errors.message}</div>
             )}
           </div>
+          <div className="btn-container">
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
+          </div>
           {successMessage && (
             <div className="alert alert-success mt-3">{successMessage}</div>
           )}
