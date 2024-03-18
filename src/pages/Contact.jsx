@@ -2,6 +2,9 @@ import Header from "../components/Header";
 import { useState } from "react";
 import { send } from "emailjs-com";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -86,11 +89,14 @@ export default function Contact() {
     <div>
       <Header />
       <div className="container pt-4 contact">
-        <h2>Contact Me</h2>
-        <h4 className="text-center  mb-5">
-          If you'd like to contact me about opportunities or to work on projects
-          together, please fill out the form below:
-        </h4>
+        <div className="titleDiv">
+          <h2>Contact Me</h2>
+          <h4 className="text-center mb-5">
+            If you'd like to contact me about opportunities or to work on projects
+            together, please fill out the form below:
+          </h4>
+        </div>
+        
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col-md-6">
@@ -177,14 +183,24 @@ export default function Contact() {
             )}
           </div>
           <div className="btn-container">
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
           </div>
           {successMessage && (
             <div className="alert alert-success mt-3">{successMessage}</div>
           )}
         </form>
+        <div className="row justify-content-center mt-3 ">
+          <div className="col-md-6 d-flex justify-content-center icon-container">
+            <div className="telephone icon-spacing">
+              <FontAwesomeIcon icon={faPhone} /> <span>+1(231) 740-1594</span>
+            </div>
+            <div className="envelope envelope-css">
+              <FontAwesomeIcon icon={faEnvelope} /> <span>thechillhypomaniac@gmail.com</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
