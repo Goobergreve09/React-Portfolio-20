@@ -33,6 +33,7 @@ body {
   border-bottom-left-radius: 25px;
   overflow-y: auto;
   max-height: 600px;
+  margin-bottom: 100px;
 }
 
 .about-text a {
@@ -87,6 +88,7 @@ body {
 
 .resume {
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .resume h2 {
@@ -113,6 +115,7 @@ body {
 
 .contact {
   color: whitesmoke;
+  padding-bottom: 100px;
 }
 
 .contact h2 {
@@ -222,4 +225,41 @@ header {
 .nav-links li a.active {
   font-weight: bold;
   color: #3795ff;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the breakpoint according to your needs */
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the column */
+   
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 0.5rem; /* Add some gap between links */
+  }
+
+  .about-text {
+    max-height: 300px;
+  }
+
+  .project {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+  }
+
+  .project img {
+    width: 100%; /* Make image fill container width */
+    margin-bottom: 20px; /* Add some space below image */
+  }
+
+  .project-info {
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Adjust padding */
+  }
 }
