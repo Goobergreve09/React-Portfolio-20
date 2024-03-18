@@ -7,6 +7,10 @@ import brewZip from "../assets/images/brew-zip.png";
 import readMe from "../assets/images/read-me.jpg";
 import employee from "../assets/images/employee.jpg";
 import techBlog from "../assets/images/tech-blog.jpg";
+import passwordGen from "../assets/images/pwg.jpg";
+import workday from "../assets/images/workday.jpg";
+import noteTaker from "../assets/images/notetaker.jpg";
+import property from "../assets/images/property.jpg";
 
 const Portfolio = () => {
   return (
@@ -16,7 +20,7 @@ const Portfolio = () => {
         <div className="projects">
           <Project
             title="Weather API"
-            image=  {Weather}
+            image={Weather}
             alt="Weather API Project Thumbnail"
             deployedLink="https://goobergreve09.github.io/weather-dashboard-api/"
             githubLink="https://github.com/Goobergreve09/weather-dashboard-api"
@@ -24,7 +28,7 @@ const Portfolio = () => {
           />
           <Project
             title="slAPI Social Media Website"
-            image= {slAPI}
+            image={slAPI}
             alt="slAPI Social Media Website Thumbnail"
             deployedLink="https://desolate-sierra-47851-d89056b73f92.herokuapp.com/"
             githubLink="https://github.com/Wruqe/SlApiI"
@@ -32,7 +36,7 @@ const Portfolio = () => {
           />
           <Project
             title="Brewery-Zip"
-            image=  {brewZip}
+            image={brewZip}
             alt="Brew-Zip Website Thumbnail"
             deployedLink="https://whitney-simpson.github.io/Brewery-Search-Engine/"
             githubLink="https://github.com/Whitney-Simpson/Brewery-Search-Engine"
@@ -40,26 +44,64 @@ const Portfolio = () => {
           />
           <Project
             title="ReadMe Generator"
-            image= {readMe}
+            image={readMe}
             alt="Read-Me Generator Thumbnail"
             githubLink="https://github.com/Goobergreve09/read-me-generator"
             description="A readME.md is a very important aspect to your project. It is also the go-to file for anyone to open or view your project. I have created an easy way to makeup a readME.md by only answering a few prompts in the terminal. All of the information about your Github project will be accessed here."
           />
           <Project
             title="Employee Manager"
-            image= {employee}
+            image={employee}
             alt="Employee Manager Thumbnail"
             githubLink="https://github.com/Goobergreve09/employee-manager-backend"
             description="This application was created and is used for backend development. This is an employee manager created with the mysql2 node package. It's an application designed for company's to view,update,and manage the employees through a database. It allows you to add,view, adelete roles, departments, and employees within a company. The application is used by the user through a series of prompts to be answered in the command line using nodes inquirer package. These answers directly effect the employee manager database."
           />
           <Project
             title="Tech-Blog"
-            image= {techBlog}
+            image={techBlog}
             alt="Tech Blog Thumbnail"
             deployedLink="https://techblogbackend-9bd2896f57e1.herokuapp.com/"
             githubLink="https://github.com/Goobergreve09/tech-blog-backend"
             description="
             As part of module 14 of the EDX web development bootcamp offered by Michigan State University, I developed a tech blog meeting specific criteria. This included implementing functional login and signup forms, enabling signed-in users to create, edit, and delete posts, as well as allowing users to add comments to posts. Additionally, each post and comment displayed the username and date of the content. The blog featured a user-friendly interface with accessible links for seamless navigation."
+          />
+          <Project
+            title="Password Generator"
+            image={passwordGen}
+            alt="Password Generator Thumbnail"
+            deployedLink="https://goobergreve09.github.io/js-password-generate/"
+            githubLink="https://github.com/Goobergreve09/js-password-generate"
+            description="
+           This is a simple password generator using javascript. You will be prompted to use only certain criteria for the password, and then the password is created when generate password is clicked. Try it!"
+          />
+          <Project
+            title="Work Day Scheduler"
+            image={workday}
+            alt="Work Day Scheduler Thumbnail"
+            deployedLink="https://goobergreve09.github.io/js-workday-schedule/"
+            githubLink="https://github.com/Goobergreve09/js-workday-schedule"
+            description="
+            The schedule is setup according to a 9 AM to 5 PM workday schedule routine. When each hour passes, that column will be greyed out, when it is of the current hour, that hour will show in yellow-orange, and when all hours are yet to come, those hours will appear in green. The styling of this challenge was done with bootstrap and CSS. When the user types in a description of the scheduled event and hit the save button at the end of each column the text content of the user description is saved into local storage and then kept there upon closing of the browser or a refreshing of the tab. There is also a date in the header of the page which changes based on the current day using dayjs."
+          />
+          <Project
+            title="Note Taker with Express"
+            image={noteTaker}
+            alt="Note Taker Thumbnail"
+            deployedLink="https://notetakerwithexpress-2bb39f89669b.herokuapp.com/notes"
+            githubLink="https://github.com/Goobergreve09/note-taker-js"
+            description="
+            This was my first project created using express.js. It was created using the GET, POST, and DELETE methods from the express framework. It's a simple application for creating, saving, and deleting notes. This is very handy for anyone with a busy schedule, including myself. Each note is given a unique identifier and is saved in the server as a json object. This application was created using a mixture of frontend and backend."
+          />
+          <Project
+            title="Property Manager with MySQL"
+            image={property}
+            alt="Property Manager Thumbnail"
+            deployedLink=""
+            githubLink="https://github.com/Goobergreve09/Property-Manager-with-MySQL"
+            description="
+            This application was created and is used for backend development. This is a property manager created with the mysql2 node package. It's an application designed for users to view,update,and manage the properties through a database. It allows you to add,view, and delete properties within your database. You can also view cost management by location or state. It automatically calculates cost with a preestimated mortgage cost tax by state that has been integrated into the CLI prompts. Simply answer the prompts given and the calculations with be completed for you.. The application is used by the user through a series of prompts to be answered in the command line using nodes inquirer package. These answers directly effect the property manager database.
+
+My main motivation for this application was to create an application to allow an in"
           />
         </div>
       </div>

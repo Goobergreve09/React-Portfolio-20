@@ -244,21 +244,22 @@ header {
 }
 
 @media (max-width: 768px) {
-  /* Adjust the breakpoint according to your needs */
+  /* Header and Nav */
+
   .navbar {
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align items to the start of the column */
-    align-items: center; 
+    align-items: center;
   }
 
   header {
     text-align: center;
     background-color: black; /* Fallback color */
     border-bottom: double 2px #fff;
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/05/Black-Backgrounds-Free-Download-620x349.jpg');
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Black-Backgrounds-Free-Download-620x349.jpg");
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the background image */
-}
+  }
 
   .nav-links {
     display: none; /* Hide nav links by default */
@@ -280,7 +281,6 @@ header {
   .hamburger {
     display: block; /* Display hamburger icon */
     cursor: pointer;
-
   }
 
   .hamburger .line {
@@ -290,32 +290,38 @@ header {
     margin: 5px;
   }
 
+  /* About Me page */
 
   .about-text {
     max-height: 300px;
   }
 
+  /* Portfolio Page */
+
   .project {
-    flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
   }
 
   .project img {
     width: 100%; /* Make image fill container width */
-    margin-bottom: 20px; /* Add some space below image */
+    margin-bottom: 20px;
   }
 
   .project-info {
     margin: 0 auto; /* Center horizontally */
-    padding: 20px; /* Adjust padding */
+    padding: 20px;
   }
 
+  /* Send Message Button */
+
   .btn {
-    width:150px;
+    width: 150px;
     font-size: 18px;
   }
   .btn-container {
-    padding-bottom:50px;
+    padding-bottom: 50px;
     padding-top: 10px;
   }
 }
