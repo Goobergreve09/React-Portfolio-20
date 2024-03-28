@@ -13,6 +13,7 @@ export default function Contact() {
     company: "",
     message: "",
   });
+  
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
 

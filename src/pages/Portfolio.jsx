@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Project from "../components/Project";
 
-import Weather from "../assets/images/weather.jpg";
+import Weather from "../assets/images/weather3.jpg";
 import slAPI from "../assets/images/slAPI.png";
 import brewZip from "../assets/images/brew-zip.png";
 import readMe from "../assets/images/read-me.jpg";
@@ -19,12 +19,21 @@ const Portfolio = () => {
       <div className="portfolio">
         <div className="projects">
           <Project
-            title="Weather API"
+            title="Weather Dashboard API"
             image={Weather}
             alt="Weather API Project Thumbnail"
-            deployedLink="https://goobergreve09.github.io/weather-dashboard-api/"
-            githubLink="https://github.com/Goobergreve09/weather-dashboard-api"
-            description="I created a weather dashboard for a user to easily find the weather of a specified city. When the user types in the city into the search bar the Current weather as well as the 5 day forecast will show for the city. The weather conditions include temperature, feels like temperature, humidity percentage, wind at miles per hour, sunset/sunrise, and a brief and unique description of the weather with an icon. The past 10 city searches for the user will be saved into local storage and can be clicked to bring up the dashboard for that respective city. There were no errors upon deployment."
+            deployedLink="https://weather-dashboard-greg.netlify.app/"
+            githubLink="https://github.com/Goobergreve09/Weather-Dashboard-2.0"
+            description="I've upgraded an older weather dashboard I created with this new weather dashboard. 
+            This was created using react for a much more seamless and simple user experience. Headlining the 
+            differences would be it's polished and clean UI.When you are done typing in a city just hit enter and
+             your results will appear. You get the current time in that city whether it be yours or across the 
+             globe, as well as current weather conditions including temperature to atmospheric pressure. That's
+              not all, it also includes a future 5 day forecast of high and low temperatures. The responsiveness
+               of React.js grid and flex component experience makes it easy on any user device. I've also added
+                in a dark and light mode toggle for an enhanced user experience based on what they prefer. Once
+                 the city is searched it will save that into a drop down titled ' recent searches' storing a 
+                 maximum of 5 cities."
           />
           <Project
             title="slAPI Social Media Website"
