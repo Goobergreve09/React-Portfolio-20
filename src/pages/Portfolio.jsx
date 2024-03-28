@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Project from "../components/Project";
 
-import Weather from "../assets/images/weather3.jpg";
+import Weather from "../assets/images/weatherr.jpg";
 import slAPI from "../assets/images/slAPI.png";
 import brewZip from "../assets/images/brew-zip.png";
 import readMe from "../assets/images/read-me.jpg";
