@@ -11,6 +11,7 @@ import passwordGen from "../assets/images/pwg.jpg";
 import workday from "../assets/images/workday.jpg";
 import noteTaker from "../assets/images/notetaker.jpg";
 import property from "../assets/images/property.jpg";
+import quiz from '../assets/images/quiz.jpg'
 
 const Portfolio = () => {
   return (
@@ -35,13 +36,30 @@ const Portfolio = () => {
                  the city is searched it will save that into a drop down titled ' recent searches' storing a 
                  maximum of 5 cities."
           />
+                    <Project
+            title="Javascript Quiz"
+            image={quiz}
+            alt="Javascript Quiz Project Thumbnail"
+            deployedLink="https://javascript-quiz-2-0.onrender.com/"
+            githubLink="https://github.com/Goobergreve09/Javascript-Quiz-2.0"
+            description="The JavaScript Quiz Application deployed on Render is a user-friendly web-based quiz platform designed
+             to test users' knowledge of JavaScript programming concepts. Built with simplicity and 
+             functionality in mind, this application provides an interactive way for users to assess their 
+             understanding of JavaScript while offering an enjoyable learning experience.It is a timed quiz with
+              rules to the scoring. Keep results of your highscores and see where you rank among others with a
+               global-highscores page all being stored in a MongoDB database. I used React.js for frontend, 
+               and for my backend I used technologies like Node.js, Express.js, Apollo GraphQl, and bcrypt. 
+               This application is also responsive so you can test your skills on mobile."
+          />
           <Project
             title="slAPI Social Media Website"
             image={slAPI}
             alt="slAPI Social Media Website Thumbnail"
             deployedLink="https://desolate-sierra-47851-d89056b73f92.herokuapp.com/"
             githubLink="https://github.com/Wruqe/SlApiI"
-            description="slAPI, a pun of slappy, is a web application that serves as a repository for all things silly and whimsical. Users can explore a collection of funny and quirky data, as well as contribute their own by adding new silly entries."
+            description="slAPI, a pun of slappy, is a web application that serves as a repository for
+             all things silly and whimsical. Users can explore a collection of funny and quirky data, as well
+              as contribute their own by adding new silly entries."
           />
           <Project
             title="Brewery-Zip"
