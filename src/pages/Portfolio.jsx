@@ -12,6 +12,7 @@ import workday from "../assets/images/workday.jpg";
 import noteTaker from "../assets/images/notetaker.jpg";
 import property from "../assets/images/property.jpg";
 import quiz from '../assets/images/quiz.jpg'
+import Blockbuster from '../assets/images/Blockbuster.png'
 
 const Portfolio = () => {
   return (
@@ -19,6 +20,23 @@ const Portfolio = () => {
       <Header />
       <div className="portfolio">
         <div className="projects">
+        <Project
+            title="Blockbuster 2024 "
+            image={Blockbuster}
+            alt="Blockbuster Project Thumbnail"
+            deployedLink="https://blockbuster2024.onrender.com/"
+            githubLink="https://github.com/Goobergreve09/Blockbuster2024"
+            description="A web application focused on Movies! This is a throw back built from the foundation
+             of BLOCKBUSTER. Back when you used to look forward to going out to pick up that new VHS release, 
+             which has now disappeared. Streaming services has since killed the once beloved BLOCKBUSTER. Either
+              way we wanted to create a fun interactive site which allows users to be able to research various 
+              movies, then can create a watch list and top favorite list. Not to mention how many books were
+               written and then made into movie, how great would it be to search for that book too! If you don’t
+                have wifi the book for the win! As a group of developers we decided to go with technologies like
+                 React.js and React-Bootstrap for front end design and UI, and for the backend we used
+                  technologies like Node.js, Express.js, MongoDB Atlas and MongoDB Compass, Apollo GraphQL,
+                   bcrypt, and more."
+          />
           <Project
             title="Weather Dashboard API"
             image={Weather}
