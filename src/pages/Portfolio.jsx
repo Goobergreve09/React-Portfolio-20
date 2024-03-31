@@ -11,8 +11,22 @@ import passwordGen from "../assets/images/pwg.jpg";
 import workday from "../assets/images/workday.jpg";
 import noteTaker from "../assets/images/notetaker.jpg";
 import property from "../assets/images/property.jpg";
-import quiz from '../assets/images/quiz.jpg'
-import Blockbuster from '../assets/images/Blockbuster.png'
+import quiz from "../assets/images/quiz.jpg";
+import Blockbuster from "../assets/images/Blockbuster.png";
+
+import reactLogo from "../assets/images/reactLogo.png";
+import bootstrapLogo from "../assets/images/bootstrapLogo.png";
+import mongoDBlogo from "../assets/images/mongoDB.png";
+import javascriptLogo from "../assets/images/javascriptLogo.png";
+import apolloLogo from "../assets/images/apolloLogo.png";
+import nodeLogo from "../assets/images/nodeLogo.png";
+import cssLogo from "../assets/images/cssLogo.png";
+import htmlLogo from "../assets/images/htmlLogo.png";
+import mysqlLogo from "../assets/images/mysqlLogo.png";
+import sequelizeLogo from "../assets/images/sequelizeLogo.png";
+import tailwindLogo from "../assets/images/tailwindLogo.png";
+import handlebarsLogo from "../assets/images/handlebarsLogo.png";
+import expressLogo from '../assets/images/expressLogo.png'
 
 const Portfolio = () => {
   return (
@@ -20,26 +34,42 @@ const Portfolio = () => {
       <Header />
       <div className="portfolio">
         <div className="projects">
-        <Project
-            title="Blockbuster 2024 "
+          <Project
+            title="Blockbuster 2024"
+            technologies={[
+              { logoSrc: reactLogo, altText: "React" },
+              { logoSrc: bootstrapLogo, altText: "Bootstrap" },
+              { logoSrc: mongoDBlogo, altText: "MongoDB" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: apolloLogo, altText: "Apollo & GraphQL" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+            ]}
             image={Blockbuster}
             alt="Blockbuster Project Thumbnail"
             deployedLink="https://blockbuster2024.onrender.com/"
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
             description="A web application focused on Movies! This is a throw back built from the foundation
-             of BLOCKBUSTER. Back when you used to look forward to going out to pick up that new VHS release, 
-             which has now disappeared. Streaming services has since killed the once beloved BLOCKBUSTER. Either
-              way we wanted to create a fun interactive site which allows users to be able to research various 
-              movies, then can create a watch list and top favorite list. Not to mention how many books were
-               written and then made into movie, how great would it be to search for that book too! If you don’t
-                have wifi the book for the win! As a group of developers we decided to go with technologies like
-                 React.js and React-Bootstrap for front end design and UI, and for the backend we used
-                  technologies like Node.js, Express.js, MongoDB Atlas and MongoDB Compass, Apollo GraphQL,
-                   bcrypt, and more."
+  of BLOCKBUSTER. Back when you used to look forward to going out to pick up that new VHS release, 
+  which has now disappeared. Streaming services has since killed the once beloved BLOCKBUSTER. Either
+  way we wanted to create a fun interactive site which allows users to be able to research various 
+  movies, then can create a watch list and top favorite list. Not to mention how many books were
+  written and then made into movie, how great would it be to search for that book too! If you don’t
+  have wifi the book for the win! As a group of developers we decided to go with technologies like
+  React.js and React-Bootstrap for front end design and UI, and for the backend we used
+  technologies like Node.js, Express.js, MongoDB Atlas and MongoDB Compass, Apollo GraphQL,
+  bcrypt, and more."
           />
           <Project
             title="Weather Dashboard API"
             image={Weather}
+            technologies={[
+              { logoSrc: reactLogo, altText: "React" },
+              { logoSrc: bootstrapLogo, altText: "Bootstrap" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: htmlLogo, altText: "HTML5" },
+            ]}
             alt="Weather API Project Thumbnail"
             deployedLink="https://weather-dashboard-greg.netlify.app/"
             githubLink="https://github.com/Goobergreve09/Weather-Dashboard-2.0"
@@ -54,9 +84,17 @@ const Portfolio = () => {
                  the city is searched it will save that into a drop down titled ' recent searches' storing a 
                  maximum of 5 cities."
           />
-                    <Project
+          <Project
             title="Javascript Quiz"
             image={quiz}
+            technologies={[
+              { logoSrc: reactLogo, altText: "React" },
+              { logoSrc: bootstrapLogo, altText: "Bootstrap" },
+              { logoSrc: mongoDBlogo, altText: "MongoDB" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: apolloLogo, altText: "Apollo & GraphQL" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+            ]}
             alt="Javascript Quiz Project Thumbnail"
             deployedLink="https://javascript-quiz-2-0.onrender.com/"
             githubLink="https://github.com/Goobergreve09/Javascript-Quiz-2.0"
@@ -71,31 +109,79 @@ const Portfolio = () => {
           />
           <Project
             title="slAPI Social Media Website"
+            technologies={[
+              { logoSrc: mysqlLogo, altText: "MySQL" },
+              { logoSrc: sequelizeLogo, altText: "Sequelize" },
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: handlebarsLogo, altText: "Handlebars.js" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+            ]}
             image={slAPI}
             alt="slAPI Social Media Website Thumbnail"
             deployedLink="https://desolate-sierra-47851-d89056b73f92.herokuapp.com/"
             githubLink="https://github.com/Wruqe/SlApiI"
-            description="slAPI, a pun of slappy, is a web application that serves as a repository for
-             all things silly and whimsical. Users can explore a collection of funny and quirky data, as well
-              as contribute their own by adding new silly entries."
+            description="'slAPI' is a dynamic web application designed to curate a
+             diverse array of humorous and whimsical content. Serving as a 
+             comprehensive repository for lighthearted and entertaining contributions,
+              users can explore a wide range of amusing anecdotes, quirky observations,
+               and creative musings. Furthermore, users have the opportunity to 
+               actively engage with the platform by submitting their own humorous
+                entries, fostering a vibrant community of laughter and creativity.
+                 Enhancing user interaction, the platform features a sophisticated 
+                 rating system that aggregates user feedback to generate average
+                  scores, providing valuable insights into content quality. 
+                  Additionally, a real-time chat functionality fosters lively 
+                  discussions and spontaneous exchanges, creating a dynamic
+                   environment conducive to playful banter and camaraderie. Here 
+                   we use Sequelize and MySQL2 for the backend database with frameworks like Express
+                    and Node. The frontend is done with CSS3, HTML5, and Javascript."
           />
           <Project
             title="Brewery-Zip"
+            technologies={[
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: htmlLogo, altText: "HTML5" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: tailwindLogo, altText: "TailwindCSS" },
+            ]}
             image={brewZip}
             alt="Brew-Zip Website Thumbnail"
             deployedLink="https://whitney-simpson.github.io/Brewery-Search-Engine/"
             githubLink="https://github.com/Whitney-Simpson/Brewery-Search-Engine"
-            description="As a Beer Lover, I want to seek out different breweries based on the city I am in or visiting, get their location on a map, and know the weather at said brewery. End user goal: Find a brewery in the city I am searching and know the weather forcast. End business goal: Provide beer lovers with a searching tool to find different breweries and know the weather."
+            description="As enthusiasts of fine craft beer, our aim is to facilitate the discovery of diverse breweries 
+            tailored to the preferences of our users. With a focus on providing comprehensive information and 
+            enhanced user experience, our platform enables individuals to effortlessly locate breweries based 
+            on their current location or desired destination. Leveraging advanced technologies such as CSS3, 
+            HTML5, JavaScript, and Tailwind CSS, we have developed a sophisticated tool that seamlessly 
+            integrates brewery location data with real-time weather forecasts. Our overarching objective is to
+             furnish beer aficionados with a robust search platform that not only facilitates brewery 
+             exploration but also offers invaluable insights into weather conditions, thereby enhancing their 
+             overall brewery-visiting experience."
           />
           <Project
             title="ReadMe Generator"
+            technologies={[
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+            ]}
             image={readMe}
             alt="Read-Me Generator Thumbnail"
             githubLink="https://github.com/Goobergreve09/read-me-generator"
-            description="A readME.md is a very important aspect to your project. It is also the go-to file for anyone to open or view your project. I have created an easy way to makeup a readME.md by only answering a few prompts in the terminal. All of the information about your Github project will be accessed here."
+            description="A readME.md is a very important aspect to your project. It is also the go-to
+             file for anyone to open or view your project. I have created an easy way to makeup a readME.md
+              by only answering a few prompts in the terminal. All of the information about your Github
+               project will be accessed here. The backend application uses the command line to create a readme by answering prompts
+                by node's inquirer package. It us Node's fs and readline to create the readMe.md document. 
+                This is something I still use on a weekly basis."
           />
           <Project
             title="Employee Manager"
+            technologies={[
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+              { logoSrc: mysqlLogo, altText: "MySQL" },
+            ]}
             image={employee}
             alt="Employee Manager Thumbnail"
             githubLink="https://github.com/Goobergreve09/employee-manager-backend"
@@ -103,6 +189,14 @@ const Portfolio = () => {
           />
           <Project
             title="Tech-Blog"
+            technologies={[
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+              { logoSrc: mysqlLogo, altText: "MySQL" },
+              { logoSrc: sequelizeLogo, altText: "Sequelize" },
+              { logoSrc: handlebarsLogo, altText: "Handlebars.js" },
+              { logoSrc: expressLogo, altText: "Express.js" },
+            ]}
             image={techBlog}
             alt="Tech Blog Thumbnail"
             deployedLink="https://techblogbackend-9bd2896f57e1.herokuapp.com/"
@@ -112,6 +206,11 @@ const Portfolio = () => {
           />
           <Project
             title="Password Generator"
+            technologies={[
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: htmlLogo, altText: "HTML5" },
+              { logoSrc: javascriptLogo, altText: "Javascript" }
+            ]}
             image={passwordGen}
             alt="Password Generator Thumbnail"
             deployedLink="https://goobergreve09.github.io/js-password-generate/"
@@ -121,6 +220,12 @@ const Portfolio = () => {
           />
           <Project
             title="Work Day Scheduler"
+            technologies={[
+              { logoSrc: bootstrapLogo, altText: "Bootstrap" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: htmlLogo, altText: "HTML5" },
+            ]}
             image={workday}
             alt="Work Day Scheduler Thumbnail"
             deployedLink="https://goobergreve09.github.io/js-workday-schedule/"
@@ -130,6 +235,12 @@ const Portfolio = () => {
           />
           <Project
             title="Note Taker with Express"
+            technologies={[
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: htmlLogo, altText: "HTML5" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: expressLogo, altText: "Express.js" },
+            ]}
             image={noteTaker}
             alt="Note Taker Thumbnail"
             deployedLink="https://notetakerwithexpress-2bb39f89669b.herokuapp.com/notes"
@@ -139,6 +250,11 @@ const Portfolio = () => {
           />
           <Project
             title="Property Manager with MySQL"
+            technologies={[
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+              { logoSrc: mysqlLogo, altText: "MySQL" },
+            ]}
             image={property}
             alt="Property Manager Thumbnail"
             deployedLink=""
