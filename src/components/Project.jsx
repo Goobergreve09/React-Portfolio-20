@@ -19,8 +19,10 @@ const Project = ({ title, image, deployedLink, githubLink, description, technolo
             ))}
           </Row>
         )}
+        <Row className = 'description-hero'>
         <Row className="justify-content-center description-container">
           <p className="project-description">{description}</p>
+        </Row>
         </Row>
         <Row className="project-links p-1">
           <Col md={3}></Col>

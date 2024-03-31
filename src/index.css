@@ -164,7 +164,7 @@ h4 {
 /* PORTFOLIO */
 
 .project {
-  background-image: url(https://img.freepik.com/free-vector/abstract-blue-circle-black-background-technology_1142-12714.jpg?w=1000);
+  background-image: url(https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8300.jpg?t=st=1711868530~exp=1711872130~hmac=e556a5d34c07ade002b1a6d30f8020665f51005756aaf06b05c1d849d8023be9&w=1380);
   background-size: cover;
   color: whitesmoke;
   border-bottom: solid 5px whitesmoke;
@@ -192,13 +192,14 @@ h4 {
   font-family: "Manrope", sans-serif;
   border-radius: 25px;
   padding:10px;
-  width:75%;
+  width:85%;
 }
 
 
 
 .project-links {
   background-color: rgba(55, 149, 255, 0.1);
+  font-family: "Manrope", sans-serif;
 }
 
 .project-links a {
@@ -219,6 +220,10 @@ min-width: 75px;
 
 .technologies-row {
   background-color: rgba(55, 149, 255, 0.1);
+}
+
+.description-hero {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -329,21 +334,13 @@ header {
 
   /* Portfolio Page */
 
-  .project {
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 50px;
-  }
 
   .project img {
     width: 100%; /* Make image fill container width */
-    margin-bottom: 20px;
+
   }
 
-  .project-info {
-    margin: 0 auto; /* Center horizontally */
-    padding: 20px;
-  }
+
 
   /* Send Message Button */
 
