@@ -51,10 +51,11 @@ export default function AboutMe() {
       <div className="container pt-4 about-me-container">
         <div className="row">
           <div className="col-md-4">
-          <a href={profileImage} data-lightbox="About-Me Myself"
-            data-title="The Developer: Gregory M. Greve">
-            <img src={profileImage}  alt= "Image of the Developer" className="profile-photo"/>
-             </a>
+            <img
+              src={profileImage}
+              alt="Profile Image"
+              className="img-fluid rounded-circle mb-3"
+            />
 
             <div className="text-center credentials">
               <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>
