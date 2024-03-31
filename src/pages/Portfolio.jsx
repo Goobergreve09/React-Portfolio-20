@@ -13,6 +13,7 @@ import noteTaker from "../assets/images/notetaker.jpg";
 import property from "../assets/images/property.jpg";
 import quiz from "../assets/images/quiz.jpg";
 import Blockbuster from "../assets/images/Blockbuster.png";
+import adam from "../assets/images/adam.jpg";
 
 import reactLogo from "../assets/images/reactLogo.png";
 import bootstrapLogo from "../assets/images/bootstrapLogo.png";
@@ -27,6 +28,7 @@ import sequelizeLogo from "../assets/images/sequelizeLogo.png";
 import tailwindLogo from "../assets/images/tailwindLogo.png";
 import handlebarsLogo from "../assets/images/handlebarsLogo.png";
 import expressLogo from "../assets/images/expressLogo.png";
+import squarespaceLogo from "../assets/images/squarespaceLogo.png";
 
 const Portfolio = () => {
   return (
@@ -261,8 +263,26 @@ const Portfolio = () => {
             githubLink="https://github.com/Goobergreve09/Property-Manager-with-MySQL"
             description="
             This application was created and is used for backend development. This is a property manager created with the mysql2 node package. It's an application designed for users to view,update,and manage the properties through a database. It allows you to add,view, and delete properties within your database. You can also view cost management by location or state. It automatically calculates cost with a preestimated mortgage cost tax by state that has been integrated into the CLI prompts. Simply answer the prompts given and the calculations with be completed for you.. The application is used by the user through a series of prompts to be answered in the command line using nodes inquirer package. These answers directly effect the property manager database.
-
-My main motivation for this application was to create an application to allow an in"
+            My main motivation for this application was to create an application to allow an in"
+          />
+          <Project
+            title="Squarespace Web Design"
+            technologies={[
+              { logoSrc: squarespaceLogo, altText: "Squarespace" },
+              { logoSrc: cssLogo, altText: "CSS3" },
+            ]}
+            image={adam}
+            alt="Adam-Degi-Comedy Thumbnail"
+            deployedLink="https://www.adamdegicomedy.com/"
+            githubLink=""
+            description="
+            My skills in development are not just limited to VS code. I designed Stand-up Comedian Adam Degi's comedy 
+            page on square space for an enhanced UI and easier accessible user experience. His concern was that his 
+            page was not easy to navigate and it had an unorganized UI, so I reduced the amount of links and scrolling, and created a
+              homepage with nav links. The page is used to display upcoming shows and events, a calendar of those upcoming shows
+              and events, a contact form for clubs and organizations to reach him for bookings, and a cool about me page
+              designed to meet his personality. The final product displays all of the above, I also integrated some photos I took of him as
+               I am also a photographer, and I only needed to integrate code to remove the footer. "
           />
         </div>
       </div>

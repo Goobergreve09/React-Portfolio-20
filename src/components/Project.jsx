@@ -45,22 +45,33 @@ const Project = ({
             <p className="project-description">{description}</p>
           </Row>
         </Row>
-        <Row className="project-links p-1">
-          <Col md={3}></Col>
-          <Col md={3}>
-            <p>
-              <a href={deployedLink} target="_blank" rel="noopener noreferrer">
-                Deployed Application
-              </a>
-            </p>
-          </Col>
-          <Col md={3}>
-            <p>
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                GitHub Repository
-              </a>
-            </p>
-          </Col>
+        <Row className="project-links p-1 justify-content-center">
+          {deployedLink && (
+            <Col md={3}>
+              <p>
+                <a
+                  href={deployedLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Deployed Application
+                </a>
+              </p>
+            </Col>
+          )}
+          {githubLink && (
+            <Col md={3}>
+              <p>
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Repository
+                </a>
+              </p>
+            </Col>
+          )}
         </Row>
       </Col>
     </Container>
@@ -68,3 +79,4 @@ const Project = ({
 };
 
 export default Project;
+
