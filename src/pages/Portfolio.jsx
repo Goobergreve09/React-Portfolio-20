@@ -26,7 +26,7 @@ import mysqlLogo from "../assets/images/mysqlLogo.png";
 import sequelizeLogo from "../assets/images/sequelizeLogo.png";
 import tailwindLogo from "../assets/images/tailwindLogo.png";
 import handlebarsLogo from "../assets/images/handlebarsLogo.png";
-import expressLogo from '../assets/images/expressLogo.png'
+import expressLogo from "../assets/images/expressLogo.png";
 
 const Portfolio = () => {
   return (
@@ -209,7 +209,7 @@ const Portfolio = () => {
             technologies={[
               { logoSrc: cssLogo, altText: "CSS3" },
               { logoSrc: htmlLogo, altText: "HTML5" },
-              { logoSrc: javascriptLogo, altText: "Javascript" }
+              { logoSrc: javascriptLogo, altText: "Javascript" },
             ]}
             image={passwordGen}
             alt="Password Generator Thumbnail"

@@ -2,8 +2,8 @@ import Header from "../components/Header";
 import { useState } from "react";
 import { send } from "emailjs-com";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,7 +13,7 @@ export default function Contact() {
     company: "",
     message: "",
   });
-  
+
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
 
@@ -59,7 +59,6 @@ export default function Contact() {
         templateParams.company = formData.company;
       }
 
-
       // Send email using EmailJS
       send(
         "service_18mue07",
@@ -93,11 +92,11 @@ export default function Contact() {
         <div className="titleDiv">
           <h2>Contact Me</h2>
           <h4 className="text-center mb-5">
-            If you'd like to contact me about opportunities or to work on projects
-            together, please fill out the form below:
+            If you'd like to contact me about opportunities or to work on
+            projects together, please fill out the form below:
           </h4>
         </div>
-        
+
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col-md-6">
@@ -198,7 +197,8 @@ export default function Contact() {
               <FontAwesomeIcon icon={faPhone} /> <span>+1(231) 740-1594</span>
             </div>
             <div className="envelope envelope-css">
-              <FontAwesomeIcon icon={faEnvelope} /> <span>thechillhypomaniac@gmail.com</span>
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <span>thechillhypomaniac@gmail.com</span>
             </div>
           </div>
         </div>
