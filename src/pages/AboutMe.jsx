@@ -6,6 +6,8 @@ import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
 
+import '../css/lightbox.css'
+
 export default function AboutMe() {
   const [codingDuration, setCodingDuration] = useState({
     years: 0,
@@ -49,11 +51,10 @@ export default function AboutMe() {
       <div className="container pt-4 about-me-container">
         <div className="row">
           <div className="col-md-4">
-            <img
-              src={profileImage}
-              alt="Profile Image"
-              className="img-fluid rounded-circle mb-3"
-            />
+          <a href={profileImage} data-lightbox="About-Me Myself"
+            data-title="The Developer: Gregory M. Greve">
+            <img src={profileImage}  alt= "Image of the Developer" className="profile-photo"/>
+             </a>
 
             <div className="text-center credentials">
               <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>

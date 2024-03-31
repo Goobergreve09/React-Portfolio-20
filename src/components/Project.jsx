@@ -1,5 +1,7 @@
 import { Row, Col, Container } from "react-bootstrap";
 import projectBackground from "../assets/images/projectBackground.jpg";
+import '../css/lightbox.css'
+
 
 const Project = ({
   title,
@@ -18,8 +20,11 @@ const Project = ({
       {/* image from https://www.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_38129027.htm#fromView=search&page=4&position=8&uuid=054666d7-c24f-4630-8448-b8d7d6776951 Image by Mateus Andre on Freepik */}
 
       <Col className="align-items-center justify-content-center text-center">
-        <Row className="justify-content-center">
-          <img src={image} alt={title} />
+        <Row className="justify-content-center lightbox-thumbnail">
+        <a href={image} data-lightbox="Project-Thumbnails"
+            data-title={title}>
+            <img src={image}  alt={title} />
+             </a>
         </Row>
         <Row>
           <h3 className="project-title p-2">{title}</h3>
