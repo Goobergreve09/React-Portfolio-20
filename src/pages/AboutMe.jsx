@@ -1,12 +1,12 @@
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
-
+import { Row, Col, Container } from "react-bootstrap";
 import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
 
-import '../css/lightbox.css'
+import "../css/lightbox.css";
 
 export default function AboutMe() {
   const [codingDuration, setCodingDuration] = useState({
@@ -48,32 +48,39 @@ export default function AboutMe() {
   return (
     <div>
       <Header />
-      <div className="container pt-4 about-me-container">
-        <div className="row">
-          <div className="col-md-4">
-            <img
-              src={profileImage}
-              alt="Profile Image"
-              className="img-fluid rounded-circle mb-3"
-            />
-
-            <div className="text-center credentials">
+      <Container fluid>
+        <Row className="justify-content-center ">
+          <Col lg={6} md={8}>
+            <Row lg={2} className="justify-content-center">
+              <a
+                href={profileImage}
+                data-lightbox="Project-Thumbnails"
+                data-title="me"
+              >
+                <img
+                  src={profileImage}
+                  alt="me"
+                  className="img-fluid mb-3 profile-photo"
+                />
+              </a>
+            </Row>
+            <Row className="text-center credentials">
               <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>
+            </Row>
+            <Row className="text-center credentials">
               <h4 className="mb-4">Full-Stack Web-Developer</h4>
-              <div className="logo-images">
-                <div className="d-flex justify-content-center align-items-center">
-                  <img
-                    src={msuLogo}
-                    alt="MSU Logo"
-                    className="img-fluid mr-4"
-                  />
-                  <img src={edx} alt="edX Logo" className="img-fluid" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-8 about-text">
-            <h2 className="mb-4">About the Developer</h2>
+            </Row>
+            <Row className="logo-images text-center">
+              <Col>
+                <img src={msuLogo} alt="MSU Logo" className="img-fluid" />
+              </Col>
+              <Col>
+                <img src={edx} alt="edX Logo" className="img-fluid" />
+              </Col>
+            </Row>
+          </Col>
+          <Col className="about-text">
+            <h2>About the Developer</h2>
             <p className="bio-text">
               <span id="custom-text">Hello World</span>, and welcome to my
               portfolio! I'm Greg, a dedicated full-stack web developer fueled
@@ -211,19 +218,19 @@ export default function AboutMe() {
               or exploring a new hiking trail, I approach each endeavor with
               enthusiasm, dedication, and a commitment to excellence and knowing
               the unknown.
-              <div className="d-flex justify-content-end">
-                <div className="signature">
-                  <img
-                    src={signature}
-                    alt="Developer's Signature"
-                    className="img-fluid signature-img"
-                  />
-                </div>
-              </div>
             </p>
-          </div>
-        </div>
-      </div>
+            <div className="d-flex justify-content-end">
+              <div className="signature">
+                <img
+                  src={signature}
+                  alt="Developer's Signature"
+                  className="img-fluid signature-img"
+                />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
