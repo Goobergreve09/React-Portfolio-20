@@ -54,12 +54,12 @@ export default function AboutMe() {
             <Row lg={2} className="justify-content-center">
               <a
                 href={profileImage}
-                data-lightbox="Project-Thumbnails"
-                data-title="me"
+                data-lightbox="profile-photo"
+                data-title="The Developer: Gregory M. Greve"
               >
                 <img
                   src={profileImage}
-                  alt="me"
+                  alt="Photo of the developer, Greg Greve"
                   className="img-fluid mb-3 profile-photo"
                 />
               </a>
