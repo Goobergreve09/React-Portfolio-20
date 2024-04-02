@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./index.css";
+import '../src/css/lightbox.css'
 
 // Importing pages
 import App from "./App";
@@ -21,12 +22,9 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: true,
-        element: <AboutMe />,
-      },
-      {
+        index:true,
         path: "/",
-        element: <AboutMe />, // Change the path to '/' to match the NavLink
+        element: <AboutMe />, 
       },
       {
         path: "/Portfolio",

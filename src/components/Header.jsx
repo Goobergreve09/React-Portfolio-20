@@ -1,5 +1,5 @@
 // Header.js
-import  { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
@@ -27,17 +27,25 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio" activeClassName="active" onClick={toggleMenu}>
+            <NavLink
+              to="/Portfolio"
+              activeClassName="active"
+              onClick={toggleMenu}
+            >
               Portfolio
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active" onClick={toggleMenu}>
+            <NavLink
+              to="/Contact"
+              activeClassName="active"
+              onClick={toggleMenu}
+            >
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink to="/resume" activeClassName="active" onClick={toggleMenu}>
+            <NavLink to="/Resume" activeClassName="active" onClick={toggleMenu}>
               Resume
             </NavLink>
           </li>
@@ -48,4 +56,3 @@ function Header() {
 }
 
 export default Header;
-
