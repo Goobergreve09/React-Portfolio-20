@@ -14,6 +14,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
 import Resume from "./pages/Resume";
+import Github from './pages/Github'
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/Resume",
         element: <Resume />,
-        exact:true,
+      },
+      {
+        path: "/Github",
+        element: <Github/>,
       },
     ],
   },

@@ -19,9 +19,14 @@ export default function Nav() {
           Portfolio
         </Link>,
 
-        <Link key={4} className="nav-link text-light" to="/Resume">
+          <Link key={4} className="nav-link text-light" to="/Github">
+          Github
+        </Link>,
+
+        <Link key={5} className="nav-link text-light" to="/Resume">
           Resume
         </Link>,
+
       ]}
     />
   );

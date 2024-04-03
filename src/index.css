@@ -282,6 +282,36 @@ header {
   color: #3795ff;
 }
 
+.githubBio {
+  color:white;
+  font-family: "Manrope", sans-serif;
+  font-size: large;
+
+}
+
+.userName {
+  font-size: 40px;
+  text-decoration: none;
+  color:white;
+  transition: .3s ease;
+}
+
+.userName:hover {
+  color:#3795ff;
+}
+
+.skillsRow {
+  color: white;
+  font-family: "Manrope", sans-serif;
+  padding-bottom:50px;
+
+}
+
+.skillsContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 @media (max-width: 768px) {
   /* Header and Nav */
 

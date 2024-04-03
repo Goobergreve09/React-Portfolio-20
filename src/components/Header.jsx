@@ -37,6 +37,15 @@ function Header() {
           </li>
           <li>
             <NavLink
+              to="/Github"
+              activeClassName="active"
+              onClick={toggleMenu}
+            >
+              Github
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/Contact"
               activeClassName="active"
               onClick={toggleMenu}
