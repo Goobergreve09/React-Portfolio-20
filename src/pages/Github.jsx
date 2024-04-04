@@ -34,7 +34,7 @@ function GitHub() {
   return (
     <>
       <Header />
-      <Container fluid style={{marginBottom:'125px'}}>
+      <Container fluid style={{ marginBottom: "125px" }}>
         {userData && (
           <div>
             <Container fluid>
@@ -52,12 +52,20 @@ function GitHub() {
                     >
                       {userData.login}
                     </a>
-      
+
                     <DropdownButton
                       id="dropdown-basic-button"
-                      title={` Repositories (${userData && userData.public_repos})`}
+                      title={` Repositories (${
+                        userData && userData.public_repos
+                      })`}
                     >
-                      <div style={{ maxHeight: '400px', overflowY: 'auto', overflowX: 'hidden' }}>
+                      <div
+                        style={{
+                          maxHeight: "400px",
+                          overflowY: "auto",
+                          overflowX: "hidden",
+                        }}
+                      >
                         {repos.map((repo) => (
                           <Dropdown.Item
                             key={repo.id}
@@ -72,7 +80,11 @@ function GitHub() {
                   </Col>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center">
-                  <img src={userData.avatar_url} style={{ maxWidth: '200px' }} className='githubprofileImg' />
+                  <img
+                    src={userData.avatar_url}
+                    style={{ maxWidth: "200px" }}
+                    className="githubprofileImg"
+                  />
                 </Col>
               </Row>
             </Container>
@@ -124,7 +136,8 @@ function GitHub() {
                     onClick={() => setShowSkills(!showSkills)}
                     className="skillsBtn"
                   >
-                    <img src = {statsGif} style={{maxWidth:'25px'}}/>Show Skills <FontAwesomeIcon icon={faChevronDown} />
+                    <img src={statsGif} style={{ maxWidth: "25px" }} />
+                    Show Skills <FontAwesomeIcon icon={faChevronDown} />
                   </Button>
                 </Col>
               </Row>
