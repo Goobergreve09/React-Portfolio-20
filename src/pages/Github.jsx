@@ -89,7 +89,7 @@ function GitHub() {
               </Row>
             </Container>
             <Row className="p-3 d-flex justify-content-center align-items-center">
-              <Col lg={4} md={12} className="d-flex justify-content-center">
+              <Col lg={4} md={12} className="d-flex justify-content-center ">
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"
@@ -99,10 +99,11 @@ function GitHub() {
                     src="https://github-readme-stats.vercel.app/api?username=Goobergreve09&show_icons=true&theme=radical"
                     alt="Goobergreve09's GitHub Stats"
                     style={{ maxWidth: "100%", height: "auto" }}
+                    className="statsBox"
                   />
                 </a>
               </Col>
-              <Col lg={4} md={12} className="d-flex justify-content-center">
+              <Col lg={4} md={12} className="d-flex justify-content-center ">
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"
@@ -112,6 +113,7 @@ function GitHub() {
                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=Goobergreve09&layout=compact&langs_count=9&theme=radical&exclude_repo=Optifine-Mod-Coder-Pack-1.16.1,Projects"
                     alt="Greg's most used languages"
                     style={{ maxWidth: "100%", height: "auto" }}
+                    className="statsBox"
                   />
                 </a>
               </Col>
@@ -123,8 +125,9 @@ function GitHub() {
                 >
                   <img
                     src="https://github-readme-streak-stats.herokuapp.com/?user=Goobergreve09&theme=radical"
-                    alt="More Nish Stats"
+                    alt="More Goobergreve09 Stats"
                     style={{ maxWidth: "100%", height: "auto" }}
+                    className="statsBox"
                   />
                 </a>
               </Col>
