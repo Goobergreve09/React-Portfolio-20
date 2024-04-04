@@ -48,7 +48,7 @@ const Portfolio = () => {
             ]}
             image={Blockbuster}
             alt="Blockbuster Project Thumbnail"
-            deployedLink="https://blockbuster2024.onrender.com/"
+            deployedLink="https://blockbuster2024-clone.onrender.com/"
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
             description="A web application focused on Movies! This is a throw back built from the foundation
   of BLOCKBUSTER. Back when you used to look forward to going out to pick up that new VHS release, 
