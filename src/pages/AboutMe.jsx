@@ -4,8 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
-import signature from "../assets/images/signature.png"
-
+import signature from "../assets/images/signature.png";
 
 export default function AboutMe() {
   const [codingDuration, setCodingDuration] = useState({
@@ -51,13 +50,11 @@ export default function AboutMe() {
         <Row className="justify-content-center ">
           <Col lg={6} md={8}>
             <Row lg={2} className="justify-content-center">
-         
-                <img
-                  src={profileImage}
-                  alt="Photo of the developer, Greg Greve"
-                  className="img-fluid mb-3 profile-photo"
-                />
-            
+              <img
+                src={profileImage}
+                alt="Photo of the developer, Greg Greve"
+                className="img-fluid mb-3 profile-photo"
+              />
             </Row>
             <Row className="text-center credentials">
               <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>

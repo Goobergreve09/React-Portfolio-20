@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import resumeFile from "../assets/Resume.pdf"
+import resumeFile from "../assets/Front-End-Developer.pdf"
 
 const Resume = () => {
   const proficiencies = [
