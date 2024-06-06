@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import resumeFile from "../assets/Front-End-Developer.pdf"
+import resumeFile from "../assets/Front-End-Developer.pdf";
 
 const Resume = () => {
   const proficiencies = [
@@ -65,7 +65,7 @@ const Resume = () => {
       <Header />
       <div className="container pt-4 resume">
         <h2> Download Resume</h2>
-        <a href= {resumeFile} download>
+        <a href={resumeFile} download>
           <i className="bi bi-download" style={{ fontSize: "48px" }}></i>
         </a>
         <div className="row">
