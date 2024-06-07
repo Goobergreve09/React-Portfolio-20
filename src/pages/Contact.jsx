@@ -198,7 +198,7 @@ export default function Contact() {
             </div>
             <div className="envelope envelope-css">
               <FontAwesomeIcon icon={faEnvelope} />{" "}
-              <span>thechillhypomaniac@gmail.com</span>
+              <span>gregory.greve@yahoo.com</span>
             </div>
           </div>
         </div>
