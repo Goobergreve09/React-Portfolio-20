@@ -1,6 +1,8 @@
 import { Row, Col, Container } from "react-bootstrap";
 import projectBackground from "../assets/images/projectBackground.jpg";
 
+import ModalImage from "react-modal-image";
+
 
 const Project = ({
   title,
@@ -21,7 +23,7 @@ const Project = ({
       <Col className="align-items-center justify-content-center text-center">
         <Row className="justify-content-center">
       
-            <img src={image}  alt={title} />
+            <ModalImage small={image} large={image}  alt={title} />
             
         </Row>
         <Row>
