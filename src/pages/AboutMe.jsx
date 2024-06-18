@@ -6,6 +6,8 @@ import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
 
+import ModalImage from "react-modal-image";
+
 export default function AboutMe() {
   const [codingDuration, setCodingDuration] = useState({
     years: 0,
@@ -50,8 +52,9 @@ export default function AboutMe() {
         <Row className="justify-content-center ">
           <Col lg={6} md={8}>
             <Row lg={2} className="justify-content-center">
-              <img
-                src={profileImage}
+              <ModalImage
+                small={profileImage}
+                large={profileImage}
                 alt="Photo of the developer, Greg Greve"
                 className="img-fluid mb-3 profile-photo"
               />

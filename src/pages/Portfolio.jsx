@@ -14,6 +14,7 @@ import property from "../assets/images/property.jpg";
 import quiz from "../assets/images/quiz.jpg";
 import Blockbuster from "../assets/images/Blockbuster.png";
 import adam from "../assets/images/adam.jpg";
+import rolePlay from "../assets/images/rolePlay.jpeg"
 
 import reactLogo from "../assets/images/reactLogo.png";
 import bootstrapLogo from "../assets/images/bootstrapLogo.png";
@@ -283,6 +284,22 @@ const Portfolio = () => {
               and events, a contact form for clubs and organizations to reach him for bookings, and a cool about me page
               designed to meet his personality. The final product displays all of the above, I also integrated some photos I took of him as
                I am also a photographer, and I only needed to integrate code to remove the footer. "
+          />
+                    <Project
+            title="Role-Playing Game"
+            technologies={[
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: htmlLogo, altText: "HTML5" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+            ]}
+            image={rolePlay}
+            alt="Password Generator Thumbnail"
+            deployedLink="https://dragonrepel.netlify.app//"
+            githubLink="https://github.com/Goobergreve09/Data-Structures-Algorithms"
+            description="
+           This is a fun project found on freecodecamp.org using basic fundamental javascript. These concepts helped create a Role Playing Game to help the town defeat the monsters and eventually the Dragon. This game involves strategic decision making as well as images that resemble the choices you make.
+
+I wanted to keep my coding skills fresh while creating a fun game for friends or anybody else who wants to give it a shot and fight the dragon."
           />
         </div>
       </div>
