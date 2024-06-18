@@ -14,7 +14,7 @@ import property from "../assets/images/property.jpg";
 import quiz from "../assets/images/quiz.jpg";
 import Blockbuster from "../assets/images/Blockbuster.png";
 import adam from "../assets/images/adam.jpg";
-import rolePlay from "../assets/images/rolePlay.jpeg"
+import rolePlay from "../assets/images/rolePlay.jpg"
 
 import reactLogo from "../assets/images/reactLogo.png";
 import bootstrapLogo from "../assets/images/bootstrapLogo.png";
