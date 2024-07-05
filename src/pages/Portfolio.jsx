@@ -15,6 +15,7 @@ import quiz from "../assets/images/quiz.jpg";
 import Blockbuster from "../assets/images/Blockbuster.png";
 import adam from "../assets/images/adam.jpg";
 import rolePlay from "../assets/images/rolePlay.jpg"
+import photography from "../assets/images/photography.jpg"
 
 import reactLogo from "../assets/images/reactLogo.png";
 import bootstrapLogo from "../assets/images/bootstrapLogo.png";
@@ -109,6 +110,27 @@ const Portfolio = () => {
                global-highscores page all being stored in a MongoDB database. I used React.js for frontend, 
                and for my backend I used technologies like Node.js, Express.js, Apollo GraphQl, and bcrypt. 
                This application is also responsive so you can test your skills on mobile."
+          />
+                  <Project
+            title="Photography Portfolio"
+            image={photography}
+            technologies={[
+              { logoSrc: reactLogo, altText: "React" },
+              { logoSrc: bootstrapLogo, altText: "Bootstrap" },
+              { logoSrc: javascriptLogo, altText: "Javascript" },
+              { logoSrc: nodeLogo, altText: "Node.js" },
+              { logoSrc: cssLogo, altText: "CSS3" },
+              { logoSrc: htmlLogo, altText: "HTML5" }
+            ]}
+            alt="Photography Portfolio Thumbnail"
+            deployedLink="https://greggrevephotography.netlify.app/"
+            githubLink="https://github.com/Goobergreve09/greg-greve-photography-portfolio"
+            description="This is my own personal photography portfolio. There is no backend, primarily the front end uses React, Bootstrap, and CSS3.
+             The portfolio website is fully-responsive for mobile use. I'm using npm's package manager to organize and keep track of my libraries. 
+             This website is hosted using Netlify and its speedy network capabilities with a React front end. I use npm's ModalImage for user's to get a better view of each photo, with 
+             downloading capabilities. React-Bootstrap-s flex design was primarily used for a seamless responsive design for an ease of use on all platforms. 
+              My motivation for this project was to have a place to store my images. I am an expert in landscape photography. I 
+              use this website to store my photos in a way that's a bit more professional than your basic social media outlets."
           />
           <Project
             title="slAPI Social Media Website"

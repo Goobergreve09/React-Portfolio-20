@@ -3,7 +3,6 @@ import projectBackground from "../assets/images/projectBackground.jpg";
 
 import ModalImage from "react-modal-image";
 
-
 const Project = ({
   title,
   image,
@@ -22,9 +21,7 @@ const Project = ({
 
       <Col className="align-items-center justify-content-center text-center">
         <Row className="justify-content-center">
-      
-            <ModalImage small={image} large={image}  alt={title} />
-            
+          <ModalImage small={image} large={image} alt={title} />
         </Row>
         <Row>
           <h3 className="project-title p-2">{title}</h3>
@@ -67,11 +64,7 @@ const Project = ({
           {githubLink && (
             <Col md={3}>
               <p>
-                <a
-                  href={githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={githubLink} target="_blank" rel="noopener noreferrer">
                   GitHub Repository
                 </a>
               </p>
@@ -84,4 +77,3 @@ const Project = ({
 };
 
 export default Project;
-

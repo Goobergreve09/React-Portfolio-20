@@ -80,7 +80,8 @@ export default function AboutMe() {
               <span id="custom-text">Hello World</span>, and welcome to my
               portfolio! I'm Greg, a dedicated full-stack web developer fueled
               by a passion for creating immersive digital experiences. I began
-              my coding journey {codingDuration.months} months, {codingDuration.days} days, {codingDuration.hours} hours,{" "}
+              my coding journey {codingDuration.months} months,{" "}
+              {codingDuration.days} days, {codingDuration.hours} hours,{" "}
               {codingDuration.minutes} minutes, and {codingDuration.seconds}{" "}
               seconds ago. I hold a certificate in Full Stack Web Development
               from Michigan State University, where I gained hands-on experience
