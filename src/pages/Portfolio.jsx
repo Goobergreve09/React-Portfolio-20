@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 import Header from "../components/Header";
 import Project from "../components/Project";
@@ -35,15 +35,17 @@ import squarespaceLogo from "../assets/images/squarespaceLogo.png";
 
 const Portfolio = () => {
   const [upTimeData, setUpTimeData] = useState([]); // Initialize as an empty array
-  
+
   useEffect(() => {
+    const apiUrl = "/.netlify/functions/uptime"; // Updated URL
+
     const getAverageResponseTimes = async () => {
-      const response = await fetch('http://localhost:5000/api/uptime'); // Your server URL
+      const response = await fetch(apiUrl);
       const data = await response.json();
-      if (data.stat === 'ok') {
+      if (data.stat === "ok") {
         setUpTimeData(data.monitors); // Set the monitors data
       } else {
-        console.error('Unexpected data format:', data);
+        console.error("Unexpected data format:", data);
       }
     };
 
@@ -51,20 +53,30 @@ const Portfolio = () => {
   }, []);
 
   const getUpTimeForProject = (deployedLink) => {
-    const monitor = upTimeData.find(m => m.url === deployedLink);
+    const monitor = upTimeData.find((m) => m.url === deployedLink);
     if (monitor) {
-      console.log('Monitor data:', monitor); // Debugging: log the monitor data
+      console.log("Monitor data:", monitor); // Debugging: log the monitor data
       const averageResponseTime = parseFloat(monitor.average_response_time);
-      console.log(averageResponseTime) // Convert to a float
-      return !isNaN(averageResponseTime) ? Math.floor(averageResponseTime) : null; // Return floored value or null
+      console.log(averageResponseTime); // Convert to a float
+      return !isNaN(averageResponseTime)
+        ? Math.floor(averageResponseTime)
+        : null; // Return floored value or null
     }
     return null; // Return null if no monitor found
   };
 
-  const blockbusterAverageResponseTime = getUpTimeForProject("https://blockbuster2024-clone.onrender.com/");
-  const javascriptQuizAverageResponseTime = getUpTimeForProject("https://javascript-quiz-2-0.onrender.com/");
-  const weatherDashboardAverageResponseTime = getUpTimeForProject("https://weather-dashboard-greg.netlify.app/");
-  const photographyAverageResponseTime = getUpTimeForProject("https://weather-dashboard-greg.netlify.app/");
+  const blockbusterAverageResponseTime = getUpTimeForProject(
+    "https://blockbuster2024-clone.onrender.com/"
+  );
+  const javascriptQuizAverageResponseTime = getUpTimeForProject(
+    "https://javascript-quiz-2-0.onrender.com/"
+  );
+  const weatherDashboardAverageResponseTime = getUpTimeForProject(
+    "https://weather-dashboard-greg.netlify.app/"
+  );
+  const photographyAverageResponseTime = getUpTimeForProject(
+    "https://weather-dashboard-greg.netlify.app/"
+  );
 
   return (
     <div>
@@ -95,7 +107,7 @@ const Portfolio = () => {
   React.js and React-Bootstrap for front end design and UI, and for the backend we used
   technologies like Node.js, Express.js, MongoDB Atlas and MongoDB Compass, Apollo GraphQL,
   bcrypt, and more."
-  upTime={blockbusterAverageResponseTime}
+            upTime={blockbusterAverageResponseTime}
           />
           <Project
             title="Weather Dashboard API"
@@ -121,7 +133,7 @@ const Portfolio = () => {
                 in a dark and light mode toggle for an enhanced user experience based on what they prefer. Once
                  the city is searched it will save that into a drop down titled ' recent searches' storing a 
                  maximum of 5 cities."
-                 upTime={weatherDashboardAverageResponseTime}
+            upTime={weatherDashboardAverageResponseTime}
           />
           <Project
             title="Javascript Quiz"
@@ -145,7 +157,7 @@ const Portfolio = () => {
                global-highscores page all being stored in a MongoDB database. I used React.js for frontend, 
                and for my backend I used technologies like Node.js, Express.js, Apollo GraphQl, and bcrypt. 
                This application is also responsive so you can test your skills on mobile."
-               upTime={javascriptQuizAverageResponseTime}
+            upTime={javascriptQuizAverageResponseTime}
           />
           <Project
             title="Photography Portfolio"
@@ -167,7 +179,7 @@ const Portfolio = () => {
              downloading capabilities. React-Bootstrap-s flex design was primarily used for a seamless responsive design for an ease of use on all platforms. 
               My motivation for this project was to have a place to store my images. I am an expert in landscape photography. I 
               use this website to store my photos in a way that's a bit more professional than your basic social media outlets."
-              upTime={photographyAverageResponseTime}
+            upTime={photographyAverageResponseTime}
           />
           <Project
             title="slAPI Social Media Website"

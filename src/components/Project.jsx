@@ -12,7 +12,6 @@ const Project = ({
   upTime,
   technologies,
 }) => {
-
   const averageResponseTime = upTime ? Math.floor(upTime) : null;
   return (
     <Container
@@ -52,7 +51,7 @@ const Project = ({
           <Row className="justify-content-center description-container">
             {upTime && (
               <p className="uptime-Metrics">
-               Average Response Time: {averageResponseTime} ms
+                Average Response Time: {averageResponseTime} ms
               </p>
             )}
           </Row>

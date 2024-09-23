@@ -1,16 +1,8 @@
-import express from "express";
-import fetch from "node-fetch";
-import cors from "cors";
-import dotenv from "dotenv";
+const fetch = require("node-fetch");
 
-dotenv.config();
+exports.handler = async (event, context) => {
+  const apiKey = process.env.API_KEY; // Make sure to set this in Netlify's environment variables
 
-const app = express();
-const PORT = process.env.PORT || 5000;
-
-app.use(cors());
-
-app.get("/api/uptime", async (req, res) => {
   try {
     const response = await fetch("https://api.uptimerobot.com/v2/getMonitors", {
       method: "POST",
@@ -18,7 +10,7 @@ app.get("/api/uptime", async (req, res) => {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: new URLSearchParams({
-        api_key: process.env.API_KEY, // Use your main API key
+        api_key: apiKey,
         format: "json",
         response_times: "1",
       }),
@@ -30,13 +22,15 @@ app.get("/api/uptime", async (req, res) => {
     const data = await response.json(); // Get the JSON response
     console.log("Uptime Data:", data); // Log the Uptime data
 
-    res.json(data); // Send the data as a response
+    return {
+      statusCode: 200,
+      body: JSON.stringify(data), // Send the data as a response
+    };
   } catch (error) {
     console.error("Error fetching data:", error);
-    res.status(500).send("Error fetching uptime data");
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: "Error fetching uptime data" }),
+    };
   }
-});
-
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+};
