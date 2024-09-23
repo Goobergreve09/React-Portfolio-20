@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
-  const apiKey = process.env.API_KEY; // Make sure to set this in Netlify's environment variables
+  const apiKey = process.env.API_KEY; // Ensure this is set in your environment variables
 
   try {
     const response = await fetch("https://api.uptimerobot.com/v2/getMonitors", {
@@ -16,15 +16,10 @@ exports.handler = async (event, context) => {
       }),
     });
 
-    // Log the response status
-    console.log("Response Status:", response.status);
-
-    const data = await response.json(); // Get the JSON response
-    console.log("Uptime Data:", data); // Log the Uptime data
-
+    const data = await response.json();
     return {
       statusCode: 200,
-      body: JSON.stringify(data), // Send the data as a response
+      body: JSON.stringify(data),
     };
   } catch (error) {
     console.error("Error fetching data:", error);

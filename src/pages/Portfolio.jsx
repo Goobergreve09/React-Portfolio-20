@@ -37,10 +37,8 @@ const Portfolio = () => {
   const [upTimeData, setUpTimeData] = useState([]); // Initialize as an empty array
 
   useEffect(() => {
-    const apiUrl = "/.netlify/functions/uptime"; // Updated URL
-
     const getAverageResponseTimes = async () => {
-      const response = await fetch(apiUrl);
+      const response = await fetch("http://localhost:5000/api/uptime"); // Your server URL
       const data = await response.json();
       if (data.stat === "ok") {
         setUpTimeData(data.monitors); // Set the monitors data
