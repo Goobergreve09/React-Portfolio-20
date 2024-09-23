@@ -6,7 +6,7 @@ import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
-import grccLogo from "../assets/images/grccLogo.png"
+import grccLogo from "../assets/images/grccLogo.png";
 
 import ModalImage from "react-modal-image";
 
@@ -61,10 +61,10 @@ export default function AboutMe() {
                 className="img-fluid mb-3 profile-photo"
               />
             </Row>
-            <Row className="text-center credentials" >
+            <Row className="text-center credentials">
               <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>
             </Row>
-            <Row className="text-center credentials" >
+            <Row className="text-center credentials">
               <h4 className="mb-4">Full-Stack Web-Developer</h4>
             </Row>
             <Row className="logo-images text-center d-flex align-items-center">
@@ -85,12 +85,13 @@ export default function AboutMe() {
               <span id="custom-text">Hello World</span>, and welcome to my
               portfolio! I'm Greg, a dedicated full-stack web developer fueled
               by a passion for creating immersive digital experiences. I began
-              my coding journey {codingDuration.years} year(s),{" "} {codingDuration.months} months,{" "}
-              {codingDuration.days} days, {codingDuration.hours} hours,{" "}
-              {codingDuration.minutes} minutes, and {codingDuration.seconds}{" "}
-              seconds ago. I hold a certificate in Full Stack Web Development
-              from Michigan State University, where I gained hands-on experience
-              and a solid foundation in the latest web technologies.
+              my coding journey {codingDuration.years} year(s),{" "}
+              {codingDuration.months} months, {codingDuration.days} days,{" "}
+              {codingDuration.hours} hours, {codingDuration.minutes} minutes,
+              and {codingDuration.seconds} seconds ago. I hold a certificate in
+              Full Stack Web Development from Michigan State University, where I
+              gained hands-on experience and a solid foundation in the latest
+              web technologies.
             </p>
             <p className="bio-text">
               My journey into the world of web development began with a

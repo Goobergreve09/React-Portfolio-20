@@ -9,8 +9,11 @@ const Project = ({
   deployedLink,
   githubLink,
   description,
+  upTime,
   technologies,
 }) => {
+
+  const averageResponseTime = upTime ? Math.floor(upTime) : null;
   return (
     <Container
       fluid
@@ -46,6 +49,13 @@ const Project = ({
           <Row className="justify-content-center description-container">
             <p className="project-description">{description}</p>
           </Row>
+          <Row className="justify-content-center description-container">
+            {upTime && (
+              <p className="uptime-Metrics">
+               Average Response Time: {averageResponseTime} ms
+              </p>
+            )}
+          </Row>
         </Row>
         <Row className="project-links p-1 justify-content-center">
           {deployedLink && (
@@ -55,6 +65,7 @@ const Project = ({
                   href={deployedLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="navLink"
                 >
                   Deployed Application
                 </a>
