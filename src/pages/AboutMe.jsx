@@ -6,7 +6,7 @@ import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
-import grccLogo from "../assets/images/grcc-Logo.png"
+import grccLogo from "../assets/images/grccLogo.png"
 
 import ModalImage from "react-modal-image";
 
