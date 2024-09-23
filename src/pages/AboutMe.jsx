@@ -1,10 +1,12 @@
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
+
 import profileImage from "../assets/images/profile.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
+import grccLogo from "../assets/images/grcc-Logo.png"
 
 import ModalImage from "react-modal-image";
 
@@ -50,7 +52,7 @@ export default function AboutMe() {
       <Header />
       <Container fluid>
         <Row className="justify-content-center ">
-          <Col lg={6} md={8}>
+          <Col lg={6} md={8} sm={12}>
             <Row lg={2} className="justify-content-center">
               <ModalImage
                 small={profileImage}
@@ -59,28 +61,31 @@ export default function AboutMe() {
                 className="img-fluid mb-3 profile-photo"
               />
             </Row>
-            <Row className="text-center credentials">
+            <Row className="text-center credentials" >
               <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>
             </Row>
-            <Row className="text-center credentials">
+            <Row className="text-center credentials" >
               <h4 className="mb-4">Full-Stack Web-Developer</h4>
             </Row>
-            <Row className="logo-images text-center">
-              <Col>
+            <Row className="logo-images text-center d-flex align-items-center">
+              <Col sm={4} xs={4}>
                 <img src={msuLogo} alt="MSU Logo" className="img-fluid" />
               </Col>
-              <Col>
+              <Col sm={4} xs={4}>
                 <img src={edx} alt="edX Logo" className="img-fluid" />
+              </Col>
+              <Col sm={4} xs={4}>
+                <img src={grccLogo} alt="GRCC Logo" className="img-fluid" />
               </Col>
             </Row>
           </Col>
-          <Col className="about-text">
+          <Col className="about-text" lg={8}>
             <h2>About the Developer</h2>
             <p className="bio-text">
               <span id="custom-text">Hello World</span>, and welcome to my
               portfolio! I'm Greg, a dedicated full-stack web developer fueled
               by a passion for creating immersive digital experiences. I began
-              my coding journey {codingDuration.months} months,{" "}
+              my coding journey {codingDuration.years} year(s),{" "} {codingDuration.months} months,{" "}
               {codingDuration.days} days, {codingDuration.hours} hours,{" "}
               {codingDuration.minutes} minutes, and {codingDuration.seconds}{" "}
               seconds ago. I hold a certificate in Full Stack Web Development

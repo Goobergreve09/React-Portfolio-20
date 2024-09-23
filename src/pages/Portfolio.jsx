@@ -14,8 +14,8 @@ import property from "../assets/images/property.jpg";
 import quiz from "../assets/images/quiz.jpg";
 import Blockbuster from "../assets/images/Blockbuster.png";
 import adam from "../assets/images/adam.jpg";
-import rolePlay from "../assets/images/rolePlay.jpg"
-import photography from "../assets/images/photography.jpg"
+import rolePlay from "../assets/images/rolePlay.jpg";
+import photography from "../assets/images/photography.jpg";
 
 import reactLogo from "../assets/images/reactLogo.png";
 import bootstrapLogo from "../assets/images/bootstrapLogo.png";
@@ -111,7 +111,7 @@ const Portfolio = () => {
                and for my backend I used technologies like Node.js, Express.js, Apollo GraphQl, and bcrypt. 
                This application is also responsive so you can test your skills on mobile."
           />
-                  <Project
+          <Project
             title="Photography Portfolio"
             image={photography}
             technologies={[
@@ -120,7 +120,7 @@ const Portfolio = () => {
               { logoSrc: javascriptLogo, altText: "Javascript" },
               { logoSrc: nodeLogo, altText: "Node.js" },
               { logoSrc: cssLogo, altText: "CSS3" },
-              { logoSrc: htmlLogo, altText: "HTML5" }
+              { logoSrc: htmlLogo, altText: "HTML5" },
             ]}
             alt="Photography Portfolio Thumbnail"
             deployedLink="https://greggrevephotography.netlify.app/"
@@ -307,7 +307,7 @@ const Portfolio = () => {
               designed to meet his personality. The final product displays all of the above, I also integrated some photos I took of him as
                I am also a photographer, and I only needed to integrate code to remove the footer. "
           />
-                    <Project
+          <Project
             title="Role-Playing Game"
             technologies={[
               { logoSrc: cssLogo, altText: "CSS3" },

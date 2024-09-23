@@ -22,7 +22,12 @@ function Header() {
         {/* Nav links */}
         <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <NavLink to="/" activeClassName="active" onClick={toggleMenu}>
+            <NavLink
+              to="/"
+              activeClassName="active"
+              onClick={toggleMenu}
+              className="navLink"
+            >
               About Me
             </NavLink>
           </li>
@@ -31,6 +36,7 @@ function Header() {
               to="/Portfolio"
               activeClassName="active"
               onClick={toggleMenu}
+              className="navLink"
             >
               Portfolio
             </NavLink>
@@ -40,6 +46,7 @@ function Header() {
               to="/Github"
               activeClassName="active"
               onClick={toggleMenu}
+              className="navLink"
             >
               Github
             </NavLink>
@@ -49,12 +56,18 @@ function Header() {
               to="/Contact"
               activeClassName="active"
               onClick={toggleMenu}
+              className="navLink"
             >
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Resume" activeClassName="active" onClick={toggleMenu}>
+            <NavLink
+              to="/Resume"
+              activeClassName="active"
+              onClick={toggleMenu}
+              className="navLink"
+            >
               Resume
             </NavLink>
           </li>
