@@ -37,17 +37,24 @@ const Portfolio = () => {
   const [upTimeData, setUpTimeData] = useState([]); // Initialize as an empty array
 
   useEffect(() => {
-const apiUrl = "/.netlify/functions/uptime"; // Updated URL
+    const apiUrl = "/.netlify/functions/uptime"; // Updated URL
 
-const getAverageResponseTimes = async () => {
-  const response = await fetch(apiUrl);
-  const data = await response.json();
-  if (data.stat === "ok") {
-    setUpTimeData(data.monitors); // Set the monitors data
-  } else {
-    console.error("Unexpected data format:", data);
-  }
-};
+    const getAverageResponseTimes = async () => {
+      try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        if (data.stat === "ok") {
+          setUpTimeData(data.monitors); // Set the monitors data
+        } else {
+          console.error("Unexpected data format:", data);
+        }
+      } catch (error) {
+        console.error("Fetch error:", error);
+      }
+    };
 
     getAverageResponseTimes();
   }, []);

@@ -1,7 +1,8 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch"; // Use import instead of require
 
-exports.handler = async (event, context) => {
+export async function handler(event, context) {
   const apiKey = process.env.API_KEY; // Ensure this is set in your environment variables
+  console.log("Function invoked");
 
   try {
     const response = await fetch("https://api.uptimerobot.com/v2/getMonitors", {
@@ -28,4 +29,6 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({ message: "Error fetching uptime data" }),
     };
   }
-};
+}
+
+
