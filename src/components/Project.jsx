@@ -49,6 +49,8 @@ const Project = ({
             <p className="project-description">{description}</p>
           </Row>
           <Row className="justify-content-center description-container">
+            </Row>
+          <Row className="justify-content-center description-container">
             {upTime && (
               <p className="uptime-Metrics">
                 Average Response Time: {averageResponseTime} ms

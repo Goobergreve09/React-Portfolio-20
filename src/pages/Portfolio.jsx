@@ -104,16 +104,18 @@ const Portfolio = () => {
             alt="Blockbuster Project Thumbnail"
             deployedLink="https://blockbuster2024-clone.onrender.com/"
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
-            description="A web application focused on Movies! This is a throw back built from the foundation
-  of BLOCKBUSTER. Back when you used to look forward to going out to pick up that new VHS release, 
-  which has now disappeared. Streaming services has since killed the once beloved BLOCKBUSTER. Either
-  way we wanted to create a fun interactive site which allows users to be able to research various 
-  movies, then can create a watch list and top favorite list. Not to mention how many books were
-  written and then made into movie, how great would it be to search for that book too! If you don’t
-  have wifi the book for the win! As a group of developers we decided to go with technologies like
-  React.js and React-Bootstrap for front end design and UI, and for the backend we used
-  technologies like Node.js, Express.js, MongoDB Atlas and MongoDB Compass, Apollo GraphQL,
-  bcrypt, and more."
+            description="This is a web application with a nostalgic Blockbuster theme. Our team went
+             for a classic HTML ‘blockbuster’ look integrated with modern movie backgrounds and a
+              comfortable UI. It uses RestAPI’s for movies(OMDB API) and books(Googlebooks API) so 
+              a user can search for any book or movie that they desire, and not to mention the 
+              Youtube API from the React framework. Not only is this app requesting information
+               from API’s, but it allows you as a user to save your favorite movies/books which
+                get stored into a database(MongoDB). You can simply create an account, and begin
+                 your search. The motivation behind this project was to create an application so for
+                  book loves and movie lovers alike, can keep tabs on their favorite movies and 
+                  watchlist. Personally, my primary role was a full-stack web developer. I helped 
+                  setup queries to the database, implementing the backend server, and creating the 
+                  design of the front end interface."
             upTime={blockbusterAverageResponseTime}
           />
           <Project
