@@ -124,6 +124,9 @@ const Portfolio = () => {
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
             description={blockbusterDescription}
             upTime={blockbusterAverageResponseTime}
+            softSkills={[ "Collaboration", "Problem-solving","Debugging","Adaptability","Creativity"]}
+              
+        
           />
           <Project
             title="Weather Dashboard API"

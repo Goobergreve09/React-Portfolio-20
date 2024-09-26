@@ -11,6 +11,7 @@ const Project = ({
   description,
   upTime,
   technologies,
+  softSkills = []
 }) => {
   const averageResponseTime = upTime ? Math.floor(upTime) : null;
   return (
@@ -48,7 +49,17 @@ const Project = ({
           <Row className="justify-content-center description-container p-3">
             <p className="project-description ">{description}</p>
           </Row>
-          <Row className="justify-content-center description-container">
+          <Row className="text-center softSkills d-flex align-items-center pt-4">
+         
+            <Col sm={6} lg={6} className="d-flex align-items-center justify-content-center softSkillsTitle">
+            <p>Soft-Skills</p>
+            </Col>
+            <Col sm={6} lg={6} className="softSkillsContent">
+        {softSkills.map((skill, index) => (
+          <p key={index}>{skill}</p>
+        ))}
+      </Col>
+            
             </Row>
           <Row className="justify-content-center description-container">
             {upTime && (

@@ -216,12 +216,12 @@ h4 {
 
 .project-title {
   color: white;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Playfair Display', serif;
   width: 100%;
 }
 
 .project-description {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Playfair Display', serif;
   border-radius: 25px;
   padding: 10px;
   width: 75%;
@@ -240,6 +240,7 @@ text-decoration: none;
 .project-links {
   background-color: rgba(55, 149, 255, 0.1);
   font-family: "Manrope", sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .project-links a {
@@ -274,6 +275,38 @@ text-decoration: none;
   max-width: fit-content;
   border-radius: 10px;
   border:1px lime solid;
+}
+
+.softSkills {
+  border-top: 2px solid white;
+  width:85%;
+  margin:0 auto;
+  margin-bottom: 20px;
+  font-family: "Manrope", sans-serif;
+  
+
+
+}
+
+.softSkillsTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+
+.softSkillsContent{
+  color: white;
+  font-family: 'Playfair Display', serif;
+
 }
 
 /* HEADER  */
@@ -443,6 +476,48 @@ header {
   .project img {
     width: 100%; /* Make image fill container width */
   }
+
+  .project-description {
+    font-size: 14px;
+    max-height: 200px;
+    overflow: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: linear-gradient(blue,yellow); /* For Firefox */
+  }
+  
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+  .project-description::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .project-description::-webkit-scrollbar-thumb {
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  
+  /* Ensures scrollbar is always visible */
+  .project-description {
+    overflow-y: scroll; /* Use scroll to always show the scrollbar */
+  }
+
+  .softSkillsTitle {
+font-size: 20px;
+justify-content: start !important;
+align-items: center;
+  
+  }
+  
+  .softSkillsContent {
+    font-size: 14px;
+    text-align: right !important;
+  }
+
+  .softSkills {
+    align-items: center;
+    display: flex;
+  }
+
+
 
 
   /* Send Message Button */
