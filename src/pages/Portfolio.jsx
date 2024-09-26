@@ -85,6 +85,24 @@ const Portfolio = () => {
     "https://weather-dashboard-greg.netlify.app/"
   );
 
+  const blockbusterDescription = ( 
+    <>
+    This is a web application with a nostalgic Blockbuster theme. Our team went
+             for a classic HTML ‘blockbuster’ look integrated with modern movie backgrounds and a
+              comfortable UI with user-integration using <a href="https://react-bootstrap.github.io/" target="_blank" rel="noopener noreferrer">React-Bootstrap</a>, <a href="https://devdoc.net/web/developer.mozilla.org/en-US/docs/CSS/CSS3.html" target="_blank" rel="noopener noreferrer">CSS3</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Javascript</a>. It uses RestAPI’s for movies(<a href="https://www.omdbapi.com/" target="_blank" rel="noopener noreferrer">OMDB API</a>)
+               and books(<a href="https://developers.google.com/books" target="_blank" rel="noopener noreferrer">Google Books API</a>) so 
+              a user can search for any book or movie that they desire, and not to mention the <a href="https://developers.google.com/youtube/v3" target="_blank" rel="noopener noreferrer">YouTube API</a> from the <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a> framework. 
+              Not only is this app requesting information
+               from API’s, but it allows you as a user to save your favorite movies/books which
+                get stored into a database(<a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a>). You can simply create an account, and begin
+                 your search. The motivation behind this project was to create an application so for
+                  book loves and movie lovers alike, can keep tabs on their favorite movies and 
+                  watchlist. Personally, my primary role was a full-stack web developer. I helped 
+                  setup queries to the database, implementing the backend server, and creating the 
+                  design of the front end interface.
+    </>
+  )
+
   return (
     <div>
       <Header />
@@ -104,18 +122,7 @@ const Portfolio = () => {
             alt="Blockbuster Project Thumbnail"
             deployedLink="https://blockbuster2024-clone.onrender.com/"
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
-            description="This is a web application with a nostalgic Blockbuster theme. Our team went
-             for a classic HTML ‘blockbuster’ look integrated with modern movie backgrounds and a
-              comfortable UI. It uses RestAPI’s for movies(OMDB API) and books(Googlebooks API) so 
-              a user can search for any book or movie that they desire, and not to mention the 
-              Youtube API from the React framework. Not only is this app requesting information
-               from API’s, but it allows you as a user to save your favorite movies/books which
-                get stored into a database(MongoDB). You can simply create an account, and begin
-                 your search. The motivation behind this project was to create an application so for
-                  book loves and movie lovers alike, can keep tabs on their favorite movies and 
-                  watchlist. Personally, my primary role was a full-stack web developer. I helped 
-                  setup queries to the database, implementing the backend server, and creating the 
-                  design of the front end interface."
+            description={blockbusterDescription}
             upTime={blockbusterAverageResponseTime}
           />
           <Project

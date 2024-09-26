@@ -45,8 +45,8 @@ const Project = ({
           </Row>
         )}
         <Row className="description-hero">
-          <Row className="justify-content-center description-container">
-            <p className="project-description">{description}</p>
+          <Row className="justify-content-center description-container p-3">
+            <p className="project-description ">{description}</p>
           </Row>
           <Row className="justify-content-center description-container">
             </Row>
@@ -66,7 +66,7 @@ const Project = ({
                   href={deployedLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="navLink"
+                  
                 >
                   Deployed Application
                 </a>

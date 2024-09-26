@@ -224,8 +224,18 @@ h4 {
   font-family: "Manrope", sans-serif;
   border-radius: 25px;
   padding: 10px;
-  width: 85%;
+  width: 75%;
 }
+
+.project-description a {
+color:#3795ff;
+text-decoration: none;
+}
+
+.project-description a:hover {
+  color:#7db6f8;
+  text-decoration: underline;
+  }
 
 .project-links {
   background-color: rgba(55, 149, 255, 0.1);
@@ -433,6 +443,7 @@ header {
   .project img {
     width: 100%; /* Make image fill container width */
   }
+
 
   /* Send Message Button */
 
