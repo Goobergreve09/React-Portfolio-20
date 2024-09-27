@@ -1,5 +1,5 @@
 [dev]
-  targetPort = 3001 
+  targetPort = 5000 
 
   [build]
   node_version = "20.0"

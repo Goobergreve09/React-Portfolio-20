@@ -279,12 +279,11 @@ text-decoration: none;
 
 .softSkills {
   border-top: 2px solid white;
+  border-bottom: 2px solid white;
   width:85%;
   margin:0 auto;
   margin-bottom: 20px;
   font-family: "Manrope", sans-serif;
-  
-
 
 }
 
@@ -450,11 +449,11 @@ header {
   }
 
   .nav-links.open {
-    display: flex; /* Display nav links when menu is open */
+    display: flex; 
   }
 
   .hamburger {
-    display: block; /* Display hamburger icon */
+    display: block; 
     cursor: pointer;
   }
 
@@ -474,7 +473,7 @@ header {
   /* Portfolio Page */
 
   .project img {
-    width: 100%; /* Make image fill container width */
+    width: 100%; 
   }
 
   .project-description {
@@ -515,6 +514,10 @@ align-items: center;
   .softSkills {
     align-items: center;
     display: flex;
+  }
+
+  .softSkillsArrow {
+display:none;
   }
 
 

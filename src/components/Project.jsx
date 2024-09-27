@@ -1,5 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import projectBackground from "../assets/images/projectBackground.jpg";
+import skillsArrow from "../assets/images/softSkillsArrow.png"
 
 import ModalImage from "react-modal-image";
 
@@ -51,10 +52,13 @@ const Project = ({
           </Row>
           <Row className="text-center softSkills d-flex align-items-center pt-4">
          
-            <Col sm={6} lg={6} className="d-flex align-items-center justify-content-center softSkillsTitle">
+            <Col sm={4} lg={4} className="d-flex align-items-center justify-content-center softSkillsTitle">
             <p>Soft-Skills</p>
             </Col>
-            <Col sm={6} lg={6} className="softSkillsContent">
+            <Col sm={4} lg={4} className="p-0">
+            <img src={skillsArrow} alt="neon-arrow png image" className="softSkillsArrow"></img>
+            </Col>
+            <Col sm={4} lg={4} className="softSkillsContent">
         {softSkills.map((skill, index) => (
           <p key={index}>{skill}</p>
         ))}
