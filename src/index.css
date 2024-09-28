@@ -45,6 +45,17 @@ body {
 
 /* ABOUT ME */
 
+.aboutMe-container {
+  opacity: 0; /* Start as invisible */
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out; /* Smooth transition for both opacity and scale */
+}
+
+.aboutMe-container.visible {
+  opacity: 1; /* Make it visible */
+  transform: scale(1); /* Scale it back to normal size */
+}
+
 .navLink {
   position: relative;
 }

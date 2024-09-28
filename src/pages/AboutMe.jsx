@@ -20,15 +20,22 @@ export default function AboutMe() {
     seconds: 0,
   });
 
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    const startDate = new Date("2023-09-10T18:00:00"); // September 25th, 2023, at 6:00 PM
+    const timer = setTimeout(() => {
+      setIsVisible(true); // Set visible to true after a delay
+    }, 100); // Adjust the delay as needed
+
+    const startDate = new Date("2023-09-10T18:00:00"); // September 10th, 2023, at 6:00 PM
     const interval = setInterval(() => {
       const currentDate = new Date();
       const elapsedTime = currentDate - startDate;
+
       const years = Math.floor(elapsedTime / (1000 * 60 * 60 * 24 * 365.25));
       const months = Math.floor(
         (elapsedTime % (1000 * 60 * 60 * 24 * 365.25)) /
-          (1000 * 60 * 60 * 24 * 30.44)
+        (1000 * 60 * 60 * 24 * 30.44)
       );
       const days = Math.floor(
         (elapsedTime % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24)
@@ -44,13 +51,16 @@ export default function AboutMe() {
       setCodingDuration({ years, months, days, hours, minutes, seconds });
     }, 1000);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearTimeout(timer); // Cleanup timer
+      clearInterval(interval); // Cleanup interval
+    };
   }, []);
 
   return (
     <div>
       <Header />
-      <Container fluid className="aboutMe-container">
+      <Container fluid className={`aboutMe-container ${isVisible ? "visible" : ""}`}>
         <Row className="justify-content-center ">
           <Col lg={6} md={8} sm={12}>
             <Row lg={2} className="justify-content-center">
