@@ -61,20 +61,25 @@ export default function AboutMe() {
                 className="img-fluid mb-3 profile-photo"
               />
             </Row>
-            <Row className="text-center credentials">
-              <h2 className="mb-4">Graduate of MSU EDX Bootcamp</h2>
+            <div className="credentials-container">
+            <Row className="text-center credentials d-flex align-items-center">
+              <h3 className="mb-2">Graduate of MSU EDX Bootcamp</h3>
             </Row>
-            <Row className="text-center credentials">
-              <h4 className="mb-4">Full-Stack Web-Developer</h4>
+            <Row className="text-center credentials d-flex align-items-center">
+              <h3 className="mb-4">Student at Grand Rapids Community College, A.A Pre-Computer Science</h3>
             </Row>
+            <Row className="text-center credentials d-flex align-items-center justify-content-center">
+              <h4 className="mb-4"><span className="italic">Full-Stack Web-Developer</span></h4>
+            </Row>
+            </div>
             <Row className="logo-images text-center d-flex align-items-center">
-              <Col sm={4} xs={4}>
+            <Col sm={4} xs={4} className="logo-reflection">
                 <img src={msuLogo} alt="MSU Logo" className="img-fluid" />
               </Col>
-              <Col sm={4} xs={4}>
+              <Col sm={4} xs={4} className="logo-reflection">
                 <img src={edx} alt="edX Logo" className="img-fluid" />
               </Col>
-              <Col sm={4} xs={4}>
+             <Col sm={4} xs={4} className="logo-reflection">
                 <img src={grccLogo} alt="GRCC Logo" className="img-fluid" />
               </Col>
             </Row>

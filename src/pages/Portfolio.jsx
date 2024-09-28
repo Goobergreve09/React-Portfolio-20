@@ -85,8 +85,175 @@ const Portfolio = () => {
     "https://weather-dashboard-greg.netlify.app/"
   );
 
-  const blockbusterDescription = (<>This is a web application with a nostalgic Blockbuster theme. Our team went for a classic HTML ‘blockbuster’ look integrated with modern movie backgrounds and a comfortable UI with user-integration using <a href="https://react-bootstrap.github.io/" target="_blank" rel="noopener noreferrer">React-Bootstrap</a>, <a href="https://devdoc.net/web/developer.mozilla.org/en-US/docs/CSS/CSS3.html" target="_blank" rel="noopener noreferrer">CSS3</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Javascript</a>. It uses RestAPI’s for movies(<a href="https://www.omdbapi.com/" target="_blank" rel="noopener noreferrer">OMDB API</a>) and books(<a href="https://developers.google.com/books" target="_blank" rel="noopener noreferrer">Google Books API</a>) so a user can search for any book or movie that they desire, and not to mention the <a href="https://developers.google.com/youtube/v3" target="_blank" rel="noopener noreferrer">YouTube API</a> from the <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a> framework. Not only is this app requesting information from API’s, but it allows you as a user to save your favorite movies/books which get stored into a database(<a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a>) while also using <a href="https://www.apollographql.com/" target="_blank" rel="noopener noreferrer">Apollo GraphQL</a> for efficient server-side data fetching and storage. You can simply create an account, and begin your search. The motivation behind this project was to create an application so for book lovers and movie lovers alike, can keep tabs on their favorite movies and watchlist. Personally, my primary role was a full-stack web developer. I helped setup queries to the database, implementing the backend server, and creating the design of the front end interface.</>);
-  const weatherDescription = (<>A weather dashboard I created as an individual project using the <a href="https://openweathermap.org/api" target="_blank" rel="noopener noreferrer">OpenWeatherMap API</a>. This dashboard was created using <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a> for a seamless and simple user experience. Its primary purpose is to provide users with their needs accounting for accessibility and simplicity, with this in mind I made sure to add a dark or light mode toggle using React’s <a href="https://react.dev/reference/react/useState" target="_blank" rel="noopener noreferrer">useState</a> hook. Once the user searches for the weather of a particular city, it will almost instantly be displayed. Some of the metrics being requested are temperature (high and low), wind speed, atmospheric pressure, sunset and sunrise, the 5-day forecast, and even the country flag of the city provided. Once a city is searched it will save into <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">localStorage</a>, so the user can then view recent cities searched in the recent searches dropdown. This application uses libraries and languages of the following: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" rel="noopener noreferrer">HTML5</a>, <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS3</a>, <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite</a>, and <a href="https://fontawesome.com/v5/docs/web/use-with/react" target="_blank" rel="noopener noreferrer">Fortawesome</a>.</>)
+  const blockbusterDescription = (
+    <>
+      This is a web application with a nostalgic Blockbuster theme. Our team
+      went for a classic HTML ‘blockbuster’ look integrated with modern movie
+      backgrounds and a comfortable UI with user-integration using{" "}
+      <a
+        href="https://react-bootstrap.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        React-Bootstrap
+      </a>
+      ,{" "}
+      <a
+        href="https://devdoc.net/web/developer.mozilla.org/en-US/docs/CSS/CSS3.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CSS3
+      </a>
+      , and{" "}
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Javascript
+      </a>
+      . It uses RestAPI’s for movies(
+      <a
+        href="https://www.omdbapi.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        OMDB API
+      </a>
+      ) and books(
+      <a
+        href="https://developers.google.com/books"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Google Books API
+      </a>
+      ) so a user can search for any book or movie that they desire, and not to
+      mention the{" "}
+      <a
+        href="https://developers.google.com/youtube/v3"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube API
+      </a>{" "}
+      from the{" "}
+      <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+        React
+      </a>{" "}
+      framework. Not only is this app requesting information from API’s, but it
+      allows you as a user to save your favorite movies/books which get stored
+      into a database(
+      <a
+        href="https://www.mongodb.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        MongoDB
+      </a>
+      ) while also using{" "}
+      <a
+        href="https://www.apollographql.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Apollo GraphQL
+      </a>{" "}
+      for efficient server-side data fetching and storage. You can simply create
+      an account, and begin your search. The motivation behind this project was
+      to create an application so for book lovers and movie lovers alike, can
+      keep tabs on their favorite movies and watchlist. Personally, my primary
+      role was a full-stack web developer. I helped setup queries to the
+      database, implementing the backend server, and creating the design of the
+      front end interface.
+    </>
+  );
+  const weatherDescription = (
+    <>
+      A weather dashboard I created as an individual project using the{" "}
+      <a
+        href="https://openweathermap.org/api"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        OpenWeatherMap API
+      </a>
+      . This dashboard was created using{" "}
+      <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+        React
+      </a>{" "}
+      for a seamless and simple user experience. Its primary purpose is to
+      provide users with their needs accounting for accessibility and
+      simplicity, with this in mind I made sure to add a dark or light mode
+      toggle using React’s{" "}
+      <a
+        href="https://react.dev/reference/react/useState"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        useState
+      </a>{" "}
+      hook. Once the user searches for the weather of a particular city, it will
+      almost instantly be displayed. Some of the metrics being requested are
+      temperature (high and low), wind speed, atmospheric pressure, sunset and
+      sunrise, the 5-day forecast, and even the country flag of the city
+      provided. Once a city is searched it will save into{" "}
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        localStorage
+      </a>
+      , so the user can then view recent cities searched in the recent searches
+      dropdown. This application uses libraries and languages of the following:{" "}
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        JavaScript
+      </a>
+      ,{" "}
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        HTML5
+      </a>
+      ,{" "}
+      <a
+        href="https://getbootstrap.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Bootstrap
+      </a>
+      ,{" "}
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CSS3
+      </a>
+      ,{" "}
+      <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
+        Vite
+      </a>
+      , and{" "}
+      <a
+        href="https://fontawesome.com/v5/docs/web/use-with/react"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Fortawesome
+      </a>
+      .
+    </>
+  );
 
   return (
     <div>
@@ -95,6 +262,7 @@ const Portfolio = () => {
         <div className="projects">
           <Project
             title="Blockbuster 2024"
+            upTime={blockbusterAverageResponseTime}
             technologies={[
               { logoSrc: reactLogo, altText: "React" },
               { logoSrc: bootstrapLogo, altText: "Bootstrap" },
@@ -108,10 +276,13 @@ const Portfolio = () => {
             deployedLink="https://blockbuster2024-clone.onrender.com/"
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
             description={blockbusterDescription}
-            upTime={blockbusterAverageResponseTime}
-            softSkills={[ "Collaboration", "Problem-solving","Debugging","Adaptability","Creativity"]}
-              
-        
+            softSkills={[
+              "Collaboration",
+              "Problem-solving",
+              "Debugging",
+              "Adaptability",
+              "Creativity",
+            ]}
           />
           <Project
             title="Weather Dashboard API"
@@ -129,7 +300,12 @@ const Portfolio = () => {
             githubLink="https://github.com/Goobergreve09/Weather-Dashboard-2.0"
             description={weatherDescription}
             upTime={weatherDashboardAverageResponseTime}
-            softSkills={["Problem-Solving", "Attention to Detail", "User-Centered Design", "Collaboration"]}
+            softSkills={[
+              "Problem-Solving",
+              "Attention to Detail",
+              "User-Centered Design",
+              "Collaboration",
+            ]}
           />
           <Project
             title="Javascript Quiz"
