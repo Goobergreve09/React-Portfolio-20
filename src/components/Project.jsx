@@ -30,6 +30,13 @@ const Project = ({
         <Row>
           <h3 className="project-title p-2">{title}</h3>
         </Row>
+        <Row className="justify-content-center description-container">
+            {upTime && (
+              <p className="uptime-Metrics">
+                Average Response Time: {averageResponseTime} ms
+              </p>
+            )}
+          </Row>
         {technologies && (
           <Row className="technologies-row justify-content-center align-items-center ">
             {technologies.map((tech, index) => (
@@ -65,13 +72,6 @@ const Project = ({
       </Col>
             
             </Row>
-          <Row className="justify-content-center description-container">
-            {upTime && (
-              <p className="uptime-Metrics">
-                Average Response Time: {averageResponseTime} ms
-              </p>
-            )}
-          </Row>
         </Row>
         <Row className="project-links p-1 justify-content-center">
           {deployedLink && (
