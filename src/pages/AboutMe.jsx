@@ -50,7 +50,7 @@ export default function AboutMe() {
   return (
     <div>
       <Header />
-      <Container fluid>
+      <Container fluid className="aboutMe-container">
         <Row className="justify-content-center ">
           <Col lg={6} md={8} sm={12}>
             <Row lg={2} className="justify-content-center">
