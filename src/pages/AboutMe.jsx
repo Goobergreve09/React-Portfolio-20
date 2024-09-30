@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
-import profileImage from "../assets/images/profile.jpg";
+import profileImage from "../assets/images/profile2.jpeg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
@@ -21,11 +21,12 @@ export default function AboutMe() {
   });
 
   const [isVisible, setIsVisible] = useState(false);
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true); // Set visible to true after a delay
-    }, 100); // Adjust the delay as needed
+    }, 1000); // Adjust the delay as needed
 
     const startDate = new Date("2023-09-10T18:00:00"); // September 10th, 2023, at 6:00 PM
     const interval = setInterval(() => {
@@ -35,7 +36,7 @@ export default function AboutMe() {
       const years = Math.floor(elapsedTime / (1000 * 60 * 60 * 24 * 365.25));
       const months = Math.floor(
         (elapsedTime % (1000 * 60 * 60 * 24 * 365.25)) /
-        (1000 * 60 * 60 * 24 * 30.44)
+          (1000 * 60 * 60 * 24 * 30.44)
       );
       const days = Math.floor(
         (elapsedTime % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24)
@@ -57,44 +58,79 @@ export default function AboutMe() {
     };
   }, []);
 
+  const handleButtonClick = () => {
+    setIsButtonClicked(true); // Update state when the button is clicked
+  };
+
   return (
     <div>
       <Header />
-      <Container fluid className={`aboutMe-container ${isVisible ? "visible" : ""}`}>
+      <Container fluid className="aboutMe-container">
         <Row className="justify-content-center ">
           <Col lg={6} md={8} sm={12}>
-            <Row lg={2} className="justify-content-center">
+            <Row lg={2} className="d-flex justify-content-center text-center">
               <ModalImage
                 small={profileImage}
                 large={profileImage}
                 alt="Photo of the developer, Greg Greve"
-                className="img-fluid mb-3 profile-photo"
+                className={`mb-3 profile-photo ${isVisible ? "visible" : ""}`}
               />
             </Row>
-            <div className="credentials-container">
-            <Row className="text-center credentials d-flex align-items-center">
-              <h3 className="mb-2">Graduate of MSU EDX Bootcamp</h3>
+            <Row>
+              {!isButtonClicked && (
+                <Button
+                  onClick={handleButtonClick}
+                  className={`aboutMe-button mt-3 ${
+                    isVisible ? "visible" : ""
+                  }`}
+                >
+                  <span className="glowing-txt">
+                    {" "}
+                    [A<span className="faulty-letter">b</span>out Me]{" "}
+                  </span>
+                </Button>
+              )}
             </Row>
-            <Row className="text-center credentials d-flex align-items-center">
-              <h3 className="mb-4">Student at Grand Rapids Community College, A.A Pre-Computer Science</h3>
-            </Row>
-            <Row className="text-center credentials d-flex align-items-center justify-content-center">
-              <h4 className="mb-4"><span className="italic">Full-Stack Web-Developer</span></h4>
-            </Row>
+            <div
+              className={`credentials-container ${
+                isButtonClicked ? "visible" : ""
+              }`}
+            >
+              <Row className="text-center credentials d-flex align-items-center">
+                <h3 className="mb-2">Graduate of MSU EDX Bootcamp</h3>
+              </Row>
+              <Row className="text-center credentials d-flex align-items-center">
+                <h3 className="mb-4">
+                  Student at Grand Rapids Community College, A.A Pre-Computer
+                  Science
+                </h3>
+              </Row>
+              <Row className="text-center credentials d-flex align-items-center justify-content-center">
+                <h4 className="mb-4">
+                  <span className="italic">Full-Stack Web-Developer</span>
+                </h4>
+              </Row>
             </div>
-            <Row className="logo-images text-center d-flex align-items-center">
-            <Col sm={4} xs={4} className="logo-reflection">
+            <Row
+              className={`logo-images text-center d-flex align-items-center ${
+                isButtonClicked ? "visible" : ""
+              }`}
+            >
+              <Col sm={4} xs={4} className="logo-reflection">
                 <img src={msuLogo} alt="MSU Logo" className="img-fluid" />
               </Col>
               <Col sm={4} xs={4} className="logo-reflection">
                 <img src={edx} alt="edX Logo" className="img-fluid" />
               </Col>
-             <Col sm={4} xs={4} className="logo-reflection">
+              <Col sm={4} xs={4} className="logo-reflection">
                 <img src={grccLogo} alt="GRCC Logo" className="img-fluid" />
               </Col>
             </Row>
           </Col>
-          <Col className="about-text" lg={8}>
+          <Col
+            className={`about-text ${isButtonClicked ? "visible" : ""}`}
+            lg={8}
+          >
             <h2>About the Developer</h2>
             <p className="bio-text">
               <span id="custom-text">Hello World</span>, and welcome to my

@@ -5,6 +5,7 @@
   --gradY: 50%;
   --c1: rgba(168, 239, 255, 1);
   --c2: rgba(168, 239, 255, 0.1);
+  --glow-color: white;
 }
 
 body {
@@ -45,17 +46,6 @@ body {
 
 /* ABOUT ME */
 
-.aboutMe-container {
-  opacity: 0; /* Start as invisible */
-  transform: scale(0.9); /* Start slightly smaller */
-  transition: opacity 5s ease-in-out, transform 5s ease-in-out; /* Smooth transition for both opacity and scale */
-}
-
-.aboutMe-container.visible {
-  opacity: 1; /* Make it visible */
-  transform: scale(1); /* Scale it back to normal size */
-}
-
 .navLink {
   position: relative;
 }
@@ -87,6 +77,9 @@ body {
   max-height: 600px;
   min-width: 50%;
   margin-bottom: 100px;
+  opacity: 0; /* Start as invisible */
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
 }
 
 .about-text a {
@@ -117,15 +110,161 @@ body {
 }
 
 .profile-photo {
-  box-shadow: 0px 0px 20px rgba(252, 250, 250, 0.5);
+  box-shadow: 0px 0px 50px rg;
   border: solid 2px white;
-  transition: 0.3s ease;
   padding: 0;
   margin-top: 10px;
+  opacity: 0; /* Start as invisible */
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+  border-radius: 50%;
+  animation: pulseShadow 2s infinite; /* Apply the pulsing animation */
 }
 
-.profile-photo:hover {
-  box-shadow: 0px 0px 130px rgba(252, 250, 250, 0.5);
+/* Define the keyframes for the heartbeat glow effect */
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0px 0px 30px rgba(252, 250, 250, 0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 40px rgba(252, 250, 250, 1); /* Increase glow intensity and size */
+  }
+  100% {
+    box-shadow: 0px 0px 30px rgba(252, 250, 250, 0.5); /* Back to initial state */
+  }
+}
+.profile-photo.visible {
+  opacity: 1; /* Make it visible */
+  transform: scale(1);
+}
+
+.aboutMe-button {
+  opacity: 0; /* Start as invisible */
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+  font-family: monospace !important;
+  position: relative;
+  color: var(--glow-color);
+  cursor: pointer;
+  background: none;
+  perspective: 2em;
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: 0.35em;
+  text-align: center;
+  padding: 10px;
+  border: none;
+}
+
+.aboutMe-button:active {
+  background-color: inherit !important; /* Keeps the background from changing */
+}
+
+.glowing-txt {
+  margin-right: -0.8em;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  animation: text-flicker 3s linear infinite;
+}
+
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.aboutMe-button.visible {
+  opacity: 1; /* Make it visible */
+  transform: scale(1);
+}
+
+.aboutMe-button:hover {
+  background: none;
+  color: white;
+  border-color: none;
+}
+
+.visible {
+  opacity: 1; /* Make it visible */
+  transform: scale(1);
 }
 
 .bio-text {
@@ -153,6 +292,14 @@ body {
     )
     30;
   animation: borderRotate var(--d) linear infinite forwards;
+  opacity: 0; /* Start as invisible */
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+.credentials-container.visible {
+  opacity: 1; /* Make it visible */
+  transform: scale(1);
 }
 
 @keyframes borderRotate {
@@ -205,6 +352,17 @@ body {
 .logo-images img {
   max-width: 150px;
   padding: 10px;
+}
+
+.logo-images {
+  opacity: 0; /* Start as invisible */
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+.logo-images.visible {
+  opacity: 1; /* Make it visible */
+  transform: scale(1);
 }
 
 /* RESUME */
@@ -505,11 +663,6 @@ header {
 
   header {
     text-align: center;
-    background-color: black; /* Fallback color */
-    border-bottom: double 2px #fff;
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Black-Backgrounds-Free-Download-620x349.jpg");
-    background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the background image */
   }
 
   .nav-links {
@@ -647,11 +800,27 @@ header {
     max-width: 90%;
     border-radius: 15px;
   }
+
+  .aboutMe-button {
+    width: 200px;
+    padding: 0;
+  }
+
+  .profile-photo {
+    width: 300px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 350px) {
   .logo-images img {
     max-width: 75px;
     padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMe-button {
+    font-size: 1.35em;
   }
 }
