@@ -447,6 +447,7 @@ h4 {
   background-size: cover;
   color: whitesmoke;
   border-bottom: solid 5px whitesmoke;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .project:last-child {
@@ -470,6 +471,7 @@ h4 {
   border-radius: 25px;
   padding: 10px;
   width: 75%;
+
 }
 
 .project-description a {
@@ -599,6 +601,11 @@ header {
   color: white;
   font-family: "Manrope", sans-serif;
   font-size: large;
+}
+
+.github-container {
+
+ 
 }
 
 .userName {

@@ -34,7 +34,7 @@ function GitHub() {
   return (
     <>
       <Header />
-      <Container fluid style={{ marginBottom: "125px" }}>
+      <Container fluid className="github-container" style={{ marginBottom: "125px" }}>
         {userData && (
           <div>
             <Container fluid>
