@@ -59,7 +59,7 @@ export default function AboutMe() {
   }, []);
 
   const handleButtonClick = () => {
-    setIsButtonClicked(true); // Update state when the button is clicked
+    setIsButtonClicked(true); // Hide button
   };
 
   return (
@@ -86,7 +86,7 @@ export default function AboutMe() {
                 >
                   <span className="glowing-txt">
                     {" "}
-                    [A<span className="faulty-letter">b</span>out Me]{" "}
+                    [C<span className="faulty-letter">l</span>ick Me]{" "}
                   </span>
                 </Button>
               )}
