@@ -23,7 +23,7 @@ const Project = ({
 
       <Col className="align-items-center justify-content-center text-center">
         <Row className="justify-content-center">
-          <ModalImage small={image} large={image} alt={title} />
+          <ModalImage small={image} large={image} alt={title} className="project-thumbnail" />
         </Row>
         <Row>
           <h3 className="project-title p-2">{title}</h3>

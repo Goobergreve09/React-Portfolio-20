@@ -34,9 +34,9 @@ const Portfolio = () => {
 
   useEffect(() => {
     const apiUrl =
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:5000/api/uptime" // Use the local Express server during development
-      : "/.netlify/functions/uptime"; 
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:5000/api/uptime" // Use the local Express server during development
+        : "/.netlify/functions/uptime";
 
     const getAverageResponseTimes = async () => {
       try {
@@ -80,7 +80,6 @@ const Portfolio = () => {
   const weatherDashboardAverageResponseTime = getUpTimeForProject(
     "https://weather-dashboard-greg.netlify.app/"
   );
-
 
   const blockbusterDescription = (
     <>
@@ -254,31 +253,148 @@ const Portfolio = () => {
 
   const javascriptDescription = (
     <>
-The JavaScript Quiz Application deployed on <a href="https://render.com/" target="_blank" rel="noopener noreferrer">Render</a> is a user-friendly web-based quiz platform designed to test users' knowledge of JavaScript programming concepts. Built with simplicity and functionality in mind, this application provides an interactive way for users to assess their understanding of JavaScript while offering an enjoyable learning experience. It is a timed quiz with rules to the scoring. Keep results of your high scores and see where you rank among others with a global-highscores page, all being stored in a <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a> database.
-
-I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.js</a> for the frontend, and for my backend, I used technologies like <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a>, <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">Express.js</a>, <a href="https://www.apollographql.com/" target="_blank" rel="noopener noreferrer">Apollo GraphQL</a>, and <a href="https://www.npmjs.com/package/bcrypt" target="_blank" rel="noopener noreferrer">bcrypt</a>. This application is also responsive, so you can test your skills on mobile.
-
+      The JavaScript Quiz Application deployed on{" "}
+      <a href="https://render.com/" target="_blank" rel="noopener noreferrer">
+        Render
+      </a>{" "}
+      is a user-friendly web-based quiz platform designed to test users'
+      knowledge of JavaScript programming concepts. Built with simplicity and
+      functionality in mind, this application provides an interactive way for
+      users to assess their understanding of JavaScript while offering an
+      enjoyable learning experience. It is a timed quiz with rules to the
+      scoring. Keep results of your high scores and see where you rank among
+      others with a global-highscores page, all being stored in a{" "}
+      <a
+        href="https://www.mongodb.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        MongoDB
+      </a>{" "}
+      database. I used{" "}
+      <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+        React.js
+      </a>{" "}
+      for the frontend, and for my backend, I used technologies like{" "}
+      <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+        Node.js
+      </a>
+      ,{" "}
+      <a
+        href="https://expressjs.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Express.js
+      </a>
+      ,{" "}
+      <a
+        href="https://www.apollographql.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Apollo GraphQL
+      </a>
+      , and{" "}
+      <a
+        href="https://www.npmjs.com/package/bcrypt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        bcrypt
+      </a>
+      . This application is also responsive, so you can test your skills on
+      mobile.
     </>
-  )
+  );
 
   const readMeDescription = (
     <>
-    This <a href="https://www.geeksforgeeks.org/what-is-readme-md-file/" target="_blank" rel="noopener noreferrer">readMe.md</a> generator has been an important aspect to all my projects. After all, a read me is essential for communicating usage and guidelines for each application. A user can download and use this for themselves with instructions directed in the repository link listed below. The application uses <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">Node-Package-Manager</a>, <a href="https://www.npmjs.com/package/inquirer" target="_blank" rel="noopener noreferrer">inquirer</a>, and <a href="https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback" target="_blank" rel="noopener noreferrer">writeFile</a> libraries. After the user activates the prompts by typing ‘node index.js’ into the terminal a list of prompts will then be answered, using <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> and <a href="https://www.npmjs.com/package/prompt" target="_blank" rel="noopener noreferrer">prompt</a>. After all necessary prompts have been answered, the user will now have a high quality readMe.md with the license of their choice included. This also includes the user contact information to be viewed at the bottom of the document, as well as a ‘Table of Contents’ for easy navigation.
-
+      This{" "}
+      <a
+        href="https://www.geeksforgeeks.org/what-is-readme-md-file/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        readMe.md
+      </a>{" "}
+      generator has been an important aspect to all my projects. After all, a
+      read me is essential for communicating usage and guidelines for each
+      application. A user can download and use this for themselves with
+      instructions directed in the repository link listed below. The application
+      uses{" "}
+      <a
+        href="https://www.npmjs.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Node-Package-Manager
+      </a>
+      ,{" "}
+      <a
+        href="https://www.npmjs.com/package/inquirer"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        inquirer
+      </a>
+      , and{" "}
+      <a
+        href="https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        writeFile
+      </a>{" "}
+      libraries. After the user activates the prompts by typing ‘node index.js’
+      into the terminal a list of prompts will then be answered, using{" "}
+      <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+        Node.js
+      </a>{" "}
+      and{" "}
+      <a
+        href="https://www.npmjs.com/package/prompt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        prompt
+      </a>
+      . After all necessary prompts have been answered, the user will now have a
+      high quality readMe.md with the license of their choice included. This
+      also includes the user contact information to be viewed at the bottom of
+      the document, as well as a ‘Table of Contents’ for easy navigation.
     </>
-  )
+  );
 
   const employeeDescription = (
     <>
-      This application was created and is used for backend development. This is an employee manager created with the 
-      <a href="https://www.npmjs.com/package/mysql2" target="_blank" rel="noopener noreferrer"> MySQL2</a> node package. 
-      It is an application designed for companies to view, update, and manage the employees through a database. It allows you to add, view, 
-      delete roles, departments, and employees within a company. The application is used by the user through a series of prompts to be answered 
-      in the command line using nodes 
-      <a href="https://www.npmjs.com/package/inquirer" target="_blank" rel="noopener noreferrer"> Inquirer</a> package. 
-      These answers directly affect the employee manager database and are meant for a user to actively manipulate information in a database. 
-      You can view the demonstration video of how a user can use this application directly from my 
-      GitHub repository as linked below.
+      This application was created and is used for backend development. This is
+      an employee manager created with the
+      <a
+        href="https://www.npmjs.com/package/mysql2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        MySQL2
+      </a>{" "}
+      node package. It is an application designed for companies to view, update,
+      and manage the employees through a database. It allows you to add, view,
+      delete roles, departments, and employees within a company. The application
+      is used by the user through a series of prompts to be answered in the
+      command line using nodes
+      <a
+        href="https://www.npmjs.com/package/inquirer"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        Inquirer
+      </a>{" "}
+      package. These answers directly affect the employee manager database and
+      are meant for a user to actively manipulate information in a database. You
+      can view the demonstration video of how a user can use this application
+      directly from my GitHub repository as linked below.
     </>
   );
 
@@ -355,7 +471,7 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
               "Critical Thinking",
               "Adaptability",
               "Attention to Detail",
-              "Creativity"
+              "Creativity",
             ]}
           />
           {/* <Project
@@ -447,7 +563,7 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
               "Communication",
               "User Empathy",
               "Time Management",
-              "Critical Thinking"
+              "Critical Thinking",
             ]}
           />
           <Project
@@ -466,7 +582,7 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
               "Attention to Detail",
               "Collaboration",
               "Time Management",
-              "Adaptability"
+              "Adaptability",
             ]}
           />
           <Project
