@@ -26,7 +26,7 @@ export default function AboutMe() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true); // Set visible to true after a delay
-    }, 1000); // Adjust the delay as needed
+    }, 1000); 
 
     const startDate = new Date("2023-09-10T18:00:00"); // September 10th, 2023, at 6:00 PM
     const interval = setInterval(() => {

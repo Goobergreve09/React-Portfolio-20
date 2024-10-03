@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Project from "../components/Project";
 import Weather from "../assets/images/weatherr.jpg";
-import slAPI from "../assets/images/slAPI.png";
-import brewZip from "../assets/images/brew-zip.png";
 import readMe from "../assets/images/read-me.jpg";
 import employee from "../assets/images/employee.jpg";
 import techBlog from "../assets/images/tech-blog.jpg";
@@ -16,8 +14,6 @@ import quiz from "../assets/images/quiz.jpg";
 import Blockbuster from "../assets/images/Blockbuster.png";
 import adam from "../assets/images/adam.jpg";
 import rolePlay from "../assets/images/rolePlay.jpg";
-import photography from "../assets/images/photography.jpg";
-
 import reactLogo from "../assets/images/reactLogo.png";
 import bootstrapLogo from "../assets/images/bootstrapLogo.png";
 import mongoDBlogo from "../assets/images/mongoDB.png";
@@ -28,7 +24,7 @@ import cssLogo from "../assets/images/cssLogo.png";
 import htmlLogo from "../assets/images/htmlLogo.png";
 import mysqlLogo from "../assets/images/mysqlLogo.png";
 import sequelizeLogo from "../assets/images/sequelizeLogo.png";
-import tailwindLogo from "../assets/images/tailwindLogo.png";
+// import tailwindLogo from "../assets/images/tailwindLogo.png";
 import handlebarsLogo from "../assets/images/handlebarsLogo.png";
 import expressLogo from "../assets/images/expressLogo.png";
 import squarespaceLogo from "../assets/images/squarespaceLogo.png";
@@ -84,9 +80,7 @@ const Portfolio = () => {
   const weatherDashboardAverageResponseTime = getUpTimeForProject(
     "https://weather-dashboard-greg.netlify.app/"
   );
-  const photographyAverageResponseTime = getUpTimeForProject(
-    "https://weather-dashboard-greg.netlify.app/"
-  );
+
 
   const blockbusterDescription = (
     <>
@@ -267,6 +261,13 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
     </>
   )
 
+  const readMeDescription = (
+    <>
+    This <a href="https://www.geeksforgeeks.org/what-is-readme-md-file/" target="_blank" rel="noopener noreferrer">readMe.md</a> generator has been an important aspect to all my projects. After all, a read me is essential for communicating usage and guidelines for each application. A user can download and use this for themselves with instructions directed in the repository link listed below. The application uses <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">Node-Package-Manager</a>, <a href="https://www.npmjs.com/package/inquirer" target="_blank" rel="noopener noreferrer">inquirer</a>, and <a href="https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback" target="_blank" rel="noopener noreferrer">writeFile</a> libraries. After the user activates the prompts by typing ‘node index.js’ into the terminal a list of prompts will then be answered, using <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> and <a href="https://www.npmjs.com/package/prompt" target="_blank" rel="noopener noreferrer">prompt</a>. After all necessary prompts have been answered, the user will now have a high quality readMe.md with the license of their choice included. This also includes the user contact information to be viewed at the bottom of the document, as well as a ‘Table of Contents’ for easy navigation.
+
+    </>
+  )
+
   return (
     <div>
       <Header />
@@ -343,7 +344,7 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
               "Creativity"
             ]}
           />
-          <Project
+          {/* <Project
             title="Photography Portfolio"
             image={photography}
             technologies={[
@@ -416,7 +417,7 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
              furnish beer aficionados with a robust search platform that not only facilitates brewery 
              exploration but also offers invaluable insights into weather conditions, thereby enhancing their 
              overall brewery-visiting experience."
-          />
+          /> */}
           <Project
             title="ReadMe Generator"
             technologies={[
@@ -426,12 +427,14 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
             image={readMe}
             alt="Read-Me Generator Thumbnail"
             githubLink="https://github.com/Goobergreve09/read-me-generator"
-            description="A readME.md is a very important aspect to your project. It is also the go-to
-             file for anyone to open or view your project. I have created an easy way to makeup a readME.md
-              by only answering a few prompts in the terminal. All of the information about your Github
-               project will be accessed here. The backend application uses the command line to create a readme by answering prompts
-                by node's inquirer package. It us Node's fs and readline to create the readMe.md document. 
-                This is something I still use on a weekly basis."
+            description={readMeDescription}
+            softSkills={[
+              "Problem-Solving",
+              "Communication",
+              "User Empathy",
+              "Time Management",
+              "Critical Thinking"
+            ]}
           />
           <Project
             title="Employee Manager"

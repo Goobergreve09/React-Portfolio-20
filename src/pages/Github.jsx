@@ -8,7 +8,6 @@ import {
   Dropdown,
   Button,
 } from "react-bootstrap";
-// import techGif from "../assets/images/techGif.gif";
 import statsGif from "../assets/images/statsGif.gif";
 import { fetchGitHubUserData } from "../utils/githubFetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

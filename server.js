@@ -18,19 +18,19 @@ app.get("/api/uptime", async (req, res) => {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: new URLSearchParams({
-        api_key: process.env.API_KEY, // Use your main API key
+        api_key: process.env.API_KEY, 
         format: "json",
         response_times: "1",
       }),
     });
 
-    // Log the response status
+    
     console.log("Response Status:", response.status);
 
-    const data = await response.json(); // Get the JSON response
-    console.log("Uptime Data:", data); // Log the Uptime data
+    const data = await response.json(); 
+    console.log("Uptime Data:", data);
 
-    res.json(data); // Send the data as a response
+    res.json(data); 
   } catch (error) {
     console.error("Error fetching data:", error);
     res.status(500).send("Error fetching uptime data");

@@ -28,7 +28,7 @@ body {
     0,
     0,
     0.9
-  ) !important; /* Black color with 50% opacity */
+  ) !important; 
   color: white;
   padding-top: 50px;
   text-align: center;
@@ -77,8 +77,8 @@ body {
   max-height: 600px;
   min-width: 50%;
   margin-bottom: 100px;
-  opacity: 0; /* Start as invisible */
-  transform: scale(0.9); /* Start slightly smaller */
+  opacity: 0; 
+  transform: scale(0.9); 
   transition: opacity 5s ease-in-out, transform 5s ease-in-out;
 }
 
@@ -134,13 +134,13 @@ body {
   }
 }
 .profile-photo.visible {
-  opacity: 1; /* Make it visible */
+  opacity: 1; 
   transform: scale(1);
 }
 
 .aboutMe-button {
-  opacity: 0; /* Start as invisible */
-  transform: scale(0.9); /* Start slightly smaller */
+  opacity: 0; 
+  transform: scale(0.9); 
   transition: opacity 5s ease-in-out, transform 5s ease-in-out;
   font-family: monospace !important;
   position: relative;
@@ -157,7 +157,7 @@ body {
 }
 
 .aboutMe-button:active {
-  background-color: inherit !important; /* Keeps the background from changing */
+  background-color: inherit !important; 
 }
 
 .glowing-txt {
@@ -252,7 +252,7 @@ body {
 }
 
 .aboutMe-button.visible {
-  opacity: 1; /* Make it visible */
+  opacity: 1; 
   transform: scale(1);
 }
 
@@ -262,10 +262,6 @@ body {
   border-color: none;
 }
 
-.visible {
-  opacity: 1; /* Make it visible */
-  transform: scale(1);
-}
 
 .bio-text {
   font-size: 20px;
@@ -292,13 +288,13 @@ body {
     )
     30;
   animation: borderRotate var(--d) linear infinite forwards;
-  opacity: 0; /* Start as invisible */
-  transform: scale(0.9); /* Start slightly smaller */
+  opacity: 0; 
+  transform: scale(0.9); 
   transition: opacity 5s ease-in-out, transform 5s ease-in-out;
 }
 
 .credentials-container.visible {
-  opacity: 1; /* Make it visible */
+  opacity: 1;
   transform: scale(1);
 }
 
@@ -355,13 +351,13 @@ body {
 }
 
 .logo-images {
-  opacity: 0; /* Start as invisible */
-  transform: scale(0.9); /* Start slightly smaller */
+  opacity: 0; 
+  transform: scale(0.9); 
   transition: opacity 5s ease-in-out, transform 5s ease-in-out;
 }
 
 .logo-images.visible {
-  opacity: 1; /* Make it visible */
+  opacity: 1; 
   transform: scale(1);
 }
 
@@ -395,7 +391,7 @@ body {
 }
 
 .icon-spacing {
-  margin-right: 100px; /* Adjust the value as needed */
+  margin-right: 100px; 
 }
 
 .icon-container {
@@ -426,8 +422,8 @@ h4 {
 }
 
 .btn {
-  display: block; /* Ensure it takes up the full width */
-  margin: 0 auto; /* Center horizontally */
+  display: block; 
+  margin: 0 auto; 
   width: 300px;
   font-size: 26px;
   font-family: "Manrope", sans-serif;
@@ -657,8 +653,8 @@ header {
   /* Header and Nav */
 
   .navbar {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start of the column */
+    flex-direction: column; 
+    align-items: flex-start; 
     align-items: center;
   }
 
@@ -667,12 +663,12 @@ header {
   }
 
   .nav-links {
-    display: none; /* Hide nav links by default */
+    display: none; 
     flex-direction: column;
     align-items: center;
     width: 100%;
     position: absolute;
-    top: 70px; /* Adjust this value as needed */
+    top: 70px; 
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
@@ -717,16 +713,16 @@ header {
 
   /* For WebKit browsers (Chrome, Safari, Edge) */
   .project-description::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+    width: 10px; 
   }
 
   .project-description::-webkit-scrollbar-thumb {
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
   }
 
   /* Ensures scrollbar is always visible */
   .project-description {
-    overflow-y: scroll; /* Use scroll to always show the scrollbar */
+    overflow-y: scroll; 
   }
 
   .softSkillsTitle {
@@ -761,8 +757,8 @@ header {
   }
 
   .icon-container {
-    display: flex; /* Use flexbox to control the layout */
-    flex-direction: column; /* Stack items vertically */
+    display: flex; 
+    flex-direction: column; 
     font-size: 12px;
     padding-bottom: 75px;
     background-color: whitesmoke;
@@ -778,7 +774,7 @@ header {
   }
 
   .contact {
-    text-align: center; /* Center text within the contact container */
+    text-align: center; 
   }
 
   .contact h2,

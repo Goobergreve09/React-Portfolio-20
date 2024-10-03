@@ -1,5 +1,4 @@
 import { Row, Col, Container } from "react-bootstrap";
-import projectBackground from "../assets/images/projectBackground.jpg";
 import skillsArrow from "../assets/images/softSkillsArrow.png"
 
 import ModalImage from "react-modal-image";
@@ -21,7 +20,6 @@ const Project = ({
       className="project"
       style={{ backgroundImage: `url(https://clipart-library.com/images_k/space-png-transparent/space-png-transparent-4.png)`, backgroundSize:'1000px', backgroundRepeat:'no-repeat'}}
     >
-      {/* image from https://www.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_38129027.htm#fromView=search&page=4&position=8&uuid=054666d7-c24f-4630-8448-b8d7d6776951 Image by Mateus Andre on Freepik */}
 
       <Col className="align-items-center justify-content-center text-center">
         <Row className="justify-content-center">
