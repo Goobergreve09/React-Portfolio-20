@@ -6,6 +6,7 @@
   --c1: rgba(168, 239, 255, 1);
   --c2: rgba(168, 239, 255, 0.1);
   --glow-color: white;
+  --hover-glow-color:#40E0D0 ;
 }
 
 body {
@@ -161,6 +162,12 @@ body {
   border: none;
 }
 
+.aboutMe-button:hover{
+  color:var(--hover-glow-color);
+  background: none;
+  border-color: var(--hover-glow-color);
+}
+
 .aboutMe-button:active {
   background-color: inherit !important; 
 }
@@ -175,9 +182,16 @@ body {
   animation: text-flicker 3s linear infinite;
 }
 
+.glowing-txt:hover {
+  -webkit-text-shadow: 0 0 0.125em var(--hover-glow-color),
+    0 0 0.45em var(--hover-glow-color);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--hover-glow-color);
+  text-shadow: 0 0 0.200em var(--hover-glow-color), 0 0 0.45em var(--hover-glow-color);
 .faulty-letter {
   opacity: 0.5;
   animation: faulty-flicker 2s linear infinite;
+}
 }
 
 @keyframes faulty-flicker {
@@ -259,12 +273,6 @@ body {
 .aboutMe-button.visible {
   opacity: 1; 
   transform: scale(1);
-}
-
-.aboutMe-button:hover {
-  background: none;
-  color: white;
-  border-color: none;
 }
 
 
