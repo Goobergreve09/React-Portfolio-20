@@ -268,6 +268,20 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
     </>
   )
 
+  const employeeDescription = (
+    <>
+      This application was created and is used for backend development. This is an employee manager created with the 
+      <a href="https://www.npmjs.com/package/mysql2" target="_blank" rel="noopener noreferrer"> MySQL2</a> node package. 
+      It is an application designed for companies to view, update, and manage the employees through a database. It allows you to add, view, 
+      delete roles, departments, and employees within a company. The application is used by the user through a series of prompts to be answered 
+      in the command line using nodes 
+      <a href="https://www.npmjs.com/package/inquirer" target="_blank" rel="noopener noreferrer"> Inquirer</a> package. 
+      These answers directly affect the employee manager database and are meant for a user to actively manipulate information in a database. 
+      You can view the demonstration video of how a user can use this application directly from my 
+      GitHub repository as linked below.
+    </>
+  );
+
   return (
     <div>
       <Header />
@@ -446,7 +460,14 @@ I used <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
             image={employee}
             alt="Employee Manager Thumbnail"
             githubLink="https://github.com/Goobergreve09/employee-manager-backend"
-            description="This application was created and is used for backend development. This is an employee manager created with the mysql2 node package. It's an application designed for company's to view,update,and manage the employees through a database. It allows you to add,view, adelete roles, departments, and employees within a company. The application is used by the user through a series of prompts to be answered in the command line using nodes inquirer package. These answers directly effect the employee manager database."
+            description={employeeDescription}
+            softSkills={[
+              "Problem-Solving",
+              "Attention to Detail",
+              "Collaboration",
+              "Time Management",
+              "Adaptability"
+            ]}
           />
           <Project
             title="Tech-Blog"

@@ -42,33 +42,11 @@ body {
 }
 
 .footer a:hover {
-  color: #3795ff !important;
+  color: var(--hover-glow-color)!important;
 }
 
 /* ABOUT ME */
 
-.navLink {
-  position: relative;
-}
-
-.navLink::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: #3795ff;
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.navLink:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
 
 .about-text {
   background-color: whitesmoke;
@@ -175,9 +153,9 @@ body {
 .glowing-txt {
   margin-right: -0.8em;
   -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
+    0 0 0.45em var(--hover-glow-color);
   -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
+    0 0 0.45em var(--hov);
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
   animation: text-flicker 3s linear infinite;
 }
@@ -187,7 +165,7 @@ body {
     0 0 0.45em var(--hover-glow-color);
   -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
     0 0 0.45em var(--hover-glow-color);
-  text-shadow: 0 0 0.200em var(--hover-glow-color), 0 0 0.45em var(--hover-glow-color);
+  text-shadow: 0 0 0.200em hsl(0 0% 100% / 0.8), 0 0 0.45em var(--hover-glow-color);
 .faulty-letter {
   opacity: 0.5;
   animation: faulty-flicker 2s linear infinite;
@@ -595,12 +573,18 @@ header {
 }
 
 .nav-links li a:hover {
-  color: #3795ff;
+  color: var(--hover-glow-color);
+  text-shadow: 0px 0px 1px var(--hover-glow-color), /* Outer glow */
+  0px 0px 8px var(--hover-glow-color), /* Stronger outer glow */
+  0px 0px 20px var(--hover-glow-color);
 }
 
 .nav-links li a.active {
   font-weight: bold;
-  color: #3795ff;
+  color: var(--hover-glow-color);
+  text-shadow: 0px 0px 1px var(--hover-glow-color), /* Outer glow */
+  0px 0px 8px var(--hover-glow-color), /* Stronger outer glow */
+  0px 0px 20px var(--hover-glow-color);
 }
 
 /* Github */
