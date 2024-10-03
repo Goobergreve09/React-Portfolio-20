@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 import { loadFireflyPreset } from "tsparticles-preset-firefly";
 
 
