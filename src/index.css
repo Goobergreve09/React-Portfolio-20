@@ -805,6 +805,7 @@ header {
   .aboutMe-button {
     width: 200px;
     padding: 0;
+    font-size: 20px;
   }
 
   .profile-photo {
