@@ -398,6 +398,109 @@ const Portfolio = () => {
     </>
   );
 
+  const techDescription = (
+    <>
+      <p>
+        This is a blog for tech lovers and blog lovers alike. With{" "}
+        <a
+          href="https://www.codecademy.com/article/what-is-crud"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CRUD
+        </a>{" "}
+        being implemented for users to add, remove, edit, and delete content
+        from the SQL database. This application uses{" "}
+        <a
+          href="https://handlebarsjs.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Handlebars
+        </a>
+        ,
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CSS3
+        </a>
+        , and{" "}
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HTML5
+        </a>
+        for the frontend and{" "}
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          JavaScript
+        </a>{" "}
+        for user engagement. The backend server uses Node’s{" "}
+        <a
+          href="https://sequelize.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sequelize ORM
+        </a>{" "}
+        library to interact with the{" "}
+        <a
+          href="https://www.mysql.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MySQL
+        </a>{" "}
+        database and define rules for validation. A user can signup and login as
+        well as make and delete their own posts.
+      </p>
+    </>
+  );
+
+  const pwgenerateDescription = (
+    <>
+      <p>
+        This is almost as simple of an application as you can get with this
+        password generator. It uses{" "}
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CSS3
+        </a>{" "}
+        and
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HTML5
+        </a>{" "}
+        for the frontend and
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          JavaScript
+        </a>{" "}
+        for logic and user engagement. A function was created to generate a
+        password for the user with the click of a button, and a user can click
+        the copy password button to simply copy the password as they deem
+        necessary. You can try it out and use it yourself at the deployment link
+        below.
+      </p>
+    </>
+  );
+
   return (
     <div>
       <Header />
@@ -599,8 +702,14 @@ const Portfolio = () => {
             alt="Tech Blog Thumbnail"
             deployedLink="https://techblogbackend-9bd2896f57e1.herokuapp.com/"
             githubLink="https://github.com/Goobergreve09/tech-blog-backend"
-            description="
-            As part of module 14 of the EDX web development bootcamp offered by Michigan State University, I developed a tech blog meeting specific criteria. This included implementing functional login and signup forms, enabling signed-in users to create, edit, and delete posts, as well as allowing users to add comments to posts. Additionally, each post and comment displayed the username and date of the content. The blog featured a user-friendly interface with accessible links for seamless navigation."
+            description={techDescription}
+            softSkills={[
+              "Collaboration",
+              "Problem-solving",
+              "Attention to Detail",
+              "Communication",
+              "Adaptability",
+            ]}
           />
           <Project
             title="Password Generator"
@@ -613,8 +722,13 @@ const Portfolio = () => {
             alt="Password Generator Thumbnail"
             deployedLink="https://goobergreve09.github.io/js-password-generate/"
             githubLink="https://github.com/Goobergreve09/js-password-generate"
-            description="
-           This is a simple password generator using javascript. You will be prompted to use only certain criteria for the password, and then the password is created when generate password is clicked. Try it!"
+            description={pwgenerateDescription}
+            softSkills={[
+              "Problem-solving",
+              "Attention to Detail",
+              "User-Centric Thinking",
+              "Creativity",
+            ]}
           />
           <Project
             title="Work Day Scheduler"
