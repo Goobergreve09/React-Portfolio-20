@@ -3,7 +3,7 @@ import resumeFile from "../assets/Resume.pdf";
 import certification from "../assets/Certification.pdf";
 import { Row, Col, Container } from "react-bootstrap";
 import { TbH5 } from "react-icons/tb";
-import { FaCheckCircle, FaPhoneSquareAlt} from "react-icons/fa";
+import { FaCheckCircle, FaPhoneSquareAlt } from "react-icons/fa";
 import { IoIosSchool, IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -70,9 +70,9 @@ const Resume = () => {
     <div>
       <Header />
       <div className="container pt-4 resume">
-        <Row>
+        <Row className="text-center">
           <Col sm={12} lg={6}>
-          <h2 className="wordGlow"> Download Resume</h2>
+            <h2> Download Resume</h2>
             <a href={resumeFile} download>
               <i className="bi bi-download" style={{ fontSize: "48px" }}></i>
             </a>
@@ -85,20 +85,35 @@ const Resume = () => {
           </Col>
         </Row>
         <Container>
-          <Row className="pb-0">
+          <Row className="pb-0 text-center">
             <Col className="resumeHeader">
               <h3>Gregory M. Greve</h3>
             </Col>
           </Row>
           <Row className="pt-3 d-flex align-items-center">
             <Col sm={12} lg={4} className="resumeSubHeader">
-              <h5><span className="iconGlow"><FaPhoneSquareAlt/></span> +1(231)-740-1594</h5>
+              <h5>
+                <span className="iconGlow">
+                  <FaPhoneSquareAlt />
+                </span>{" "}
+                +1(231)-740-1594
+              </h5>
             </Col>
             <Col sm={12} lg={4} className="resumeSubHeader">
-<h5><span className="iconGlow"><IoIosMail/></span>gregory.greve@yahoo.com</h5>
+              <h5>
+                <span className="iconGlow">
+                  <IoIosMail />
+                </span>
+                gregory.greve@yahoo.com
+              </h5>
             </Col>
             <Col sm={12} lg={4} className="resumeSubHeader">
-              <h5><span className="iconGlow"><FaLocationDot /></span>Grand Rapids, MI</h5>
+              <h5>
+                <span className="iconGlow">
+                  <FaLocationDot />
+                </span>
+                Grand Rapids, MI
+              </h5>
             </Col>
           </Row>
           <Row className="pb-0">
@@ -125,7 +140,7 @@ const Resume = () => {
           </Row>
           <div className="row">
             {proficiencies.map((proficiency, index) => (
-              <div className="col-md-4 mb-4" key={index}>
+              <div className="col-md-4 mb-4 text-center" key={index}>
                 <div
                   className="border p-3 rounded"
                   style={{ backgroundColor: "white" }}
@@ -347,15 +362,21 @@ const Resume = () => {
           <Row className="pb-0">
             <Col className="d-flex justify-content-start">
               <h6 className="jobDescription">
-                Grand Rapids Community College, Grand Rapids, MI | 2024 -
-                Present{" "}
+                <a
+                  href="https://www.grcc.edu/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Grand Rapids Community College
+                </a>
+                , Grand Rapids, MI | 2024 - Present{" "}
               </h6>
             </Col>
           </Row>
           <Row className="pb-0 d-flex justify-content-start">
             <Col className="d-flex justify-content-start">
               <h5 className="bulletedPoint">
-                <span className="checkPoint">
+                <span className="checkPointScholar">
                   <IoIosSchool />
                 </span>{" "}
                 Current student working toward an A.A in Pre-Computer Science.
@@ -365,7 +386,7 @@ const Resume = () => {
           <Row className="pb-0 d-flex justify-content-start">
             <Col className="d-flex justify-content-start">
               <h5 className="bulletedPoint">
-                <span className="checkPoint">
+                <span className="checkPointScholar">
                   <IoIosSchool />
                 </span>{" "}
                 Focus on learning different programming languages, foundational
@@ -376,7 +397,7 @@ const Resume = () => {
           <Row className="pb-0 d-flex justify-content-start">
             <Col className="d-flex justify-content-start">
               <h5 className="bulletedPoint">
-                <span className="checkPoint">
+                <span className="checkPointScholar">
                   <IoIosSchool />
                 </span>
                 <span className="boldText">Coursework Includes:</span>{" "}
@@ -395,14 +416,21 @@ const Resume = () => {
           <Row className="pb-0">
             <Col className="d-flex justify-content-start">
               <h6 className="jobDescription">
-                Michigan State University, Virtual | 2023 - 2024{" "}
+                <a
+                  href="https://msu.edu/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Michigan State University
+                </a>
+                , Virtual | 2023 - 2024{" "}
               </h6>
             </Col>
           </Row>
           <Row className="pb-0 d-flex justify-content-start">
             <Col className="d-flex justify-content-start">
               <h5 className="bulletedPoint text-left">
-                <span className="checkPoint">
+                <span className="checkPointScholar">
                   <IoIosSchool />
                 </span>{" "}
                 Gained proficiency in JavaScript, CSS3, HTML5, Node.js,
