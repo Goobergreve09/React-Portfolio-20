@@ -350,7 +350,7 @@ body {
 .resume {
   text-align: center;
   padding-bottom: 100px;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: "Manrope", sans-serif;
 }
 
@@ -362,8 +362,18 @@ body {
   padding-right: 20px;
 }
 
-.resumeHeader, .resumeSubHeader, .sectionTitle, .summaryText, .jobHeader, .jobDescription, .bulletedPoint {
+.resumeHeader,
+.resumeSubHeader,
+.sectionTitle,
+.summaryText,
+.jobHeader,
+.jobDescription,
+.bulletedPoint {
   color: whitesmoke;
+}
+
+.resumeHeader {
+  border-top: 2px solid white;
 }
 .bulletedPoint {
   margin-left: 20px;
@@ -373,18 +383,33 @@ body {
 }
 .jobHeader {
   font-weight: bold;
+  color:orange;
+  text-shadow: 0px 0px 1px orangered,
+  /* Outer glow */ 0px 0px 8px orangered,
+  /* Stronger outer glow */ 0px 0px 20px orange;
+}
+
+
+
+.iconGlow {
+  color:var(--hover-glow-color);
+ 
 }
 .sectionTitle {
   border-top: 2px solid whitesmoke;
+  color:var(--hover-glow-color);
+  text-shadow: 0px 0px 1px var(--hover-glow-color),
+  /* Outer glow */ 0px 0px 8px var(--hover-glow-color),
+  /* Stronger outer glow */ 0px 0px 20px var(--hover-glow-color);
 }
 
 .jobDescription a {
   text-decoration: none;
-  color:#3795ff;
+  color: #3795ff;
 }
 
 .jobDescription a:hover {
-color:var(--hover-glow-color)
+  color: var(--hover-glow-color);
 }
 
 .summaryText {
