@@ -75,7 +75,7 @@ const Portfolio = () => {
     "https://blockbuster2024-clone.onrender.com/"
   );
   const javascriptQuizAverageResponseTime = getUpTimeForProject(
-    "https://javascript-quiz-2-0.onrender.com/"
+    "https://javascript-quiz-86ff3d4dace3.herokuapp.com/"
   );
   const weatherDashboardAverageResponseTime = getUpTimeForProject(
     "https://weather-dashboard-greg.netlify.app/"
@@ -565,7 +565,7 @@ const Portfolio = () => {
               { logoSrc: nodeLogo, altText: "Node.js" },
             ]}
             alt="Javascript Quiz Project Thumbnail"
-            deployedLink="https://javascript-quiz-2-0.onrender.com/"
+            deployedLink="https://javascript-quiz-86ff3d4dace3.herokuapp.com/"
             githubLink="https://github.com/Goobergreve09/Javascript-Quiz-2.0"
             description={javascriptDescription}
             upTime={javascriptQuizAverageResponseTime}
