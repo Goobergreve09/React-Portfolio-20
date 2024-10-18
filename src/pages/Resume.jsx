@@ -19,6 +19,11 @@ const Resume = () => {
       description: "Create interactive user interfaces",
       iconClass: "bi bi-filetype-js icon",
     },
+  {
+    skill: "Python",
+      description: "Write clean, versatile scripts for web and data",
+      iconClass: "bi bi-filetype-py icon",
+  },
     {
       skill: "HTML",
       description: "Structure web pages",
