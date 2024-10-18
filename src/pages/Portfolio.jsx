@@ -75,7 +75,7 @@ const Portfolio = () => {
     "https://blockbuster2024-clone.onrender.com/"
   );
   const javascriptQuizAverageResponseTime = getUpTimeForProject(
-    "https://javascript-quiz-86ff3d4dace3.herokuapp.com/"
+    "https://javascript-quiz-86ff3d4dace3.herokuapp.com/global-highscores"
   );
   const weatherDashboardAverageResponseTime = getUpTimeForProject(
     "https://weather-dashboard-greg.netlify.app/"
