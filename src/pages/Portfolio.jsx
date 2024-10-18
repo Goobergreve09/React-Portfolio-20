@@ -254,8 +254,8 @@ const Portfolio = () => {
   const javascriptDescription = (
     <>
       The JavaScript Quiz Application deployed on{" "}
-      <a href="https://render.com/" target="_blank" rel="noopener noreferrer">
-        Render
+      <a href="https://heroku.com/" target="_blank" rel="noopener noreferrer">
+        Heroku
       </a>{" "}
       is a user-friendly web-based quiz platform designed to test users'
       knowledge of JavaScript programming concepts. Built with simplicity and
