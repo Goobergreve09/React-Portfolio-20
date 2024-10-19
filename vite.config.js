@@ -7,9 +7,6 @@ export default defineConfig({
   server: {
     port: 8888, // Your custom server port
     open: true  // Opens browser automatically on server start
-  },
-  build: {
-    sourcemap: false,  // Disable source maps for development to reduce memory usage
   }
 })
 

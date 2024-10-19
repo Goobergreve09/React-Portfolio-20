@@ -1,9 +1,15 @@
 import Header from "../components/Header";
 import { useState } from "react";
 import { send } from "emailjs-com";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Row, Col, Container } from "react-bootstrap";
+import {
+  FaFacebook,
+  FaYoutube,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaSpotify,
+} from "react-icons/fa";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -86,123 +92,182 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <>
       <Header />
-      <div className="container pt-4 contact">
-        <div className="titleDiv">
-          <h2>Contact Me</h2>
-          <h4 className="text-center mb-5">
-            If you'd like to contact me about opportunities or to work on
-            projects together, please fill out the form below:
-          </h4>
-        </div>
-
-        <form onSubmit={handleSubmit}>
-          <div className="row mb-3">
-            <div className="col-md-6">
-              <label htmlFor="firstName" className="form-label">
-                First Name
-              </label>
-              <input
-                type="text"
-                className={`form-control ${
-                  errors.firstName ? "is-invalid" : ""
-                }`}
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-              />
-              {errors.firstName && (
-                <div className="invalid-feedback">{errors.firstName}</div>
+      <Container className="d-flex align-items-center contact">
+        <Row>
+          <Col>
+            <Row className="keepInTouch">
+              <Col sm={12}>
+                <h2 className="mb-4">~ Keep in touch ~</h2>
+                <h4 className="text-center pt-3">
+                  If you'd like to contact me about opportunities or to work on
+                  projects together or inquiries for a job, please fill out the
+                  form. I will be notified of your message as soon as you send
+                  it. I will get back to you as soon as possible, all inquiries
+                  are very important to me.
+                </h4>
+              </Col>
+            </Row>
+            <Row className="mt-4 text-center social-row">
+              <Col>
+                <a
+                  href="https://www.facebook.com/greg.greve.79/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="icon-row-Fb" />
+                </a>
+              </Col>
+              <Col>
+                <a
+                  href="https://open.spotify.com/user/212hyismd6xfmyqsl6sx4h6fq?si=0170718002fe4149"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaSpotify className="icon-row-Sp" />
+                </a>
+              </Col>
+              <Col>
+                <a
+                  href="https://www.youtube.com/@thechillhypomaniac3373"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube className="icon-row-Yt" />
+                </a>
+              </Col>
+              <Col>
+                <a
+                  href="https://www.instagram.com/karatecakeman/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="icon-row-Ig" />
+                </a>
+              </Col>
+              <Col>
+                <a
+                  href="https://github.com/Goobergreve09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="icon-row-Gh" />
+                </a>
+              </Col>
+              <Col>
+                <a
+                  href="https://www.linkedin.com/in/gregory-greve-b48463300/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="icon-row-Li" />
+                </a>
+              </Col>
+            </Row>
+          </Col>
+          <Col className="form-container " lg={6} sm={12} md={12}>
+            <form onSubmit={handleSubmit}>
+              <Row className="d-flex align-items-center justify-content-center">
+                <Col sm={12} md={6} lg={6} className="form-margin mb-3">
+                  <label htmlFor="firstName" className="form-label">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      errors.firstName ? "is-invalid" : ""
+                    }`}
+                    id="firstName"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                  />
+                  {errors.firstName && (
+                    <div className="invalid-feedback">{errors.firstName}</div>
+                  )}
+                </Col>
+                <Col sm={12} md={6} lg={6} className="form-margin mb-3">
+                  <label htmlFor="lastName" className="form-label">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      errors.lastName ? "is-invalid" : ""
+                    }`}
+                    id="lastName"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                  />
+                  {errors.lastName && (
+                    <div className="invalid-feedback">{errors.lastName}</div>
+                  )}
+                </Col>
+              </Row>
+              <Row className="mb-3">
+                <Col className="form-margin mb-3" sm={12} md={6} lg={6}>
+                  <label htmlFor="email" className="form-label">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className={`form-control ${
+                      errors.email ? "is-invalid" : ""
+                    }`}
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                  {errors.email && (
+                    <div className="invalid-feedback">{errors.email}</div>
+                  )}
+                </Col>
+                <Col sm={12} md={6} lg={6} className="form-margin">
+                  <label htmlFor="company" className="form-label">
+                    Company (optional)
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                  />
+                </Col>
+              </Row>
+              <Row className="mb-3">
+                <label htmlFor="message" className="form-label">
+                  Message
+                </label>
+                <textarea
+                  className={`form-control ${
+                    errors.message ? "is-invalid" : ""
+                  }`}
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                ></textarea>
+                {errors.message && (
+                  <div className="invalid-feedback">{errors.message}</div>
+                )}
+              </Row>
+              <Row className="d-flex justify-content-center">
+                <button type="submit" className="contact-btn mt-3">
+                  Send Message
+                </button>
+              </Row>
+              {successMessage && (
+                <Row className="alert alert-success mt-3">{successMessage}</Row>
               )}
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="lastName" className="form-label">
-                Last Name
-              </label>
-              <input
-                type="text"
-                className={`form-control ${
-                  errors.lastName ? "is-invalid" : ""
-                }`}
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-              />
-              {errors.lastName && (
-                <div className="invalid-feedback">{errors.lastName}</div>
-              )}
-            </div>
-          </div>
-          <div className="row mb-3">
-            <div className="col-md-6">
-              <label htmlFor="email" className="form-label">
-                Email
-              </label>
-              <input
-                type="email"
-                className={`form-control ${errors.email ? "is-invalid" : ""}`}
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              {errors.email && (
-                <div className="invalid-feedback">{errors.email}</div>
-              )}
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="company" className="form-label">
-                Company (optional)
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className="mb-3">
-            <label htmlFor="message" className="form-label">
-              Message
-            </label>
-            <textarea
-              className={`form-control ${errors.message ? "is-invalid" : ""}`}
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-            ></textarea>
-            {errors.message && (
-              <div className="invalid-feedback">{errors.message}</div>
-            )}
-          </div>
-          <div className="btn-container">
-            <button type="submit" className="btn btn-primary">
-              Send Message
-            </button>
-          </div>
-          {successMessage && (
-            <div className="alert alert-success mt-3">{successMessage}</div>
-          )}
-        </form>
-        <div className="row justify-content-center mt-3 ">
-          <div className="col-md-6 d-flex justify-content-center icon-container">
-            <div className="telephone icon-spacing">
-              <FontAwesomeIcon icon={faPhone} /> <span>+1(231) 740-1594</span>
-            </div>
-            <div className="envelope envelope-css">
-              <FontAwesomeIcon icon={faEnvelope} />{" "}
-              <span>gregory.greve@yahoo.com</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </form>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }

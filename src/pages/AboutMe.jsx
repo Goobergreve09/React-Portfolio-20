@@ -76,7 +76,7 @@ export default function AboutMe() {
                 className={`mb-3 profile-photo ${isVisible ? "visible" : ""}`}
               />
             </Row>
-            <Row>
+            <Row className="d-flex justify-content-center">
               {!isButtonClicked && (
                 <Button
                   onClick={handleButtonClick}

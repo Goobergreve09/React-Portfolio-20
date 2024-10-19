@@ -88,7 +88,7 @@ function GitHub() {
               </Row>
             </Container>
             <Row className="p-3 d-flex justify-content-center align-items-center">
-              <Col lg={4} md={12} className="d-flex justify-content-center ">
+              <Col lg={4} md={12} className="d-flex justify-content-center mt-2 ">
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"
@@ -102,7 +102,7 @@ function GitHub() {
                   />
                 </a>
               </Col>
-              <Col lg={4} md={12} className="d-flex justify-content-center ">
+              <Col lg={4} md={12} className="d-flex justify-content-center mt-5 ">
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"
@@ -116,7 +116,7 @@ function GitHub() {
                   />
                 </a>
               </Col>
-              <Col lg={4} md={12} className="d-flex justify-content-center">
+              <Col lg={4} md={12} className="d-flex justify-content-center mt-5">
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"

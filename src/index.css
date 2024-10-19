@@ -126,7 +126,7 @@ body {
   cursor: pointer;
   background: none;
   perspective: 2em;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 900;
   letter-spacing: 0.35em;
   text-align: center;
@@ -441,12 +441,68 @@ body {
   align-items: center;
 }
 
+/* Contact */
+
 .contact {
   color: whitesmoke;
-  padding-bottom: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px;
+  background: url(https://wallpaperaccess.com/full/6247613.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 25px;
   font-family: "Manrope", sans-serif;
+  margin-bottom: 125px;
+  width: 100%;
+}
+
+.icon-row-Fb,
+.icon-row-Sp,
+.icon-row-Ig,
+.icon-row-Yt,
+.icon-row-Gh,
+.icon-row-Li {
+  font-size: x-large;
+  transition: 0.1s ease-in-out;
+}
+
+.icon-row-Fb {
+  color: #1c95e6;
+}
+
+.icon-row-Sp {
+  color: #27ae60;
+}
+
+.icon-row-Yt {
+  color: #e74c3c;
+}
+
+.icon-row-Ig {
+  color: #c6749c;
+}
+
+.icon-row-Gh {
+  color: #ccd1d1;
+}
+
+.icon-row-Li {
+  color: #3498db;
+}
+
+/* Apply hover styles to the anchor tags that wrap the icons */
+.social-row a {
+  text-decoration: none; /* Remove underline if necessary */
+}
+
+.social-row a:hover .icon-row-Fb,
+.social-row a:hover .icon-row-Sp,
+.social-row a:hover .icon-row-Ig,
+.social-row a:hover .icon-row-Yt,
+.social-row a:hover .icon-row-Gh,
+.social-row a:hover .icon-row-Li {
+  font-size: xx-large; /* Increase size on hover */
+  cursor: pointer; /* Change cursor to pointer */
 }
 
 .contact h2,
@@ -457,15 +513,81 @@ h4 {
 
 .contact h4 {
   font-size: 20px;
-  padding-bottom: 25px;
 }
 
-.btn {
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-  font-size: 26px;
+.keepInTouch {
+  padding-right: 50px;
+}
+
+.contact-btn {
+  align-self: center;
+  background-color: whitesmoke;
+  background-image: none;
+  border-color: whitesmoke;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e; /* Text color */
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   font-family: "Manrope", sans-serif;
+}
+
+.contact-btn:hover {
+  box-shadow: rgba(6, 230, 211, 0.7) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: var(--hover-glow-color); /* Keep background the same */
+  color: #41403e; /* Keep text color the same */
+  border-color: var(--hover-glow-color);
+  font-weight: bold;
+}
+
+.contact-btn:focus {
+  box-shadow: rgba(255, 255, 255, 0.7) 2px 8px 4px -6px;
+}
+
+.form-container {
+  border-left: white 5px ridge;
+  padding-left: 50px;
+}
+
+.form-control {
+  transition: 0.2s ease-in;
+  background-color: #ccd1d1;
+}
+
+.form-control:hover {
+  background-color: whitesmoke;
+}
+
+.form-control:focus {
+  border-color: rgba(
+    14,
+    252,
+    200,
+    0.2
+  ); /* Change this to your preferred color */
+  box-shadow: 0 0 0 3px rgba(14, 252, 200, 0.7); /* Optional: Adjust shadow effect */
+  outline: none; /* Remove the default outline if needed */
 }
 
 .titleDiv {
@@ -506,6 +628,7 @@ h4 {
   border-radius: 25px;
   padding: 10px;
   width: 75%;
+  font-size: larger;
 }
 
 .project-description a {
@@ -526,7 +649,7 @@ h4 {
 
 .project-links a {
   color: white;
-  font-size: large;
+  font-size: 24px;
   text-decoration: none;
 }
 
@@ -577,6 +700,7 @@ h4 {
 .softSkillsContent {
   color: white;
   font-family: "Playfair Display", serif;
+  font-size: 20px;
 }
 
 /* HEADER  */
@@ -637,6 +761,10 @@ header {
 
 /* Github */
 
+.github-container {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .githubBio {
   color: white;
   font-family: "Manrope", sans-serif;
@@ -675,6 +803,7 @@ header {
 .skillsBtn {
   background: none !important;
   border: none !important;
+  font-size: 28px;
 }
 
 .statsBox {
@@ -693,6 +822,16 @@ header {
 .library-title {
   text-decoration: underline;
   color: blue;
+}
+
+@media (max-width: 990px) {
+  .form-container {
+    border-left: none;
+    margin-top: 50px;
+    padding-left: 10px;
+    border-top: white 5px ridge;
+    padding-top: 25px;
+  }
 }
 @media (max-width: 768px) {
   /* Header and Nav */
@@ -792,26 +931,6 @@ header {
 
   /* Send Message Button */
 
-  .btn {
-    width: 150px;
-    font-size: 18px;
-  }
-  .btn-container {
-    padding-top: 10px;
-    padding-bottom: 25px;
-  }
-
-  .icon-container {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    padding-bottom: 75px;
-    background-color: whitesmoke;
-    color: black;
-    text-align: center;
-    height: 100px;
-  }
-
   .icon-spacing {
     margin-bottom: 10px;
     margin-left: 10px;
@@ -830,6 +949,35 @@ header {
   .contact h4 {
     font-size: 20px;
     padding-bottom: 25px;
+  }
+
+  .contact-header-row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact {
+    border-radius: 0px;
+    padding: 25px;
+    padding-bottom: 75px;
+    padding-top: 50px;
+  }
+
+  .project-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .contact-btn {
+    background-color: var(--hover-glow-color);
+    border-color: var(--hover-glow-color);
+    font-weight: bold;
+  }
+
+  .contact {
+    background: url(https://wallpaperaccess.com/full/6247613.jpg);
   }
 }
 
