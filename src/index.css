@@ -964,6 +964,11 @@ header {
     padding-top: 50px;
   }
 
+  .keepInTouch {
+    padding-right: 0px;
+  }
+
+
   .project-links a {
     color: white;
     font-size: 24px;
