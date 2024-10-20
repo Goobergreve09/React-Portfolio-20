@@ -7,6 +7,8 @@ import { FaCheckCircle, FaPhoneSquareAlt } from "react-icons/fa";
 import { IoIosSchool, IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 
+import "../styles/resume.css"
+
 const Resume = () => {
   const proficiencies = [
     {

@@ -9,6 +9,7 @@ import signature from "../assets/images/signature.png";
 import grccLogo from "../assets/images/grccLogo.png";
 
 import ModalImage from "react-modal-image";
+import "../styles/aboutMe.css"
 
 export default function AboutMe() {
   const [codingDuration, setCodingDuration] = useState({

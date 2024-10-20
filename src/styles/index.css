@@ -1,0 +1,211 @@
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+  --glow-color: white;
+  --hover-glow-color: #40e0d0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+
+@media (max-width: 991px) {
+  .form-container {
+    border-left: none;
+    margin-top: 50px;
+    padding-left: 10px;
+    border-top: white 5px ridge;
+    padding-top: 25px;
+  }
+
+  .astronaut-contact {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  /* Header and Nav */
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    border-radius: 25px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+  }
+
+  /* About Me page */
+
+  .about-text {
+    max-height: 300px;
+  }
+
+  /* Portfolio Page */
+
+  .project img {
+    width: 100%;
+  }
+
+  .project-description {
+    font-size: 14px;
+    max-height: 200px;
+    overflow: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: linear-gradient(blue, yellow); /* For Firefox */
+  }
+
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+  .project-description::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .project-description::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+  /* Ensures scrollbar is always visible */
+  .project-description {
+    overflow-y: scroll;
+  }
+
+  .softSkillsTitle {
+    font-size: 20px;
+    justify-content: start !important;
+    align-items: center;
+  }
+
+  .softSkillsContent {
+    font-size: 14px;
+    text-align: right !important;
+  }
+
+  .softSkills {
+    align-items: center;
+    display: flex;
+  }
+
+  .softSkillsArrow {
+    display: none;
+  }
+
+  /* Send Message Button */
+
+  .icon-spacing {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .contact {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .contact h2,
+  .contact h4 {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .contact h4 {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+  .contact-header-row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact {
+    border-radius: 0px;
+    padding: 25px;
+    padding-bottom: 75px;
+    padding-top: 50px;
+  }
+
+  .keepInTouch {
+    padding-right: 0px;
+  }
+
+  .project-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .contact-btn {
+    background-color: var(--hover-glow-color);
+    border-color: var(--hover-glow-color);
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo-images img {
+    width: 100px;
+  }
+
+  .about-text {
+    max-width: 90%;
+    border-radius: 15px;
+  }
+
+  .aboutMe-button {
+    width: 200px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .profile-photo {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo-images img {
+    max-width: 75px;
+    padding: 10px;
+  }
+}

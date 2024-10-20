@@ -11,7 +11,9 @@ import {
   FaSpotify,
 } from "react-icons/fa";
 
-import containerBackground from "../assets/images/container-background.jpg"
+import containerBackground from "../assets/images/container-background.jpg";
+
+import "../styles/contact.css"
 
 import contactHeader from "../assets/images/contact-header.png";
 export default function Contact() {
@@ -97,7 +99,10 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <Container className="d-flex align-items-center contact" style={{ backgroundImage: `url(${containerBackground})` }}>
+      <Container
+        className="d-flex align-items-center contact"
+        style={{ backgroundImage: `url(${containerBackground})` }}
+      >
         <Row>
           <Col>
             <Row className="keepInTouch">

@@ -1,0 +1,55 @@
+/* HEADER  */
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .navbar h1 {
+    color: whitesmoke;
+    font-size: 36px;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .navbar h1:hover {
+    color: whitesmoke;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: ease 0.1s;
+  }
+  
+  .nav-links li a:hover {
+    color: var(--hover-glow-color);
+    text-shadow: 0px 0px 1px var(--hover-glow-color),
+      /* Outer glow */ 0px 0px 8px var(--hover-glow-color),
+      /* Stronger outer glow */ 0px 0px 20px var(--hover-glow-color);
+  }
+  
+  .nav-links li a.active {
+    font-weight: bold;
+    color: var(--hover-glow-color);
+    text-shadow: 0px 0px 1px var(--hover-glow-color),
+      /* Outer glow */ 0px 0px 8px var(--hover-glow-color),
+      /* Stronger outer glow */ 0px 0px 20px var(--hover-glow-color);
+  }
