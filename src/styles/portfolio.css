@@ -1,104 +1,104 @@
 /* PORTFOLIO */
 
 .project {
-    background-size: cover;
-    color: whitesmoke;
-    border-bottom: solid 5px whitesmoke;
-    background: rgba(0, 0, 0, 0.8);
-  }
-  
-  .project:last-child {
-    margin-bottom: 80px;
-  }
-  
-  .project img {
-    width: 40%;
-    padding: 15px;
-    border-radius: 25px;
-  }
-  
-  .project-title {
-    color: white;
-    font-family: "Playfair Display", serif;
-    width: 100%;
-  }
-  
-  .project-description {
-    font-family: "Playfair Display", serif;
-    border-radius: 25px;
-    padding: 10px;
-    width: 75%;
-    font-size: larger;
-  }
-  
-  .project-description a {
-    color: #3795ff;
-    text-decoration: none;
-  }
-  
-  .project-description a:hover {
-    color: #7db6f8;
-    text-decoration: underline;
-  }
-  
-  .project-links {
-    background-color: rgba(55, 149, 255, 0.1);
-    font-family: "Manrope", sans-serif;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .project-links a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-  }
-  
-  .project-links a:hover {
-    color: #3795ff;
-  }
-  
-  .logo-column img {
-    max-width: 75px;
-    min-width: 75px;
-  }
-  
-  .technologies-row {
-    background-color: rgba(55, 149, 255, 0.1);
-  }
-  
-  .description-hero {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .uptime-Metrics {
-    color: lime;
-    font-family: monospace;
-    font-weight: 100;
-    font-style: italic;
-    max-width: fit-content;
-    font-size: 14px;
-  }
-  
-  .softSkills {
-    border-top: 2px solid white;
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-family: "Manrope", sans-serif;
-  }
-  
-  .softSkillsTitle {
-    font-family: "Playfair Display", serif;
-    font-size: 2.8rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-  
-  .softSkillsContent {
-    color: white;
-    font-family: "Playfair Display", serif;
-    font-size: 20px;
-  }
+  background-size: cover;
+  color: whitesmoke;
+  border-bottom: solid 5px whitesmoke;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.project:last-child {
+  margin-bottom: 80px;
+}
+
+.project img {
+  width: 40%;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.project-title {
+  color: white;
+  font-family: "Playfair Display", serif;
+  width: 100%;
+}
+
+.project-description {
+  font-family: "Playfair Display", serif;
+  border-radius: 25px;
+  padding: 10px;
+  width: 75%;
+  font-size: larger;
+}
+
+.project-description a {
+  color: #3795ff;
+  text-decoration: none;
+}
+
+.project-description a:hover {
+  color: #7db6f8;
+  text-decoration: underline;
+}
+
+.project-links {
+  background-color: rgba(55, 149, 255, 0.1);
+  font-family: "Manrope", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+.project-links a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  color: #3795ff;
+}
+
+.logo-column img {
+  max-width: 75px;
+  min-width: 75px;
+}
+
+.technologies-row {
+  background-color: rgba(55, 149, 255, 0.1);
+}
+
+.description-hero {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.uptime-Metrics {
+  color: lime;
+  font-family: monospace;
+  font-weight: 100;
+  font-style: italic;
+  max-width: fit-content;
+  font-size: 14px;
+}
+
+.softSkills {
+  border-top: 2px solid white;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "Manrope", sans-serif;
+}
+
+.softSkillsTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.softSkillsContent {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}

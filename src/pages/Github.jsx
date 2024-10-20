@@ -13,6 +13,8 @@ import { fetchGitHubUserData } from "../utils/githubFetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
+import "../styles/github.css"
+
 function GitHub() {
   const [userData, setUserData] = useState(null);
   const [repos, setRepos] = useState([]);

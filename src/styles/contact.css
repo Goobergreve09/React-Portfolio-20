@@ -1,160 +1,160 @@
 .contact {
-    color: whitesmoke;
-    padding: 100px;
-    background: url(https://wallpaperaccess.com/full/1732259.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 25px;
-    font-family: "Manrope", sans-serif;
-    margin-bottom: 125px;
-    width: 100%;
-    margin-right: auto;
-    margin-top: 5%;
-  }
-  
-  .icon-row-Fb,
-  .icon-row-Sp,
-  .icon-row-Ig,
-  .icon-row-Yt,
-  .icon-row-Gh,
-  .icon-row-Li {
-    font-size: x-large;
-    transition: 0.1s ease-in-out;
-  }
-  
-  .icon-row-Fb {
-    color: #1c95e6;
-  }
-  
-  .icon-row-Sp {
-    color: #27ae60;
-  }
-  
-  .icon-row-Yt {
-    color: #e74c3c;
-  }
-  
-  .icon-row-Ig {
-    color: #c6749c;
-  }
-  
-  .icon-row-Gh {
-    color: #ccd1d1;
-  }
-  
-  .icon-row-Li {
-    color: #3498db;
-  }
-  
-  /* Apply hover styles to the anchor tags that wrap the icons */
-  .social-row a {
-    text-decoration: none; /* Remove underline if necessary */
-  }
-  
-  .social-row a:hover .icon-row-Fb,
-  .social-row a:hover .icon-row-Sp,
-  .social-row a:hover .icon-row-Ig,
-  .social-row a:hover .icon-row-Yt,
-  .social-row a:hover .icon-row-Gh,
-  .social-row a:hover .icon-row-Li {
-    font-size: xx-large; /* Increase size on hover */
-    cursor: pointer; /* Change cursor to pointer */
-  }
-  
-  .contact h2,
-  h4 {
-    text-align: center;
-    font-family: "Manrope", sans-serif;
-  }
-  
-  .contact h4 {
-    font-size: 20px;
-  }
-  
-  .keepInTouch {
-    padding-right: 50px;
-  }
-  
-  .contact-btn {
-    align-self: center;
-    background-color: whitesmoke;
-    background-image: none;
-    border-color: whitesmoke;
-    background-position: 0 90%;
-    background-repeat: repeat no-repeat;
-    background-size: 4px 3px;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
-    box-sizing: border-box;
-    color: #41403e; /* Text color */
-    cursor: pointer;
-    display: inline-block;
-    font-family: Neucha, sans-serif;
-    font-size: 1rem;
-    line-height: 23px;
-    outline: none;
-    padding: 0.75rem;
-    text-decoration: none;
-    transition: all 235ms ease-in-out;
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    font-family: "Manrope", sans-serif;
-  }
-  
-  .contact-btn:hover {
-    box-shadow: rgba(6, 230, 211, 0.7) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-    background-color: var(--hover-glow-color); /* Keep background the same */
-    color: #41403e; /* Keep text color the same */
-    border-color: var(--hover-glow-color);
-    font-weight: bold;
-  }
-  
-  .contact-btn:focus {
-    box-shadow: rgba(255, 255, 255, 0.7) 2px 8px 4px -6px;
-  }
-  
-  .form-container {
-    border-left: white 5px ridge;
-    padding-left: 50px;
-  }
-  
-  .form-control {
-    transition: 0.2s ease-in;
-    background-color: #ccd1d1;
-  }
-  
-  .astronaut-contact {
-    width: 40%;
-  }
-  
-  .form-control:hover {
-    background-color: whitesmoke;
-  }
-  
-  .form-control:focus {
-    border-color: rgba(
-      14,
-      252,
-      200,
-      0.2
-    ); /* Change this to your preferred color */
-    box-shadow: 0 0 0 3px rgba(14, 252, 200, 0.7); /* Optional: Adjust shadow effect */
-    outline: none; /* Remove the default outline if needed */
-  }
-  
-  .titleDiv {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: whitesmoke;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    text-align: center;
-  }
+  color: whitesmoke;
+  padding: 100px;
+  background: url(https://wallpaperaccess.com/full/1732259.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 125px;
+  width: 100%;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.icon-row-Fb,
+.icon-row-Sp,
+.icon-row-Ig,
+.icon-row-Yt,
+.icon-row-Gh,
+.icon-row-Li {
+  font-size: x-large;
+  transition: 0.1s ease-in-out;
+}
+
+.icon-row-Fb {
+  color: #1c95e6;
+}
+
+.icon-row-Sp {
+  color: #27ae60;
+}
+
+.icon-row-Yt {
+  color: #e74c3c;
+}
+
+.icon-row-Ig {
+  color: #c6749c;
+}
+
+.icon-row-Gh {
+  color: #ccd1d1;
+}
+
+.icon-row-Li {
+  color: #3498db;
+}
+
+/* Apply hover styles to the anchor tags that wrap the icons */
+.social-row a {
+  text-decoration: none; /* Remove underline if necessary */
+}
+
+.social-row a:hover .icon-row-Fb,
+.social-row a:hover .icon-row-Sp,
+.social-row a:hover .icon-row-Ig,
+.social-row a:hover .icon-row-Yt,
+.social-row a:hover .icon-row-Gh,
+.social-row a:hover .icon-row-Li {
+  font-size: xx-large; /* Increase size on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.contact h2,
+h4 {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.contact h4 {
+  font-size: 20px;
+}
+
+.keepInTouch {
+  padding-right: 50px;
+}
+
+.contact-btn {
+  align-self: center;
+  background-color: whitesmoke;
+  background-image: none;
+  border-color: whitesmoke;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e; /* Text color */
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: "Manrope", sans-serif;
+}
+
+.contact-btn:hover {
+  box-shadow: rgba(6, 230, 211, 0.7) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: var(--hover-glow-color); /* Keep background the same */
+  color: #41403e; /* Keep text color the same */
+  border-color: var(--hover-glow-color);
+  font-weight: bold;
+}
+
+.contact-btn:focus {
+  box-shadow: rgba(255, 255, 255, 0.7) 2px 8px 4px -6px;
+}
+
+.form-container {
+  border-left: white 5px ridge;
+  padding-left: 50px;
+}
+
+.form-control {
+  transition: 0.2s ease-in;
+  background-color: #ccd1d1;
+}
+
+.astronaut-contact {
+  width: 40%;
+}
+
+.form-control:hover {
+  background-color: whitesmoke;
+}
+
+.form-control:focus {
+  border-color: rgba(
+    14,
+    252,
+    200,
+    0.2
+  ); /* Change this to your preferred color */
+  box-shadow: 0 0 0 3px rgba(14, 252, 200, 0.7); /* Optional: Adjust shadow effect */
+  outline: none; /* Remove the default outline if needed */
+}
+
+.titleDiv {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
