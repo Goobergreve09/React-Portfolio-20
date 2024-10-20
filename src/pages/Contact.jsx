@@ -11,6 +11,7 @@ import {
   FaSpotify,
 } from "react-icons/fa";
 
+import contactHeader from "../assets/images/contact-header.png";
 export default function Contact() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -99,17 +100,20 @@ export default function Contact() {
           <Col>
             <Row className="keepInTouch">
               <Col sm={12}>
-                <h2 className="mb-4">~ Keep in touch ~</h2>
-                <h4 className="text-center pt-3">
-                  If you'd like to contact me about opportunities or to work on
-                  projects together or inquiries for a job, please fill out the
-                  form. I will be notified of your message as soon as you send
-                  it. I will get back to you as soon as possible, all inquiries
-                  are very important to me.
+                <div className="d-flex justify-content-center">
+                  <img
+                    src={contactHeader}
+                    alt="cartoon-character contact image"
+                    className="astronaut-contact text-center pb-2"
+                  />
+                </div>
+                <h4 className="text-center ">
+                  If you'd like to contact me about opportunities or any
+                  inquiries please fill out the form.
                 </h4>
               </Col>
             </Row>
-            <Row className="mt-4 text-center social-row">
+            <Row className="mt-2 text-center social-row g-0">
               <Col>
                 <a
                   href="https://www.facebook.com/greg.greve.79/"
