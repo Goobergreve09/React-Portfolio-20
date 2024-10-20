@@ -30,6 +30,7 @@ import expressLogo from "../assets/images/expressLogo.png";
 import squarespaceLogo from "../assets/images/squarespaceLogo.png";
 
 import "../styles/portfolio.css"
+import "../styles/index.css"
 
 const Portfolio = () => {
   const [upTimeData, setUpTimeData] = useState([]); // Initialize as an empty array

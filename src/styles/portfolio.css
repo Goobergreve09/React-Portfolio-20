@@ -102,3 +102,51 @@
   font-family: "Playfair Display", serif;
   font-size: 20px;
 }
+
+@media (max-width: 768px) {
+  .project img {
+    width: 100%;
+  }
+
+  .project-description {
+    font-size: 14px;
+    max-height: 200px;
+    overflow: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: linear-gradient(blue, yellow); /* For Firefox */
+  }
+
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+  .project-description::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .project-description::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+  /* Ensures scrollbar is always visible */
+  .project-description {
+    overflow-y: scroll;
+  }
+
+  .softSkillsTitle {
+    font-size: 20px;
+    justify-content: start !important;
+    align-items: center;
+  }
+
+  .softSkillsContent {
+    font-size: 14px;
+    text-align: right !important;
+  }
+
+  .softSkills {
+    align-items: center;
+    display: flex;
+  }
+
+  .softSkillsArrow {
+    display: none;
+  }
+}

@@ -53,3 +53,44 @@ header {
     /* Outer glow */ 0px 0px 8px var(--hover-glow-color),
     /* Stronger outer glow */ 0px 0px 20px var(--hover-glow-color);
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    border-radius: 25px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+  }
+}
