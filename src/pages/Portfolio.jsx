@@ -75,7 +75,7 @@ const Portfolio = () => {
   };
 
   const blockbusterAverageResponseTime = getUpTimeForProject(
-    "https://blockbuster2024-clone.onrender.com/"
+    "https://blockbuster2024-c2f830097f5f.herokuapp.com/"
   );
   const javascriptQuizAverageResponseTime = getUpTimeForProject(
     "https://javascript-quiz-86ff3d4dace3.herokuapp.com/global-highscores"
@@ -522,7 +522,7 @@ const Portfolio = () => {
             ]}
             image={Blockbuster}
             alt="Blockbuster Project Thumbnail"
-            deployedLink="https://blockbuster2024-clone.onrender.com/"
+            deployedLink="https://blockbuster2024-c2f830097f5f.herokuapp.com/"
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
             description={blockbusterDescription}
             softSkills={[
