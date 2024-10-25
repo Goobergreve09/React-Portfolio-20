@@ -26,6 +26,7 @@ header {
   list-style-type: none;
   display: flex;
   gap: 1rem;
+  font-family: monospace !important;
 }
 
 .nav-links li {
@@ -76,18 +77,20 @@ display:none;
   .nav-links {
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content:start;
+    padding-top: 30%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    height: 80vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, .9);
     z-index: 1;
     border-radius: 0;
     transform: translateX(-100%); /* Start hidden off-screen */
     transition: transform 0.3s ease; /* Smooth slide-in effect */
 gap:.25rem;
+font-family: monospace !important;
   }
 
 
