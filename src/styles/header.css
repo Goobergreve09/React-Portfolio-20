@@ -54,6 +54,14 @@ header {
     /* Stronger outer glow */ 0px 0px 20px var(--hover-glow-color);
 }
 
+.close-btn {
+display:none;
+}
+
+.mobile-header-image {
+display:none;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -106,9 +114,34 @@ header {
     font-size: 30px;
     color: white;
     cursor: pointer;
+    display: inherit;
   }
 
   .close-btn:hover {
     color:var(--hover-glow-color)
   }
+
+  .mobile-header-image {
+    display: block;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Optional for rounded corners */
+
+    /* Floating effect */
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 }
