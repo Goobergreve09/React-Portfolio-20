@@ -4,11 +4,12 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .navbar h1 {
   color: whitesmoke;
-  font-size: 36px;
+  font-size: 48px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -27,6 +28,7 @@ header {
   display: flex;
   gap: 1rem;
   font-family: monospace !important;
+  font-size: 32px;
 }
 
 .nav-links li {
@@ -36,7 +38,6 @@ header {
 .nav-links li a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
   transition: ease 0.1s;
 }
 
@@ -56,11 +57,11 @@ header {
 }
 
 .close-btn {
-display:none;
+  display: none;
 }
 
 .mobile-header-image {
-display:none;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -72,28 +73,28 @@ display:none;
 
   header {
     text-align: center;
+    padding-bottom: none;
   }
 
   .nav-links {
     flex-direction: column;
     align-items: center;
-    justify-content:start;
+    justify-content: start;
     padding-top: 30%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .95);
     z-index: 1;
     border-radius: 0;
     transform: translateX(-100%); /* Start hidden off-screen */
     transition: transform 0.3s ease; /* Smooth slide-in effect */
-gap:.25rem;
-font-family: monospace !important;
+    gap: 0.25rem;
+    font-family: monospace !important;
+    font-size: 24px;
   }
-
-
 
   .nav-links.open {
     transform: translateX(0); /* Slide in when open */
@@ -116,13 +117,13 @@ font-family: monospace !important;
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
     display: inherit;
   }
 
   .close-btn:hover {
-    color:var(--hover-glow-color)
+    color: #e74c3c ;
   }
 
   .mobile-header-image {
@@ -147,5 +148,4 @@ font-family: monospace !important;
       transform: translateY(0);
     }
   }
-
 }
