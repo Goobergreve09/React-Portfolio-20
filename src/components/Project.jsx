@@ -1,11 +1,11 @@
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container,Carousel } from "react-bootstrap";
 import skillsArrow from "../assets/images/softSkillsArrow.png"
 
 import ModalImage from "react-modal-image";
 
 const Project = ({
   title,
-  image,
+  images = [],
   deployedLink,
   githubLink,
   description,
@@ -22,8 +22,18 @@ const Project = ({
     >
 
       <Col className="align-items-center justify-content-center text-center">
-        <Row className="justify-content-center">
-          <ModalImage small={image} large={image} alt={title} className="project-thumbnail" />
+      <Row className="justify-content-center">
+          {images.length > 0 ? (
+            <Carousel className="project-carousel" interval={null}>
+              {images.map((image, index) => (
+                <Carousel.Item key={index}>
+                  <ModalImage small={image} large={image} alt={`${title} - ${index + 1}`} className="project-thumbnail" />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          ) : (
+            <p>No images available</p> // Fallback if images array is empty
+          )}
         </Row>
         <Row>
           <h3 className="project-title p-2">{title}</h3>

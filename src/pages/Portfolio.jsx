@@ -2,16 +2,25 @@ import { useEffect, useState } from "react";
 
 import Header from "../components/Header";
 import Project from "../components/Project";
-import Weather from "../assets/images/weatherr.jpg";
-import readMe from "../assets/images/read-me.jpg";
-import employee from "../assets/images/employee.jpg";
-import techBlog from "../assets/images/tech-blog.jpg";
-import passwordGen from "../assets/images/pwg.jpg";
-import workday from "../assets/images/workday.jpg";
+import Weather from "../assets/images/Weather.png";
+import Weather2 from "../assets/images/Weather2.png";
+import readMe from "../assets/images/read-me.png";
+import readMe2 from "../assets/images/read-me2.png";
+import Employee from "../assets/images/Employee.png";
+// import techBlog from "../assets/images/tech-blog.jpg";
+import passwordGen from "../assets/images/gpw.png";
+import passwordGen2 from "../assets/images/gpw2.png";
+import passwordGen3 from "../assets/images/gpw3.png";
+import workDay from "../assets/images/workDay.png";
 import noteTaker from "../assets/images/notetaker.jpg";
 import property from "../assets/images/property.jpg";
-import quiz from "../assets/images/quiz.jpg";
+import Javascript from "../assets/images/Javascript.png";
+import Javascript2 from "../assets/images/Javascript2.png";
+import Javascript3 from "../assets/images/Javascript3.png";
 import Blockbuster from "../assets/images/Blockbuster.png";
+import Blockbuster2 from "../assets/images/Blockbuster2.png";
+import Blockbuster3 from "../assets/images/Blockbuster3.png";
+import Blockbuster4 from "../assets/images/Blockbuster4.png";
 import adam from "../assets/images/adam.jpg";
 import rolePlay from "../assets/images/rolePlay.jpg";
 import reactLogo from "../assets/images/reactLogo.png";
@@ -23,9 +32,9 @@ import nodeLogo from "../assets/images/nodeLogo.png";
 import cssLogo from "../assets/images/cssLogo.png";
 import htmlLogo from "../assets/images/htmlLogo.png";
 import mysqlLogo from "../assets/images/mysqlLogo.png";
-import sequelizeLogo from "../assets/images/sequelizeLogo.png";
+// import sequelizeLogo from "../assets/images/sequelizeLogo.png";
 // import tailwindLogo from "../assets/images/tailwindLogo.png";
-import handlebarsLogo from "../assets/images/handlebarsLogo.png";
+// import handlebarsLogo from "../assets/images/handlebarsLogo.png";
 import expressLogo from "../assets/images/expressLogo.png";
 import squarespaceLogo from "../assets/images/squarespaceLogo.png";
 
@@ -83,6 +92,14 @@ const Portfolio = () => {
   const weatherDashboardAverageResponseTime = getUpTimeForProject(
     "https://weather-dashboard-greg.netlify.app/"
   );
+
+  const BlockbusterImages = [Blockbuster, Blockbuster2, Blockbuster3, Blockbuster4]
+  const JavascriptQuizImages = [Javascript, Javascript2, Javascript3]
+  const WeatherImages = [Weather, Weather2]
+  const ReadMeImages = [readMe,readMe2]
+  const EmployeeImages = [Employee]
+  const PasswordGenImages = [passwordGen,passwordGen2,passwordGen3]
+  const workDayImages = [workDay]
 
   const blockbusterDescription = (
     <>
@@ -401,71 +418,71 @@ const Portfolio = () => {
     </>
   );
 
-  const techDescription = (
-    <>
-      <p>
-        This is a blog for tech lovers and blog lovers alike. With{" "}
-        <a
-          href="https://www.codecademy.com/article/what-is-crud"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CRUD
-        </a>{" "}
-        being implemented for users to add, remove, edit, and delete content
-        from the SQL database. This application uses{" "}
-        <a
-          href="https://handlebarsjs.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Handlebars
-        </a>
-        ,
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CSS3
-        </a>
-        , and{" "}
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML5
-        </a>
-        for the frontend and{" "}
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          JavaScript
-        </a>{" "}
-        for user engagement. The backend server uses Node’s{" "}
-        <a
-          href="https://sequelize.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sequelize ORM
-        </a>{" "}
-        library to interact with the{" "}
-        <a
-          href="https://www.mysql.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          MySQL
-        </a>{" "}
-        database and define rules for validation. A user can signup and login as
-        well as make and delete their own posts.
-      </p>
-    </>
-  );
+  // const techDescription = (
+  //   <>
+  //     <p>
+  //       This is a blog for tech lovers and blog lovers alike. With{" "}
+  //       <a
+  //         href="https://www.codecademy.com/article/what-is-crud"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         CRUD
+  //       </a>{" "}
+  //       being implemented for users to add, remove, edit, and delete content
+  //       from the SQL database. This application uses{" "}
+  //       <a
+  //         href="https://handlebarsjs.com/"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         Handlebars
+  //       </a>
+  //       ,
+  //       <a
+  //         href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         CSS3
+  //       </a>
+  //       , and{" "}
+  //       <a
+  //         href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         HTML5
+  //       </a>
+  //       for the frontend and{" "}
+  //       <a
+  //         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         JavaScript
+  //       </a>{" "}
+  //       for user engagement. The backend server uses Node’s{" "}
+  //       <a
+  //         href="https://sequelize.org/"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         Sequelize ORM
+  //       </a>{" "}
+  //       library to interact with the{" "}
+  //       <a
+  //         href="https://www.mysql.com/"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         MySQL
+  //       </a>{" "}
+  //       database and define rules for validation. A user can signup and login as
+  //       well as make and delete their own posts.
+  //     </p>
+  //   </>
+  // );
 
   const pwgenerateDescription = (
     <>
@@ -520,7 +537,7 @@ const Portfolio = () => {
               { logoSrc: apolloLogo, altText: "Apollo & GraphQL" },
               { logoSrc: nodeLogo, altText: "Node.js" },
             ]}
-            image={Blockbuster}
+            images={BlockbusterImages}
             alt="Blockbuster Project Thumbnail"
             deployedLink="https://blockbuster2024-c2f830097f5f.herokuapp.com/"
             githubLink="https://github.com/Goobergreve09/Blockbuster2024"
@@ -535,7 +552,7 @@ const Portfolio = () => {
           />
           <Project
             title="Weather Dashboard API"
-            image={Weather}
+            images={WeatherImages}
             technologies={[
               { logoSrc: reactLogo, altText: "React" },
               { logoSrc: bootstrapLogo, altText: "Bootstrap" },
@@ -558,7 +575,7 @@ const Portfolio = () => {
           />
           <Project
             title="Javascript Quiz"
-            image={quiz}
+            images={JavascriptQuizImages}
             technologies={[
               { logoSrc: reactLogo, altText: "React" },
               { logoSrc: bootstrapLogo, altText: "Bootstrap" },
@@ -580,87 +597,13 @@ const Portfolio = () => {
               "Creativity",
             ]}
           />
-          {/* <Project
-            title="Photography Portfolio"
-            image={photography}
-            technologies={[
-              { logoSrc: reactLogo, altText: "React" },
-              { logoSrc: bootstrapLogo, altText: "Bootstrap" },
-              { logoSrc: javascriptLogo, altText: "Javascript" },
-              { logoSrc: nodeLogo, altText: "Node.js" },
-              { logoSrc: cssLogo, altText: "CSS3" },
-              { logoSrc: htmlLogo, altText: "HTML5" },
-            ]}
-            alt="Photography Portfolio Thumbnail"
-            deployedLink="https://greggrevephotography.netlify.app/"
-            githubLink="https://github.com/Goobergreve09/greg-greve-photography-portfolio"
-            description="This is my own personal photography portfolio. There is no backend, primarily the front end uses React, Bootstrap, and CSS3.
-             The portfolio website is fully-responsive for mobile use. I'm using npm's package manager to organize and keep track of my libraries. 
-             This website is hosted using Netlify and its speedy network capabilities with a React front end. I use npm's ModalImage for user's to get a better view of each photo, with 
-             downloading capabilities. React-Bootstrap-s flex design was primarily used for a seamless responsive design for an ease of use on all platforms. 
-              My motivation for this project was to have a place to store my images. I am an expert in landscape photography. I 
-              use this website to store my photos in a way that's a bit more professional than your basic social media outlets."
-            upTime={photographyAverageResponseTime}
-          />
-          <Project
-            title="slAPI Social Media Website"
-            technologies={[
-              { logoSrc: mysqlLogo, altText: "MySQL" },
-              { logoSrc: sequelizeLogo, altText: "Sequelize" },
-              { logoSrc: cssLogo, altText: "CSS3" },
-              { logoSrc: handlebarsLogo, altText: "Handlebars.js" },
-              { logoSrc: javascriptLogo, altText: "Javascript" },
-              { logoSrc: nodeLogo, altText: "Node.js" },
-            ]}
-            image={slAPI}
-            alt="slAPI Social Media Website Thumbnail"
-            deployedLink="https://desolate-sierra-47851-d89056b73f92.herokuapp.com/"
-            githubLink="https://github.com/Wruqe/SlApiI"
-            description="'slAPI' is a dynamic web application designed to curate a
-             diverse array of humorous and whimsical content. Serving as a 
-             comprehensive repository for lighthearted and entertaining contributions,
-              users can explore a wide range of amusing anecdotes, quirky observations,
-               and creative musings. Furthermore, users have the opportunity to 
-               actively engage with the platform by submitting their own humorous
-                entries, fostering a vibrant community of laughter and creativity.
-                 Enhancing user interaction, the platform features a sophisticated 
-                 rating system that aggregates user feedback to generate average
-                  scores, providing valuable insights into content quality. 
-                  Additionally, a real-time chat functionality fosters lively 
-                  discussions and spontaneous exchanges, creating a dynamic
-                   environment conducive to playful banter and camaraderie. Here 
-                   we use Sequelize and MySQL2 for the backend database with frameworks like Express
-                    and Node. The frontend is done with CSS3, HTML5, and Javascript."
-          />
-          <Project
-            title="Brewery-Zip"
-            technologies={[
-              { logoSrc: cssLogo, altText: "CSS3" },
-              { logoSrc: htmlLogo, altText: "HTML5" },
-              { logoSrc: javascriptLogo, altText: "Javascript" },
-              { logoSrc: tailwindLogo, altText: "TailwindCSS" },
-            ]}
-            image={brewZip}
-            alt="Brew-Zip Website Thumbnail"
-            deployedLink="https://whitney-simpson.github.io/Brewery-Search-Engine/"
-            githubLink="https://github.com/Whitney-Simpson/Brewery-Search-Engine"
-            description="As enthusiasts of fine craft beer, our aim is to facilitate the discovery of diverse breweries 
-            tailored to the preferences of our users. With a focus on providing comprehensive information and 
-            enhanced user experience, our platform enables individuals to effortlessly locate breweries based 
-            on their current location or desired destination. Leveraging advanced technologies such as CSS3, 
-            HTML5, JavaScript, and Tailwind CSS, we have developed a sophisticated tool that seamlessly 
-            integrates brewery location data with real-time weather forecasts. Our overarching objective is to
-             furnish beer aficionados with a robust search platform that not only facilitates brewery 
-             exploration but also offers invaluable insights into weather conditions, thereby enhancing their 
-             overall brewery-visiting experience."
-          /> */}
           <Project
             title="ReadMe Generator"
             technologies={[
               { logoSrc: javascriptLogo, altText: "Javascript" },
               { logoSrc: nodeLogo, altText: "Node.js" },
             ]}
-            image={readMe}
+            images={ReadMeImages}
             alt="Read-Me Generator Thumbnail"
             githubLink="https://github.com/Goobergreve09/read-me-generator"
             description={readMeDescription}
@@ -679,7 +622,7 @@ const Portfolio = () => {
               { logoSrc: nodeLogo, altText: "Node.js" },
               { logoSrc: mysqlLogo, altText: "MySQL" },
             ]}
-            image={employee}
+            images={EmployeeImages}
             alt="Employee Manager Thumbnail"
             githubLink="https://github.com/Goobergreve09/employee-manager-backend"
             description={employeeDescription}
@@ -691,7 +634,7 @@ const Portfolio = () => {
               "Adaptability",
             ]}
           />
-          <Project
+          {/* <Project
             title="Tech-Blog"
             technologies={[
               { logoSrc: javascriptLogo, altText: "Javascript" },
@@ -713,7 +656,7 @@ const Portfolio = () => {
               "Communication",
               "Adaptability",
             ]}
-          />
+          /> */}
           <Project
             title="Password Generator"
             technologies={[
@@ -721,7 +664,7 @@ const Portfolio = () => {
               { logoSrc: htmlLogo, altText: "HTML5" },
               { logoSrc: javascriptLogo, altText: "Javascript" },
             ]}
-            image={passwordGen}
+            images={PasswordGenImages}
             alt="Password Generator Thumbnail"
             deployedLink="https://goobergreve09.github.io/js-password-generate/"
             githubLink="https://github.com/Goobergreve09/js-password-generate"
@@ -741,7 +684,7 @@ const Portfolio = () => {
               { logoSrc: cssLogo, altText: "CSS3" },
               { logoSrc: htmlLogo, altText: "HTML5" },
             ]}
-            image={workday}
+            images={workDayImages}
             alt="Work Day Scheduler Thumbnail"
             deployedLink="https://goobergreve09.github.io/js-workday-schedule/"
             githubLink="https://github.com/Goobergreve09/js-workday-schedule"

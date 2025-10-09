@@ -1,13 +1,13 @@
 import Header from "../components/Header";
 import resumeFile from "../assets/Resume.pdf";
 import certification from "../assets/Certification.pdf";
+import presidentsList from "../assets/presidents_list.pdf";
 import { Row, Col, Container } from "react-bootstrap";
-import { TbH5 } from "react-icons/tb";
 import { FaCheckCircle, FaPhoneSquareAlt } from "react-icons/fa";
 import { IoIosSchool, IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 
-import "../styles/resume.css"
+import "../styles/resume.css";
 
 const Resume = () => {
   const proficiencies = [
@@ -21,11 +21,11 @@ const Resume = () => {
       description: "Create interactive user interfaces",
       iconClass: "bi bi-filetype-js icon",
     },
-  {
-    skill: "Python",
+    {
+      skill: "Python",
       description: "Write clean, versatile scripts for web and data",
       iconClass: "bi bi-filetype-py icon",
-  },
+    },
     {
       skill: "HTML",
       description: "Structure web pages",
@@ -78,15 +78,21 @@ const Resume = () => {
       <Header />
       <div className="container pt-4 resume">
         <Row className="text-center">
-          <Col sm={12} lg={6}>
-            <h2> Download Resume</h2>
+          <Col sm={12} lg={4}>
+            <h2>Resume</h2>
             <a href={resumeFile} download>
               <i className="bi bi-download" style={{ fontSize: "48px" }}></i>
             </a>
           </Col>
-          <Col sm={12} lg={6}>
-            <h2 className="wordGlow"> Download Certification</h2>
+          <Col sm={12} lg={4}>
+            <h2 className="wordGlow"> Certification</h2>
             <a href={certification} download>
+              <i className="bi bi-download" style={{ fontSize: "48px" }}></i>
+            </a>
+          </Col>
+          <Col sm={12} lg={4}>
+            <h2 className="wordGlow"> Academic Honors</h2>
+            <a href={presidentsList} download>
               <i className="bi bi-download" style={{ fontSize: "48px" }}></i>
             </a>
           </Col>
@@ -362,7 +368,7 @@ const Resume = () => {
           <Row className="pb-0">
             <Col className="d-flex justify-content-start">
               <h5 className="pt-3 jobHeader">
-                Associate of Arts in Pre-Computer Science
+                Associates in Computer Programming
               </h5>
             </Col>
           </Row>
@@ -386,7 +392,19 @@ const Resume = () => {
                 <span className="checkPointScholar">
                   <IoIosSchool />
                 </span>{" "}
-                Current student working toward an A.A in Pre-Computer Science.
+                <span className="boldText">Honors:</span> Awarded{" "}
+                <span className="boldText">President’s List</span> honors 2× for
+                academic excellence.
+              </h5>
+            </Col>
+          </Row>
+          <Row className="pb-0 d-flex justify-content-start">
+            <Col className="d-flex justify-content-start">
+              <h5 className="bulletedPoint">
+                <span className="checkPointScholar">
+                  <IoIosSchool />
+                </span>{" "}
+                Current student working toward an A.A in Computer Programming.
               </h5>
             </Col>
           </Row>

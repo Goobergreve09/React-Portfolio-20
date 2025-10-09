@@ -9,7 +9,7 @@ import signature from "../assets/images/signature.png";
 import grccLogo from "../assets/images/grccLogo.png";
 
 import ModalImage from "react-modal-image";
-import "../styles/aboutMe.css"
+import "../styles/aboutMe.css";
 
 export default function AboutMe() {
   const [codingDuration, setCodingDuration] = useState({
@@ -141,9 +141,56 @@ export default function AboutMe() {
               {codingDuration.months} months, {codingDuration.days} days,{" "}
               {codingDuration.hours} hours, {codingDuration.minutes} minutes,
               and {codingDuration.seconds} seconds ago. I hold a certificate in
-              Full Stack Web Development from Michigan State University, where I
-              gained hands-on experience and a solid foundation in the latest
-              web technologies.
+              Full Stack Web Development from{" "}
+              <a
+                href="https://www.msu.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">Michigan State University</span>
+              </a>
+              , where I gained hands-on experience and a solid foundation in the
+              latest web technologies.
+            </p>
+            <p className="bio-text">
+              In addition to my certificate, I’ve taken classes at{" "}
+              <a
+                href="https://www.grcc.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">
+                  Grand Rapids Community College (GRCC)
+                </span>
+              </a>{" "}
+              in{" "}
+              <a
+                href="https://en.cppreference.com/w/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">C++</span>
+              </a>
+              ,{" "}
+              <a
+                href="https://www.oracle.com/java/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">Java</span>
+              </a>
+              ,{" "}
+              <a
+                href="https://www.python.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span id="bold-text">Python</span>
+              </a>
+              , Systems Analysis, Web Application Programming, and HTML
+              Essentials. I am currently pursuing an associate degree in
+              Computer Programming to further expand my technical skills and
+              deepen my understanding of software development.
             </p>
             <p className="bio-text">
               My journey into the world of web development began with a

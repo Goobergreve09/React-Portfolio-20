@@ -86,7 +86,7 @@ header {
     top: 0;
     left: 0;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .95);
+    background-color: rgba(0, 0, 0, 0.95);
     z-index: 1;
     border-radius: 0;
     transform: translateX(-100%); /* Start hidden off-screen */
@@ -123,7 +123,7 @@ header {
   }
 
   .close-btn:hover {
-    color: #e74c3c ;
+    color: #e74c3c;
   }
 
   .mobile-header-image {
