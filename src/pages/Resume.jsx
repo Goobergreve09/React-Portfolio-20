@@ -393,7 +393,7 @@ const Resume = () => {
                   <IoIosSchool />
                 </span>{" "}
                 <span className="boldText">Honors:</span> Awarded{" "}
-                <span className="boldText">President’s List</span> honors 2× for
+                <span className="boldText">President’s List</span> honors 3× for
                 academic excellence.
               </h5>
             </Col>
