@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import { useState, useEffect } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 
-import profileImage from "../assets/images/profile2.jpeg";
+import profileImage from "../assets/images/profileImage.jpg";
 import msuLogo from "../assets/images/msuLogo.png";
 import edx from "../assets/images/edx.png";
 import signature from "../assets/images/signature.png";
