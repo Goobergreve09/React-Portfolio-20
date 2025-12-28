@@ -13,7 +13,35 @@ import { fetchGitHubUserData } from "../utils/githubFetch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-import "../styles/github.css"
+import "../styles/github.css";
+
+// Reusable image component with graceful fallback on 503 / load failure
+function StatsImage({ src, alt }) {
+  const [failed, setFailed] = useState(false);
+
+  if (failed) {
+    return (
+      <div
+        className="statsBox d-flex align-items-center justify-content-center"
+        style={{ maxWidth: "100%", height: "auto", padding: "1rem" }}
+      >
+        <p style={{ textAlign: "center", margin: 0 }}>
+          Stats service is temporarily unavailable.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      style={{ maxWidth: "100%", height: "auto" }}
+      className="statsBox"
+      onError={() => setFailed(true)}
+    />
+  );
+}
 
 function GitHub() {
   const [userData, setUserData] = useState(null);
@@ -35,7 +63,11 @@ function GitHub() {
   return (
     <>
       <Header />
-      <Container fluid className="github-container" style={{ marginBottom: "125px" }}>
+      <Container
+        fluid
+        className="github-container"
+        style={{ marginBottom: "125px" }}
+      >
         {userData && (
           <div>
             <Container fluid>
@@ -89,50 +121,62 @@ function GitHub() {
                 </Col>
               </Row>
             </Container>
+
+            {/* Stats Row */}
             <Row className="p-3 d-flex justify-content-center align-items-center">
-              <Col lg={4} md={12} className="d-flex justify-content-center mt-2 ">
+              <Col
+                lg={4}
+                md={12}
+                className="d-flex justify-content-center mt-2 "
+              >
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <StatsImage
                     src="https://github-readme-stats.vercel.app/api?username=Goobergreve09&show_icons=true&theme=radical"
                     alt="Goobergreve09's GitHub Stats"
-                    style={{ maxWidth: "100%", height: "auto" }}
-                    className="statsBox"
                   />
                 </a>
               </Col>
-              <Col lg={4} md={12} className="d-flex justify-content-center mt-5 ">
+
+              <Col
+                lg={4}
+                md={12}
+                className="d-flex justify-content-center mt-5 "
+              >
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <StatsImage
                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=Goobergreve09&layout=compact&langs_count=9&theme=radical&exclude_repo=Optifine-Mod-Coder-Pack-1.16.1,Projects"
                     alt="Greg's most used languages"
-                    style={{ maxWidth: "100%", height: "auto" }}
-                    className="statsBox"
                   />
                 </a>
               </Col>
-              <Col lg={4} md={12} className="d-flex justify-content-center mt-5">
+
+              <Col
+                lg={4}
+                md={12}
+                className="d-flex justify-content-center mt-5"
+              >
                 <a
                   href="https://github.com/Goobergreve09?tab=overview"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <StatsImage
                     src="https://github-readme-streak-stats.herokuapp.com/?user=Goobergreve09&theme=radical"
                     alt="More Goobergreve09 Stats"
-                    style={{ maxWidth: "100%", height: "auto" }}
-                    className="statsBox"
                   />
                 </a>
               </Col>
             </Row>
+
+            {/* Skills */}
             <Container className="skillsContainer">
               <Row>
                 <Col className="text-center">
@@ -178,7 +222,7 @@ function GitHub() {
                   <Col xs={12} sm={6} md={4} className="text-center p-3">
                     <h6>IDE</h6>
                     <img src="https://img.shields.io/badge/PyCharm-000?style=for-the-badge&logo=pycharm&logoColor=fff)" />
-                    <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+                    <img src="https://img.shields.io-badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
                   </Col>
                   <Col xs={12} sm={6} md={4} className="text-center p-3">
                     <h6>Operating Systems</h6>
